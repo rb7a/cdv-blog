@@ -1,0 +1,22 @@
+---
+import Footer from '../components/Footer.astro';
+import Navigation from '../components/Navigation.astro';
+import BaseHead from '../components/BaseHead.astro';
+import '../style/main.scss';
+let title = 'Charles Villard';
+let description = 'Devlog and portfolio of Charles Villard, software engineer';
+let permalink = 'https://charlesvillard.co'
+
+---
+
+<html lang="en">
+  <head>
+		<BaseHead {title} {description} {permalink} />
+  </head>
+
+  <body>
+    <Navigation />
+    <slot />
+    <Footer />
+  </body>
+</html>
