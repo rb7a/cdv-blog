@@ -6,7 +6,7 @@ import '../style/main.scss';
 let title = 'Charles Villard';
 let description = 'Devlog and portfolio of Charles Villard, software engineer';
 let permalink = 'https://charlesvillard.co'
-
+const { content } = Astro.props;
 ---
 
 <html lang="en">
@@ -16,7 +16,9 @@ let permalink = 'https://charlesvillard.co'
 
   <body>
     <Navigation />
-    <slot />
+    <main>
+      <slot />
+    </main>
     <Footer />
   </body>
 </html>

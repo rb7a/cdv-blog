@@ -1,0 +1,26 @@
+---
+layout: './../layouts/Base.astro'
+---
+# About
+
+I'm a front-end web developer and software engineer with a penchant for design systems, the JAMStack, and building tools that help people build things.
+
+I started my career teaching myself front-end web development, and have since worked on projects focused on brand management, newsletter publication, eCommerce and retail, and more.
+
+In my downtime, I help raise two beautiful daughters with my partner and five cats in Riverview, Florida (yes, the cats help too.) I also enjoy video games, table-top roleplaying games, drawing, movies and cooking, and moonlight as a voice-actor of many characters in productions of "The Friar," a mini-episode drama series.
+
+---
+
+## Speaking
+
+I've done some public speaking prior to and during my career in tech on podcasts and at meetups and conferences.
+
+ - ["The Ramp Up to Vue" (lightning talk) at VueConf.US 2019](https://www.youtube.com/watch?v=q0UJSePrEg0)
+ - ["The Ramp Up to Vue" (extended) at Global Vue Meetup](https://www.youtube.com/watch?v=yOASfLYiwU4)
+ - [CodePrep ep. 59](https://www.codeprep.io/podcast/059/)
+
+---
+
+## Community
+
+Originally hailing from Miami, Florida, I was a volunteer organizer for [Front-End Miami](https://frontend.miami/), formerly Front-End Developers of Miami. It's a casual software engineering MeetUp group with a focus on front-end engineering and web development. Since moving to Florida's western coast, I still help moderate [its Slack channel](https://fedm.slack.com/join/shared_invite/enQtMzgyMTMzNTI5NDQ3LWUzNTc2MmJjYzE0NTg1YjI0YmFmNjE3MGY4MzAxYmZlNjlkMTViNDEyODdkYTJhMzAwNjBjMzYxNzRiMzNkMzY#/shared-invite/email).

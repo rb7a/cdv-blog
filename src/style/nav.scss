@@ -9,36 +9,25 @@
       width: 100%;
       display: flex;
       flex-flow: row nowrap;
+      align-items: baseline;
       margin-left: -.125rem;
 
       .navbar-item {
         margin-right: 2rem;
-      }
-    }
 
-    .navbar-brand {
-      display: flex;
-      flex-flow: column nowrap;
-      align-items: baseline;
-      margin-right: 2rem;
-      margin-bottom: 2rem;
-      .branded-text {
-        margin-left: -.125rem;
-        font-size: var(--s-h3);
+        &.branded-text {
+          margin-left: -.125rem;
+          font-weight: 700;
+          font-size: 1.25em;
+        }
       }
+
     }
 
     @media (min-width: 575px) {
       flex-flow: row nowrap;
       align-items: baseline;
 
-      .navbar-brand {
-        flex-direction: row;
-
-        .branded-text {
-          margin-left: 0;
-        }
-      }
       .navbar-menu {
         width: auto;
         justify-self: flex-end;
@@ -46,9 +35,12 @@
 
         .navbar-item {
           margin-right: 2rem;
+
+          &.branded-text {
+            margin-left: 0;
+          }
         }
       }
     }
   }
-
 }
