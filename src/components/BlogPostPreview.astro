@@ -11,11 +11,9 @@ const { post } = Astro.props;
 		<p class="publish-date">{post.frontmatter.publishDate}</p>
 		<a href={post.url}><h3 class="title">{post.frontmatter.title}</h3></a>
 	</header>
-	<p>{post.frontmatter.description}</p>
+	{
+		post.frontmatter.description &&
+		<p>{post.frontmatter.description}</p>
+	}
 	<a href={post.url}>Read more</a>
 </article>
-
-<style>
-
-
-</style>

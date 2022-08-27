@@ -1,0 +1,41 @@
+.footer {
+  display: flex;
+  flex-flow: column-reverse nowrap;
+
+  .social {
+    display: flex;
+    margin-bottom: 1rem;
+    .social-link {
+      height: fit-content;
+      width: auto;
+      color: var(--c-green);
+      margin-right: 1rem;
+
+      &:visited {
+        color: rebeccapurple;
+      }
+
+      &:hover {
+        color: var(--c-red);
+      }
+
+      .icon {
+        height: 2rem;
+        width: auto;
+      }
+    }
+  }
+
+  @media (min-width: 575px) {
+    flex-flow: row nowrap;
+    justify-content: space-between;
+
+    .social {
+      margin-bottom: 0;
+      .social-link .icon {
+        height: 1.5rem;
+      }
+    }
+  }
+
+}

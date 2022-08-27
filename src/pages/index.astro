@@ -1,8 +1,11 @@
 ---
 // Component Imports
-import Base from '../layouts/Base.astro';
 import BlogPostPreview from '../components/BlogPostPreview.astro';
 import BaseLayout from '../layouts/Base.astro';
+import { Image } from '@astrojs/image/components';
+import headshot from '../../public/assets/headshot.png';
+import { getPublishedPosts } from '../utils/getPosts';
+
 let title = 'Charles Villard';
 let employer = 'HPE';
 let employerSite = 'https://www.hpe.com';
@@ -16,9 +19,9 @@ let job = 'Software Engineer'
 let blogTitle = 'Writings';
 
 // Data Fetching: List all Markdown posts in the repo.
-
-let allPosts = await Astro.glob('./posts/*.md');
-allPosts = allPosts.sort((a, b) => new Date(b.frontmatter.publishDate).valueOf() - new Date(a.frontmatter.publishDate).valueOf());
+const allPosts = await Astro.glob('./posts/*.mdx');
+const publishablePosts = allPosts.filter(({ frontmatter }) => frontmatter.draft !== true);
+const sortedPosts = publishablePosts.sort(({ frontmatter: a }, { frontmatter: b }) => new Date(b.publishDate).valueOf() - new Date(a.publishDate).valueOf());
 
 // Full Astro Component Syntax:
 // https://docs.astro.build/core-concepts/astro-components/
@@ -28,7 +31,7 @@ allPosts = allPosts.sort((a, b) => new Date(b.frontmatter.publishDate).valueOf()
   <div class="home">
     <div class="hero">
       <div class="headshot" >
-        <img src="/assets/headshot.png" class="headshot-image" alt="Photo of Charles Villard">
+        <Image src={headshot} class="headshot-image" alt="Photo of Charles Villard" />
       </div>
       <section class="intro">
         <h1 class="branded-text home-branding">Hi there! <br/> I'm Charles Villard.</h1>
@@ -38,9 +41,13 @@ allPosts = allPosts.sort((a, b) => new Date(b.frontmatter.publishDate).valueOf()
 
       </section>
     </div>
-    <section aria-label="Blog post list">
-			<h2 class="latest">{blogTitle}</h2>
-			{allPosts.map((p) => <BlogPostPreview post={p} />)}
-		</section>
+
+    {
+    sortedPosts.length !== 0 &&
+      <section aria-label="Blog post list">
+        <h2 class="latest">{blogTitle}</h2>
+        {sortedPosts.map((p) => <BlogPostPreview post={p} />)}
+      </section>
+    }
   </div>
 </BaseLayout>

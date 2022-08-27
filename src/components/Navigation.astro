@@ -1,12 +1,15 @@
 ---
-  let { isHome } = Astro.props;
+  let { arePostsPublished } = Astro.props;
 ---
 <header class="navbar">
   <div class="container">
+    <a href="/" class="navbar-item branded-text">Charles Villard</a>
     <nav id="navbarMenu" class="navbar-menu">
-        <a href="/" class="navbar-item branded-text">Charles Villard</a>
         <a href="/about" class="navbar-item">About</a>
-        <a href="/writing" class="navbar-item">Writing</a>
+        {
+          arePostsPublished &&
+          <a href="/writing" class="navbar-item">Writing</a>
+        }
     </nav>
   </div>
 </header>

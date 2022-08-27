@@ -18,12 +18,12 @@ html {
 }
 
 body {
-  max-width: 75ch;
+  max-width: 100ch;
   margin: 0 auto;
   padding: 3rem 3rem 0;
   color: $text;
   display: grid;
-  grid-template-rows: auto 1fr 3rem;
+  grid-template-rows: auto 1fr 2rem;
   row-gap: 3rem;
   grid-template-areas:
     "header"
@@ -35,7 +35,7 @@ body {
     margin-bottom: 1rem;
   }
 
-  a {
+  a, .link {
     color: var(--link);
     padding: 0;
     position: relative;
@@ -44,6 +44,11 @@ body {
     text-underline-offset: 2px;
     text-decoration-color: var(--c-green);
     transition: text-decoration-color 300ms;
+
+    &:visited {
+      color: var(--link);
+      text-decoration-color: rebeccapurple;
+    }
 
     &:hover {
       text-decoration-color: var(--c-red);
@@ -80,6 +85,10 @@ body {
   }
 
   hr {
+    margin: 2rem auto;
+  }
+
+  figure {
     margin: 2rem auto;
   }
 

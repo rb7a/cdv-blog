@@ -11,8 +11,9 @@ let title = 'Writings';
 
 // Data Fetching: List all Markdown posts in the repo.
 
-let allPosts = await Astro.glob('./posts/*.md');
-allPosts = allPosts.sort((a, b) => new Date(b.frontmatter.publishDate).valueOf() - new Date(a.frontmatter.publishDate).valueOf());
+const allPosts = await Astro.glob('./posts/*.mdx');
+const publishablePosts = allPosts.filter(({ frontmatter }) => frontmatter.draft !== true);
+const sortedPosts = publishablePosts.sort(({ frontmatter: a }, { frontmatter: b }) => new Date(b.publishDate).valueOf() - new Date(a.publishDate).valueOf());
 
 // Full Astro Component Syntax:
 // https://docs.astro.build/core-concepts/astro-components/
@@ -21,8 +22,17 @@ allPosts = allPosts.sort((a, b) => new Date(b.frontmatter.publishDate).valueOf()
 <Base>
 	<div class="content">
 		<section aria-label="Blog post list">
-			<h1 class="latest">{title}</h1>
-			{allPosts.map((p) => <BlogPostPreview post={p} />)}
+			{sortedPosts.length === 0 &&
+				<h1 class="latest">Bummer! Nothing yet.</h1>
+				<p>Looks like you found this page while it's still being populated. I'm afraid you'll have to try again another time.</p>
+			}
+
+			{sortedPosts.length > 0 &&
+				<h1 class="latest">{title}</h1>
+				<>
+					{sortedPosts.map((p) => <BlogPostPreview post={p} />)}
+				</>
+			}
 		</section>
 	</div>
 </Base>

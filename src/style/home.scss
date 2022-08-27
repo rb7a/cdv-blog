@@ -1,55 +1,39 @@
 .home {
   .hero {
-
     display: grid;
     grid-template-areas:
       "headshot"
       "intro";
     height: min-content;
-
-    @media (min-width: 768px) {
-      grid-template-columns: repeat(7, 1fr);
-      grid-template-rows: repeat(3, 100px);
-      grid-template-areas:
-        "header header header intro intro intro intro"
-        "header header header intro intro intro intro"
-        "header header header intro intro intro intro";
-      align-items: center;
-      margin: 0 auto;
-    }
+    justify-content: center;
 
     .headshot {
       grid-area: headshot;
-      margin-bottom: 2rem;
-
-      .headshot-image {
-        max-width: 150%;
-        margin-bottom: -5rem;
-      }
-
-      @media (min-width: 768px) {
-        grid-row-start: 1;
-        grid-row-end: 4;
-        grid-column-start: 1;
-        grid-column-end: 3;
-      }
+      margin: 0 auto 2rem;
     }
 
     .intro {
-      // margin-top: -5rem;
       grid-area: intro;
-
-      @media (min-width: 768px) {
-        grid-row-start: 1;
-        grid-row-end: 6;
-        grid-column-start: 4;
-        grid-column-end: end;
-        padding-left: 1.5rem;
-      }
 
       .branded-text {
         margin-top: 0;
       }
+    }
+
+    @media (min-width: 600px) {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-areas:
+          "headshot headshot intro intro intro intro intro";
+        margin: 0 auto;
+        align-items: center;
+        .headshot {
+          margin-bottom: 0;
+        }
+
+        .intro {
+          padding-left: 1.5rem;
+        }
     }
   }
 
@@ -60,15 +44,6 @@
 	.post-preview {
 		padding-bottom: 2rem;
 		margin-bottom: 2rem;
-	}
-
-	header {
-		align-items: flex-start;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		padding-bottom: 2rem;
-		text-align: left;
 	}
 
 	.title,

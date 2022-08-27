@@ -5,40 +5,37 @@
     display: flex;
     flex-flow: column nowrap;
 
+    .branded-text {
+      margin-left: -.125rem;
+      font-weight: 700;
+      font-size: 1.25rem;
+    }
+
     .navbar-menu {
       width: 100%;
       display: flex;
       flex-flow: row nowrap;
       align-items: baseline;
-      margin-left: -.125rem;
+      margin-top: .5rem;
 
       .navbar-item {
         margin-right: 2rem;
-
-        &.branded-text {
-          margin-left: -.125rem;
-          font-weight: 700;
-          font-size: 1.25em;
-        }
       }
 
     }
 
     @media (min-width: 575px) {
       flex-flow: row nowrap;
-      align-items: baseline;
+      align-items: center;
+      justify-content: space-between;
 
       .navbar-menu {
         width: auto;
         justify-self: flex-end;
-        margin-left: 0;
+        margin-left: 2rem;
 
         .navbar-item {
           margin-right: 2rem;
-
-          &.branded-text {
-            margin-left: 0;
-          }
         }
       }
     }
