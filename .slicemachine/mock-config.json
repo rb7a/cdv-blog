@@ -1,0 +1,38 @@
+{
+  "_cts": {
+    "blog_post": {
+      "title": {
+        "config": {
+          "patternType": "HEADING",
+          "blocks": 1
+        }
+      },
+      "description": {
+        "config": {
+          "patternType": "PARAGRAPH",
+          "blocks": 1
+        }
+      }
+    }
+  },
+  "slices": {
+    "BlogContent": {
+      "default": {
+        "items": {},
+        "primary": {
+          "content": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
+      }
+    },
+    "Image": {
+      "default": {
+        "primary": {}
+      }
+    }
+  }
+}

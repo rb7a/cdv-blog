@@ -5,6 +5,8 @@ import BaseLayout from '../layouts/Base.astro';
 import { Image } from '@astrojs/image/components';
 import headshot from './../images/headshot.png';
 import { getPublishedPosts } from '../utils/getPosts';
+import * as prismicH from "@prismicio/helpers";
+import { getAllBlogPosts } from "../lib/prismicio";
 
 let title = 'Charles Villard';
 let employer = 'HPE';
@@ -19,9 +21,18 @@ let job = 'Software Engineer'
 let blogTitle = 'Writings';
 
 // Data Fetching: List all Markdown posts in the repo.
-const allPosts = await Astro.glob('./posts/*.mdx');
-const publishablePosts = allPosts.filter(({ frontmatter }) => frontmatter.draft !== true);
-const sortedPosts = publishablePosts.sort(({ frontmatter: a }, { frontmatter: b }) => new Date(b.publishDate).valueOf() - new Date(a.publishDate).valueOf());
+// const allPosts = await Astro.glob('./posts/*.mdx');
+// const publishablePosts = allPosts.filter(({ frontmatter }) => frontmatter.draft !== true);
+// const sortedPosts = publishablePosts.sort(({ frontmatter: a }, { frontmatter: b }) => new Date(b.publishDate).valueOf() - new Date(a.publishDate).valueOf());
+const blogPosts = await getAllBlogPosts();
+
+const formattedPosts = await blogPosts.map((post) => {
+  return {
+    url: post.url,
+    title: prismicH.asText(post.data.title),
+    date: post.data.date,
+  };
+});
 
 // Full Astro Component Syntax:
 // https://docs.astro.build/core-concepts/astro-components/
@@ -43,10 +54,10 @@ const sortedPosts = publishablePosts.sort(({ frontmatter: a }, { frontmatter: b 
     </div>
 
     {
-    sortedPosts.length !== 0 &&
+    formattedPosts.length !== 0 &&
       <section aria-label="Blog post list">
         <h2 class="latest">{blogTitle}</h2>
-        {sortedPosts.map((p) => <BlogPostPreview post={p} />)}
+        {formattedPosts.map((p) => <BlogPostPreview post={p} />)}
       </section>
     }
   </div>

@@ -1,0 +1,11 @@
+---
+import * as prismicH from "@prismicio/helpers";
+const props = Astro.props;
+
+// Render the data as HTML
+const content = props.primary.content;
+const textHTML = prismicH.asHTML(content);
+console.log(props.primary)
+---
+
+<div set:html={textHTML}></div>

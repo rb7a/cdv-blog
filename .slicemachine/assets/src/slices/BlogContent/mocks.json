@@ -1,0 +1,19 @@
+[
+  {
+    "variation": "default",
+    "version": "sktwi1xtmkfgx8626",
+    "items": [
+      {}
+    ],
+    "primary": {
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "In fugiat ex proident dolore elit laboris qui sint cupidatat. Laboris id aliquip culpa officia ut voluptate.",
+          "spans": []
+        }
+      ]
+    },
+    "slice_type": "blog_content"
+  }
+]

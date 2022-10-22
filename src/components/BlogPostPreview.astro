@@ -8,12 +8,18 @@ const { post } = Astro.props;
 
 <article class="post-preview">
 	<header>
-		<p class="publish-date">{post.frontmatter.publishDate}</p>
-		<a href={post.url}><h3 class="title">{post.frontmatter.title}</h3></a>
+		<time class="publish-date" datetime={post.date}>
+			{new Date(post.date).toLocaleDateString("en-us", {
+				year: "numeric",
+				month: "short",
+				day: "numeric",
+			})}
+		</time>
+		<a href={post.url}><h3 class="title">{post.title}</h3></a>
 	</header>
 	{
-		post.frontmatter.description &&
-		<p>{post.frontmatter.description}</p>
+		post.description &&
+		<p>{post.description}</p>
 	}
 	<a href={post.url}>Read more</a>
 </article>
