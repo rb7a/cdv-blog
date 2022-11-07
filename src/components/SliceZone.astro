@@ -1,0 +1,20 @@
+---
+import Image from "../slices/Image/Image.astro";
+import BlogContent from "../slices/BlogContent/BlogContent.astro";
+
+const components = {
+  image: Image,
+  blog_content: BlogContent,
+};
+
+const { slices } = Astro.props;
+---
+
+<>
+  {
+    slices.map((slice, index) => {
+      const Component = components[slice.slice_type];
+      return <Component key={index} {...slice} />;
+    })
+  }
+</>

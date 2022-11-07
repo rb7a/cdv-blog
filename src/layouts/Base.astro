@@ -7,9 +7,9 @@ let title = 'Charles Villard';
 let description = 'Devlog and portfolio of Charles Villard, software engineer';
 let permalink = 'https://charlesvillard.co'
 
-const allPosts = await Astro.glob('./../pages/posts/*.mdx');
-const publishablePosts = allPosts.filter(({ frontmatter }) => frontmatter.draft !== true);
-const sortedPosts = publishablePosts.sort(({ frontmatter: a }, { frontmatter: b }) => new Date(b.publishDate).valueOf() - new Date(a.publishDate).valueOf());
+// const allPosts = await Astro.glob('./../pages/blog/*.mdx');
+// const publishablePosts = allPosts.filter(({ frontmatter }) => frontmatter.draft !== true);
+// const sortedPosts = publishablePosts.sort(({ frontmatter: a }, { frontmatter: b }) => new Date(b.publishDate).valueOf() - new Date(a.publishDate).valueOf());
 ---
 
 <html lang="en">
@@ -18,7 +18,7 @@ const sortedPosts = publishablePosts.sort(({ frontmatter: a }, { frontmatter: b 
   </head>
 
   <body>
-    <Navigation arePostsPublished={ sortedPosts.length > 0 }/>
+    <Navigation arePostsPublished={ true }/>
     <main>
       <slot />
     </main>

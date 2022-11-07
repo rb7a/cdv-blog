@@ -1,5 +1,4 @@
 ---
-import Author from './Author.astro';
 export interface Props {
 	title: string;
 	author: string;
@@ -9,7 +8,7 @@ export interface Props {
 	alt: string;
 }
 
-const { title, author, authorLink, publishDate, heroImage, alt } = Astro.props;
+const { title, publishDate, heroImage, alt } = Astro.props;
 ---
 
 <div class="layout">

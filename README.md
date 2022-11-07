@@ -22,5 +22,6 @@ All commands are run from the root of the project, from a terminal:
 
 ## TODOs
 
-- [ ] Figure out how to leverage Astro's functionality in JavaScript utility functions like in [utils/getPosts.js](./src/utils/getPosts.js).
+- [X] Figure out how to leverage Astro's functionality in JavaScript utility functions like in [utils/getPosts.js](./src/utils/getPosts.js).
+- [X] Improve the writing functionality for my blog with prismic!
 - [ ] Write more content!
