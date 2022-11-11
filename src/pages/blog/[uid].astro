@@ -1,8 +1,7 @@
 ---
 import SliceZone from "../../components/SliceZone.astro";
-import * as prismicH from "@prismicio/helpers";
 import { getAllBlogPosts } from "../../lib/prismicio";
-import Base from "../../layouts/Base.astro";
+import BlogPost from "../../layouts/BlogPost.astro";
 
 export async function getStaticPaths() {
   const allBlogPosts = await getAllBlogPosts();
@@ -16,10 +15,10 @@ export async function getStaticPaths() {
 }
 
 const blogPost = Astro.props;
-const title = prismicH.asHTML(blogPost.data.title);
 ---
 
-<Base>
-  <Fragment set:html={title} />
+<BlogPost
+  blogPost={blogPost}
+>
   <SliceZone slices={blogPost.data.slices} />
-</Base>
+</BlogPost>

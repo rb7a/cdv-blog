@@ -2,13 +2,19 @@
 import Base from '../layouts/Base.astro';
 import BlogPost from '../components/BlogPost.astro';
 
+const { blogPost } = Astro.props;
 
-const { content } = Astro.props;
-const { title, description, publishDate, author, heroImage, permalink, alt } = content;
+const { title, date, featuredimage } = blogPost.data;
 ---
 
 <Base>
-	<BlogPost {title} {author} {heroImage} {publishDate} {alt}>
+	<BlogPost
+		title={title}
+		publishDate={date}
+		heroImage={featuredimage}
+		author="Charles Villard"
+		authorLink="https://twitter.com/cdvillard"
+	>
 		<slot />
 	</BlogPost>
 </Base>
