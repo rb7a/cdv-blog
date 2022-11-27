@@ -15,6 +15,7 @@ import { client } from "../lib/prismicio"
         const url = await client.resolvePreviewURL({
           defaultURL,
         })
+
         window.location.replace(url)
       }
       init()
