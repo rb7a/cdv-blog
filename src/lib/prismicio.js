@@ -77,6 +77,8 @@ export async function getAllBlogPosts() {
   return await client.getAllByType("blog_post");
 }
 
+export { client }
+
 // export async function getPageByUID(uid) {
 //   return await client.getByUID("page", uid);
 // }
