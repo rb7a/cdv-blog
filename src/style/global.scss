@@ -31,7 +31,7 @@ body {
     "footer";
   font-family: $font-family;
 
-  p {
+  p, ul {
     margin-bottom: 1rem;
   }
 
@@ -89,6 +89,11 @@ body {
 
   figure {
     margin: 2rem auto;
+    place-items: flex-start;
+
+      figcaption {
+        max-inline-size: min(70ch, 800px);
+      }
   }
 
   .navbar {

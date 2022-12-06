@@ -1,13 +1,19 @@
 ---
+import * as prismicH from "@prismicio/helpers";
 import Base from '../layouts/Base.astro';
 import BlogPost from '../components/BlogPost.astro';
 
 const { blogPost } = Astro.props;
 
-const { title, date, featuredimage } = blogPost.data;
+const { data, url } = blogPost;
+const { title, description, date, featuredimage } = data;
 ---
 
-<Base>
+<Base
+	title={`Charles Villard || ${prismicH.asText(title)}`}
+	description={prismicH.asText(description)}
+	permalink={`https://charlesvillard.co${url}`}
+>
 	<BlogPost
 		title={title}
 		publishDate={date}

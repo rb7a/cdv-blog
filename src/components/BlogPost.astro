@@ -1,7 +1,11 @@
 ---
+import dayjs from 'dayjs';
+import customParseFormat from 'dayjs/plugin/customParseFormat';
 import * as prismicH from "@prismicio/helpers";
-
+import Image from "../slices/Image/Image.astro";
 import Author from './Author.astro';
+
+dayjs.extend(customParseFormat)
 
 export interface HeroImage {
 	alt: string;
@@ -18,7 +22,8 @@ export interface Props {
 
 const { props } = Astro;
 const { title, publishDate, heroImage, author, authorLink } = props;
-const { alt, url } = heroImage;
+
+const formattedDate = dayjs(publishDate).format('MMMM D, YYYY');
 ---
 
 <div class="layout">
@@ -26,17 +31,12 @@ const { alt, url } = heroImage;
 		<div>
 			<header>
 				<Fragment set:html={prismicH.asHTML(title)} />
-				<p class="publish-date">{publishDate}</p>
+				<p class="publish-date">{formattedDate}</p>
 				<Author name={author} href={authorLink} />
 			</header>
 			<main>
 				{heroImage &&
-					<figure>
-						<img class="hero-image" src={url} alt={alt} />
-						<figcaption class="caption">
-							<em>{alt}</em>
-						</figcaption>
-					</figure>
+					<Image heroImage={heroImage}/>
 				}
 				<slot/>
 			</main>
