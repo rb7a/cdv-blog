@@ -3,18 +3,23 @@ import Footer from '../components/Footer.astro';
 import Navigation from '../components/Navigation.astro';
 import BaseHead from '../components/BaseHead.astro';
 import '../style/main.scss';
-let title = 'Charles Villard';
-let description = 'Devlog and portfolio of Charles Villard, software engineer';
-let permalink = 'https://charlesvillard.co'
 
-// const allPosts = await Astro.glob('./../pages/blog/*.mdx');
-// const publishablePosts = allPosts.filter(({ frontmatter }) => frontmatter.draft !== true);
-// const sortedPosts = publishablePosts.sort(({ frontmatter: a }, { frontmatter: b }) => new Date(b.publishDate).valueOf() - new Date(a.publishDate).valueOf());
+export interface Props {
+	title: string;
+	description: string;
+	permalink: string;
+}
+
+const { props } = Astro;
 ---
 
 <html lang="en">
   <head>
-		<BaseHead {title} {description} {permalink} />
+		<BaseHead
+      title={props.title}
+      description={props.description}
+      permalink={props.permalink}
+    />
   </head>
 
   <body>

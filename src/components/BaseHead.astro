@@ -5,6 +5,10 @@ export interface Props {
 	permalink: string;
 }
 const { title, description, permalink } = Astro.props;
+
+const pageTitle = title || 'Charles Villard';
+const pageDescription = description || 'Devlog and portfolio of Charles Villard, software engineer';
+const pagePermalink = permalink || import.meta.env.SITE;
 ---
 	<!-- Global Metadata -->
 	<meta charset="utf-8" />
@@ -18,26 +22,26 @@ const { title, description, permalink } = Astro.props;
 	<meta name="msapplication-TileColor" content="#f1f3f5">
 	<meta name="theme-color" content="#f1f3f5">
 	<!-- Primary Meta Tags -->
-	<title>{title}</title>
-	<meta name="title" content={title} />
-	<meta name="description" content={description} />
+	<title>{pageTitle}</title>
+	<meta name="title" content={pageTitle} />
+	<meta name="description" content={pageDescription} />
 
 	<!-- Open Graph / Facebook -->
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content={permalink} />
-	<meta property="og:title" content={title} />
-	<meta property="og:description" content={description} />
+	<meta property="og:url" content={pagePermalink} />
+	<meta property="og:title" content={pageTitle} />
+	<meta property="og:description" content={pageDescription} />
 	<!-- <meta property="og:image" content="https://astro.build/social.png?v=1" /> -->
 
 	<!-- Twitter -->
-	<meta property="twitter:card" content="summary_large_image" />
-	<meta property="twitter:url" content={permalink} />
-	<meta property="twitter:title" content={title} />
-	<meta property="twitter:description" content={description} />
+	<!-- <meta property="twitter:card" content="summary_large_image" /> -->
+	<meta property="twitter:url" content={pagePermalink} />
+	<meta property="twitter:title" content={pageTitle} />
+	<meta property="twitter:description" content={pageDescription} />
 	<!-- <meta property="twitter:image" content="https://astro.build/social.png?v=1" /> -->
 
 	<!-- Fonts -->
 	<link rel="preconnect" href="https://fonts.gstatic.com" />
-		
+
 	<!-- Prismic preview -->
 	<script async defer src="https://static.cdn.prismic.io/prismic.js?new=true&repo=cdvblog"></script>

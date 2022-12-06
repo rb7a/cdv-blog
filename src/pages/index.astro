@@ -30,6 +30,7 @@ const formattedPosts = await blogPosts.map((post) => {
     url: post.url,
     title: prismicH.asText(post.data.title),
     date: post.data.date,
+    description: prismicH.asText(post.data.description)
   };
 });
 

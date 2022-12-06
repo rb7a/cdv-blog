@@ -1,17 +1,35 @@
 ---
 import * as prismicH from "@prismicio/helpers";
 const props = Astro.props;
-
 const image = props.primary?.image;
+const heroImage = props.heroImage;
 const imageSrcSet = prismicH.asImageWidthSrcSet(image);
 ---
 
-<div>
-  <img
-    src={image.url}
-    width={image.dimensions.width}
-    height={image.dimensions.height}
-    alt={image.alt}
-    srcset={imageSrcSet.srcset}
-  />
-</div>
+{image
+  ? <figure>
+      <img
+        class="content-image"
+        src={image.url}
+        width={image.dimensions.width}
+        height={image.dimensions.height}
+        alt={image.alt}
+        srcset={imageSrcSet.srcset}
+      />
+      <figcaption class="caption">
+        <em>{image.alt}</em>
+      </figcaption>
+    </figure>
+  : <figure>
+      <img
+        class="hero-image"
+        src={heroImage.url}
+        width={heroImage.dimensions.width}
+        height={heroImage.dimensions.height}
+        alt={heroImage.alt}
+      />
+      <figcaption class="caption">
+        <em>{heroImage.alt}</em>
+      </figcaption>
+    </figure>
+}

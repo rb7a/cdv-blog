@@ -34,5 +34,12 @@
         "primary": {}
       }
     }
+  },
+  "src/slices": {
+    "Image": {
+      "default": {
+        "primary": {}
+      }
+    }
   }
 }
