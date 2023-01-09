@@ -16,6 +16,8 @@ let blogTitle = 'Writings';
 // Data Fetching: List all Markdown posts in the repo.
 const blogPosts = await getAllBlogPosts();
 
+console.log(headshot)
+
 const formattedPosts = await blogPosts.map((post) => {
   return {
     url: post.url,
@@ -26,7 +28,7 @@ const formattedPosts = await blogPosts.map((post) => {
 });
 ---
 
-<Base featuredimage={headshot}>
+<Base featuredimage="./../images/headshot.png">
   <div class="home">
     <div class="hero">
       <div class="headshot" >
