@@ -2,8 +2,6 @@
 // Component Imports
 import BlogPostPreview from '../components/BlogPostPreview.astro';
 import Base from '../layouts/Base.astro';
-import { Image } from '@astrojs/image/components';
-import headshot from './../images/headshot.png';
 import * as prismicH from "@prismicio/helpers";
 import { getAllBlogPosts } from "../lib/prismicio";
 
@@ -16,8 +14,6 @@ let blogTitle = 'Writings';
 // Data Fetching: List all Markdown posts in the repo.
 const blogPosts = await getAllBlogPosts();
 
-console.log(headshot)
-
 const formattedPosts = await blogPosts.map((post) => {
   return {
     url: post.url,
@@ -28,11 +24,11 @@ const formattedPosts = await blogPosts.map((post) => {
 });
 ---
 
-<Base featuredimage="./../images/headshot.png">
+<Base title={title} featuredimage="./../images/headshot.png">
   <div class="home">
     <div class="hero">
       <div class="headshot" >
-        <Image src={headshot} class="headshot-image" alt="Photo of Charles Villard" />
+        <img src="https://images.prismic.io/cdvblog/55fc6926-399b-4cdb-bad8-0f174d607943_headshot.png?auto=compress,format" class="headshot-image" alt="Photo of Charles Villard" />
       </div>
       <section class="intro">
         <h1 class="branded-text home-branding">Hi there! <br/> I'm Charles Villard.</h1>

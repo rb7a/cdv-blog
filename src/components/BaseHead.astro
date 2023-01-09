@@ -1,5 +1,4 @@
 ---
-import headshot from './../images/headshot.png';
 export interface Props {
 	title?: string;
 	description?: string;
@@ -10,7 +9,7 @@ const {
 	title,
 	description = 'Devlog and portfolio of Charles Villard, software engineer',
 	permalink = import.meta.env.SITE,
-	featuredimage = headshot
+	featuredimage = "https://images.prismic.io/cdvblog/55fc6926-399b-4cdb-bad8-0f174d607943_headshot.png?auto=compress,format"
 } = Astro.props;
 
 const pageTitle = title;
