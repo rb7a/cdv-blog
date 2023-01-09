@@ -5,14 +5,17 @@ import BlogPost from '../components/BlogPost.astro';
 
 const { blogPost } = Astro.props;
 
+console.log('blogPost @ BlogPost.astro', blogPost)
+
 const { data, url } = blogPost;
 const { title, description, date, featuredimage } = data;
 ---
 
 <Base
-	title={`Charles Villard || ${prismicH.asText(title)}`}
+	title={prismicH.asText(title)}
 	description={prismicH.asText(description)}
 	permalink={`https://charlesvillard.co${url}`}
+	featuredimage={featuredimage.url}
 >
 	<BlogPost
 		title={title}

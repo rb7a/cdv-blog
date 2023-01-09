@@ -1,14 +1,21 @@
 ---
+import headshot from './../images/headshot.png';
 export interface Props {
-	title: string;
-	description: string;
-	permalink: string;
+	title?: string;
+	description?: string;
+	permalink?: string;
+	featuredimage?:string;
 }
-const { title, description, permalink } = Astro.props;
+const {
+	title,
+	description = 'Devlog and portfolio of Charles Villard, software engineer',
+	permalink = import.meta.env.SITE,
+	featuredimage = headshot
+} = Astro.props;
 
-const pageTitle = title || 'Charles Villard';
-const pageDescription = description || 'Devlog and portfolio of Charles Villard, software engineer';
-const pagePermalink = permalink || import.meta.env.SITE;
+const pageTitle = title;
+const pageDescription = description;
+const pagePermalink = permalink;
 ---
 	<!-- Global Metadata -->
 	<meta charset="utf-8" />
@@ -22,7 +29,7 @@ const pagePermalink = permalink || import.meta.env.SITE;
 	<meta name="msapplication-TileColor" content="#f1f3f5">
 	<meta name="theme-color" content="#f1f3f5">
 	<!-- Primary Meta Tags -->
-	<title>{pageTitle}</title>
+	<title>{pageTitle && `${pageTitle} | `}Charles Villard</title>
 	<meta name="title" content={pageTitle} />
 	<meta name="description" content={pageDescription} />
 
@@ -31,14 +38,14 @@ const pagePermalink = permalink || import.meta.env.SITE;
 	<meta property="og:url" content={pagePermalink} />
 	<meta property="og:title" content={pageTitle} />
 	<meta property="og:description" content={pageDescription} />
-	<!-- <meta property="og:image" content="https://astro.build/social.png?v=1" /> -->
+	<meta property="og:image" content={featuredimage} />
 
 	<!-- Twitter -->
 	<!-- <meta property="twitter:card" content="summary_large_image" /> -->
 	<meta property="twitter:url" content={pagePermalink} />
 	<meta property="twitter:title" content={pageTitle} />
 	<meta property="twitter:description" content={pageDescription} />
-	<!-- <meta property="twitter:image" content="https://astro.build/social.png?v=1" /> -->
+	<meta property="twitter:image" content={featuredimage} />
 
 	<!-- Fonts -->
 	<link rel="preconnect" href="https://fonts.gstatic.com" />
