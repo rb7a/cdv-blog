@@ -6,11 +6,7 @@ export interface Props {
 const { post } = Astro.props;
 ---
 
-<article class="post-preview">
-	<header>
-		<a href={post.url}><h3 class="title">{post.title}</h3></a>
-	</header>
-	<p>{post.description}</p>
+<div class="post-preview">
 	<time class="publish-date" datetime={post.date}>
 		{new Date(post.date).toLocaleDateString("en-us", {
 			year: "numeric",
@@ -18,5 +14,9 @@ const { post } = Astro.props;
 			day: "numeric",
 		})}
 	</time>
-	<a href={post.url}>Read more</a>
-</article>
+	<h3 class="title"><a href={post.url}>{post.title}</a></h3>
+	<p>{post.description}</p>
+	<div>
+		<a href={post.url}>Read more</a>
+	</div>
+</div>

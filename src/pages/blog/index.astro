@@ -1,11 +1,11 @@
 ---
 // Component Imports
-import { getAllBlogPosts, getPageByUID } from "../lib/prismicio";
+import { getAllBlogPosts } from "../../lib/prismicio";
 import * as prismicH from "@prismicio/helpers";
 
-import BlogPostPreview from '../components/BlogPostPreview.astro';
-import Base from '../layouts/Base.astro';
-import SliceZone from "../components/SliceZone.astro";
+import BlogPostPreview from '../../components/BlogPostPreview.astro';
+import Base from '../../layouts/Base.astro';
+import SliceZone from "../../components/SliceZone.astro";
 
 // Component Script:
 // You can write any JavaScript/TypeScript that you'd like here.
@@ -17,12 +17,12 @@ const blogPosts = await getAllBlogPosts();
 
 // Data Fetching: List all Markdown posts in the repo.
 const formattedPosts = await blogPosts.map((post) => {
-  return {
-    url: post.url,
-    title: prismicH.asText(post.data.title),
-    date: post.data.date,
+	return {
+		url: post.url,
+		title: prismicH.asText(post.data.title),
+		date: post.data.date,
 		description: prismicH.asText(post.data.description),
-  };
+	};
 });
 // const allPosts = await Astro.glob('./blog/*.mdx');
 // const publishablePosts = allPosts.filter(({ frontmatter }) => frontmatter.draft !== true);
@@ -37,12 +37,12 @@ const formattedPosts = await blogPosts.map((post) => {
 	<div class="content">
 		<section aria-label="Blog post list">
 			{formattedPosts.length === 0 &&
-				<h1 class="latest">Bummer! Nothing yet.</h1>
+				<h2 class="latest">Bummer! Nothing yet.</h2>
 				<p>Looks like you found this page while it's still being populated. I'm afraid you'll have to try again another time.</p>
 			}
 
 			{formattedPosts.length > 0 &&
-				<h1 class="latest">{title}</h1>
+				<h3 class="latest">{title}</h3>
 				<>
 					{formattedPosts.map((p) => <BlogPostPreview post={p} />)}
 				</>

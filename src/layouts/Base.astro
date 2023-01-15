@@ -8,6 +8,8 @@ export interface Props {
 	title: string;
 	description: string;
 	permalink: string;
+  featuredimage: string;
+  children: any;
 }
 
 const { props } = Astro;
@@ -19,6 +21,7 @@ const { props } = Astro;
       title={props.title}
       description={props.description}
       permalink={props.permalink}
+      featuredimage={props.featuredimage}
     />
   </head>
 

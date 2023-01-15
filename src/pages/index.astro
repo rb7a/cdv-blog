@@ -1,9 +1,7 @@
 ---
 // Component Imports
 import BlogPostPreview from '../components/BlogPostPreview.astro';
-import BaseLayout from '../layouts/Base.astro';
-import { Image } from '@astrojs/image/components';
-import headshot from './../images/headshot.png';
+import Base from '../layouts/Base.astro';
 import * as prismicH from "@prismicio/helpers";
 import { getAllBlogPosts } from "../lib/prismicio";
 
@@ -11,18 +9,9 @@ let title = 'Charles Villard';
 let employer = 'HPE';
 let employerSite = 'https://www.hpe.com';
 let job = 'Software Engineer'
-
-
-// Component Script:
-// You can write any JavaScript/TypeScript that you'd like here.
-// It will run during the build, but never in the browser.
-// All variables are available to use in the HTML template below.
 let blogTitle = 'Writings';
 
 // Data Fetching: List all Markdown posts in the repo.
-// const allPosts = await Astro.glob('./posts/*.mdx');
-// const publishablePosts = allPosts.filter(({ frontmatter }) => frontmatter.draft !== true);
-// const sortedPosts = publishablePosts.sort(({ frontmatter: a }, { frontmatter: b }) => new Date(b.publishDate).valueOf() - new Date(a.publishDate).valueOf());
 const blogPosts = await getAllBlogPosts();
 
 const formattedPosts = await blogPosts.map((post) => {
@@ -33,16 +22,13 @@ const formattedPosts = await blogPosts.map((post) => {
     description: prismicH.asText(post.data.description)
   };
 });
-
-// Full Astro Component Syntax:
-// https://docs.astro.build/core-concepts/astro-components/
 ---
 
-<BaseLayout>
+<Base title={title} featuredimage="./../images/headshot.png">
   <div class="home">
     <div class="hero">
       <div class="headshot" >
-        <Image src={headshot} class="headshot-image" alt="Photo of Charles Villard" />
+        <img src="https://images.prismic.io/cdvblog/55fc6926-399b-4cdb-bad8-0f174d607943_headshot.png?auto=compress,format" class="headshot-image" alt="Photo of Charles Villard" />
       </div>
       <section class="intro">
         <h1 class="branded-text home-branding">Hi there! <br/> I'm Charles Villard.</h1>
@@ -61,4 +47,4 @@ const formattedPosts = await blogPosts.map((post) => {
       </section>
     }
   </div>
-</BaseLayout>
+</Base>
