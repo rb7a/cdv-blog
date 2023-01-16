@@ -37,12 +37,12 @@ const formattedPosts = await blogPosts.map((post) => {
 	<div class="content">
 		<section aria-label="Blog post list">
 			{formattedPosts.length === 0 &&
-				<h2 class="latest">Bummer! Nothing yet.</h2>
+				<h1 class="latest">Bummer! Nothing yet.</h1>
 				<p>Looks like you found this page while it's still being populated. I'm afraid you'll have to try again another time.</p>
 			}
 
 			{formattedPosts.length > 0 &&
-				<h3 class="latest">{title}</h3>
+				<h1 class="latest display">{title}</h1>
 				<>
 					{formattedPosts.map((p) => <BlogPostPreview post={p} />)}
 				</>
