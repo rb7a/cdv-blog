@@ -1,7 +1,7 @@
 ---
 layout: './../layouts/Base.astro'
 ---
-# About
+<h1 class="display">About</h1>
 
 I'm a front-end web developer and software engineer with a penchant for design systems, the JAMStack, and building tools that help people build things.
 

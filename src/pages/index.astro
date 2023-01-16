@@ -9,7 +9,7 @@ let title = 'Charles Villard';
 let employer = 'HPE';
 let employerSite = 'https://www.hpe.com';
 let job = 'Software Engineer'
-let blogTitle = 'Writings';
+let blogTitle = 'Blog';
 
 // Data Fetching: List all Markdown posts in the repo.
 const blogPosts = await getAllBlogPosts();
@@ -28,10 +28,16 @@ const formattedPosts = await blogPosts.map((post) => {
   <div class="home">
     <div class="hero">
       <div class="headshot" >
-        <img src="https://images.prismic.io/cdvblog/55fc6926-399b-4cdb-bad8-0f174d607943_headshot.png?auto=compress,format" class="headshot-image" alt="Photo of Charles Villard" />
+        <img src="https://images.prismic.io/cdvblog/c3ed6091-78c9-47b4-8369-b570e1b70ada_Mask+Group.png?auto=compress,format" class="headshot-image" alt="Photo of Charles Villard" />
       </div>
       <section class="intro">
-        <h1 class="branded-text home-branding">Hi there! <br/> I'm Charles Villard.</h1>
+        <h1 class="branded-text display">
+          <small>Hi, my name is</small>
+          <br/>
+          Charles Villard.
+          <br/>
+          I build websites.
+        </h1>
         <p>
           I'm a {job} at <a class="link" href={employerSite}>{employer}</a>, an organizer moderator for <a class="link" href="https://frontend.miami">Front End Miami</a>, and sometimes a public speaker. I enjoy writing about design systems, static site generators, JavaScript, CSS, and more! Welcome!
         </p>
@@ -42,7 +48,7 @@ const formattedPosts = await blogPosts.map((post) => {
     {
     formattedPosts.length !== 0 &&
       <section aria-label="Blog post list">
-        <h2 class="latest">{blogTitle}</h2>
+        <h2 class="latest display">{blogTitle}</h2>
         {formattedPosts.map((p) => <BlogPostPreview post={p} />)}
       </section>
     }

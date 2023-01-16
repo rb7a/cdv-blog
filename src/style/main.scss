@@ -1,9 +1,36 @@
 @charset "utf-8";
 
+@font-face {
+  font-family: MeutasSoft;
+  font-style: normal;
+  font-weight: 400;
+  src: url("/assets/fonts/MeutasSoft-Light.otf") format("opentype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: MeutasSoft;
+  font-style: normal;
+  font-weight: 700;
+  src: url("/assets/fonts/MeutasSoft-Bold.otf") format("opentype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: MeutasSoft;
+  font-style: normal;
+  font-weight: 900;
+  src: url("/assets/fonts/MeutasSoft-Black.otf") format("opentype");
+  font-display: swap;
+}
+
 @import "../../node_modules/open-props/open-props.min.css";
 @import "../../node_modules/open-props/normalize.min.css";
 
-@import url('https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400;0,700;1,400;1,700&family=Fraunces:wght@400;700&display=swap');
+
+:where(html) {
+  font-size: 18px;
+}
 
 :root {
   --c-green:#4d854a;
@@ -13,18 +40,19 @@
   --c-transparent: rgba(0, 0, 0, 0);
   --c-white: #FFF;
 
+  font-family: MeutasSoft, system-ui, "Helvetica Neue", sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+
   // Font sizes
+  --fs-display: var(--font-size-8);
   --fs-h1: var(--font-size-7);
   --fs-h2: var(--font-size-6);
   --fs-h3: var(--font-size-5);
   --fs-h4: var(--font-size-4);
-
   --fs-small: var(--font-size-0);
 
   --text: var(--gray-8);
   --text-strong: var(--gray-8);
-  --background: var(--gray-1);
-  --font-family: Fraunces, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Apple Color Emoji, Segoe UI Emoji;
+  --background: var(--gray-0);
   --link: var(--gray-8);
   --link-decoration: var(--c-green);
 
@@ -43,7 +71,7 @@ $text-strong: var(--text-strong);
 $background-color: var(--background);
 $navbar-background-color: var(--background);
 $font-heading: var(--font-family);
-$font-family: var(--font-family);
+// $font-family: var(--font-family);
 
 @import "global";
 @import "header";
