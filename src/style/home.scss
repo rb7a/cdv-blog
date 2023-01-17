@@ -23,7 +23,6 @@
       .branded-text {
         margin-top: 0;
         font-size: var(--font-size-fluid-3);
-        -webkit-text-stroke: 1px var(--c-gray-400);
       }
     }
 
@@ -35,10 +34,6 @@
             transform: scale(150%) translateX(25%);
           }
         }
-
-    //     .intro {
-    //       padding-left: 1.5rem;
-    //     }
     }
 
     @media (min-width: 900px) {
