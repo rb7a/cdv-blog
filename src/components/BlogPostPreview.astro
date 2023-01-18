@@ -7,13 +7,15 @@ const { post } = Astro.props;
 ---
 
 <div class="post-preview">
-	<time class="publish-date" datetime={post.date}>
-		{new Date(post.date).toLocaleDateString("en-us", {
-			year: "numeric",
-			month: "short",
-			day: "numeric",
-		})}
-	</time>
+	<small class="publish-date">
+		<time datetime={post.date}>
+			{new Date(post.date).toLocaleDateString("en-us", {
+				year: "numeric",
+				month: "short",
+				day: "numeric",
+			})}
+		</time>
+	</small>
 	<h3 class="title"><a href={post.url}>{post.title}</a></h3>
 	<p>{post.description}</p>
 	<div>

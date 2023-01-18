@@ -52,15 +52,4 @@
   .content :global(main > * + *) {
 		margin-top: 1rem;
 	}
-
-	.post-preview {
-		padding-bottom: 2rem;
-		margin-bottom: 2rem;
-	}
-
-	.title,
-	.author,
-	.publish-date {
-		margin: 0;
-	}
 }
