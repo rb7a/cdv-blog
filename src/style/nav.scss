@@ -1,5 +1,6 @@
-.navbar {
+.header {
   padding-bottom: 3rem;
+
   .container {
     width: 100%;
     display: flex;
@@ -10,29 +11,41 @@
       font-size: 1.25rem;
     }
 
-    .navbar-menu {
-      width: 100%;
+    .nav,
+    .nav > .navbar-menu,
+    .nav > .dark-mode {
       display: flex;
-      flex-flow: row nowrap;
       align-items: baseline;
-      margin-top: .5rem;
+    }
 
-      .navbar-item {
-        margin-right: 2rem;
-        font-weight: 700;
+    .nav {
+      > .navbar-menu {
+        width: 100%;
+        flex-flow: row nowrap;
+        // margin-top: .5rem;
+
+        .navbar-item {
+          margin-right: 2rem;
+          font-weight: 700;
+        }
       }
 
+      > .dark-mode {
+        label[for="darkMode"] {
+          margin-right: .5rem;
+        }
+      }
     }
 
     @media (min-width: 575px) {
       flex-flow: row nowrap;
-      align-items: center;
+      align-items: baseline;
       justify-content: space-between;
 
       .navbar-menu {
         width: auto;
         justify-self: flex-end;
-        margin-left: 2rem;
+        // margin-left: 2rem;
 
         .navbar-item {
           margin-right: 2rem;

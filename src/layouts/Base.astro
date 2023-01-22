@@ -11,10 +11,8 @@ export interface Props {
   featuredimage: string;
   children: any;
 }
-
 const { props } = Astro;
 ---
-
 <html lang="en">
   <head>
 		<BaseHead
@@ -26,7 +24,7 @@ const { props } = Astro;
   </head>
 
   <body>
-    <Navigation arePostsPublished={ true }/>
+    <Navigation arePostsPublished={ true } />
     <main>
       <slot />
     </main>

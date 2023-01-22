@@ -56,14 +56,23 @@
   --link: var(--gray-8);
   --link-decoration: var(--c-green);
 
-  @media (prefers-color-scheme: dark) {
-    --text: var(--gray-1);
-    --text-strong: var(--gray-1);
-    --background: var(--gray-9);
-    --background-2: var(--c-gray-400);
-    --link:var(--gray-1);
-    --link-decoration: var(--c-light-green);
-  }
+  // @media (prefers-color-scheme: dark) {
+  //   --text: var(--gray-1);
+  //   --text-strong: var(--gray-1);
+  //   --background: var(--gray-9);
+  //   --background-2: var(--c-gray-400);
+  //   --link:var(--gray-1);
+  //   --link-decoration: var(--c-light-green);
+  // }
+
+  // html.dark-mode {
+  //   --text: var(--gray-1);
+  //   --text-strong: var(--gray-1);
+  //   --background: var(--gray-9);
+  //   --background-2: var(--c-gray-400);
+  //   --link:var(--gray-1);
+  //   --link-decoration: var(--c-light-green);
+  // }
 }
 
 $text: var(--text);
