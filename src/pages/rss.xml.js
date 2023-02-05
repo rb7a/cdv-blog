@@ -2,7 +2,13 @@ import rss from '@astrojs/rss';
 import sanitizeHtml from 'sanitize-html';
 
 const postImportResult = import.meta.glob('./blog/posts/*.md', { eager: true });
-const publishedPosts = Object.values(postImportResult).filter((post) => !post.frontmatter.draft);
+const publishedPosts = Object.values(postImportResult)
+  .sort(
+    (a, b) =>
+      new Date(b.frontmatter.pubDate).valueOf() -
+      new Date(a.frontmatter.pubDate).valueOf()
+  )
+  .filter((post) => !post.frontmatter.draft);
 
 export const get = () => rss({
   title: 'Charles Villard',
