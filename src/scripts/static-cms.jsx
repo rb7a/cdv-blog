@@ -31,7 +31,7 @@ const config = {
 					label: 'Layout',
 					name: 'layout',
 					widget: 'hidden',
-					default: '../layouts/BlogPost.astro'
+					default: '../../../layouts/BlogPost.astro'
 				},
 				{label: "Title", name: "title", widget: "string"},
 				{label: "Description", name: "description", widget: "string"},
