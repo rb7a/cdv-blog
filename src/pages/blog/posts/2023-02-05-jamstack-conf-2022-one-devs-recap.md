@@ -6,7 +6,7 @@ description: One developer's recap of Netlify's Jamstack Conf 2022. It's me. I'm
 pubDate: 2022-11-29T12:00:33-05:00
 draft: true
 rssOnly: false
-featuredImage: assets/a873caca-b355-4e47-8d24-b3ec2c350879_20221108_162354.avif
+featuredImage: assets/a873caca-b355-4e47-8d24-b3ec2c350879_20221108_162354.jpeg
 featuredImageAlt: Phil Hawksworth getting the crowd ready for the next speaker
   at Jamstack Conf 2022
 ---
