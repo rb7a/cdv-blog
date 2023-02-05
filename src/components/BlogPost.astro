@@ -1,41 +1,42 @@
 ---
-import dayjs from 'dayjs';
-import customParseFormat from 'dayjs/plugin/customParseFormat';
+import DateTime from './DateTime.astro';
 import Author from './Author.astro';
-
-dayjs.extend(customParseFormat)
-
-export interface FeaturedImage {
-	alt: string;
-	url: string;
-}
 
 export interface Props {
 	title: string;
 	author: string;
 	authorLink: string;
 	publishDate: string;
-	// featuredImage: FeaturedImage;
+	featuredImage: string;
+	featuredImageAlt: string;
 }
 
-const { props } = Astro;
-const { title, publishDate, featuredImage, author, authorLink } = props;
-
-const formattedDate = dayjs(publishDate).format('MMMM D, YYYY');
+const { title, publishDate, featuredImage, featuredImageAlt, author, authorLink } = Astro.props;
 ---
 
 <div class="layout">
 	<article class="content">
 		<div>
 			<header>
-				{title}
-				<p class="publish-date">{formattedDate}</p>
+				<h1>{title}</h1>
+				<DateTime date={publishDate} />
 				<Author name={author} href={authorLink} />
 			</header>
 			<main>
-				<!-- {heroImage &&
-					<Image heroImage={heroImage}/>
-				} -->
+				{featuredImage &&
+					<figure>
+						<img
+							class="hero-image"
+							src={featuredImage}
+							width="100%"
+							height="auto"
+							alt={featuredImageAlt}
+						/>
+						<figcaption class="caption">
+							<em>{featuredImageAlt}</em>
+						</figcaption>
+					</figure>
+				}
 				<slot/>
 			</main>
 		</div>

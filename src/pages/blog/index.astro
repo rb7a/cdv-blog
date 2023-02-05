@@ -1,50 +1,28 @@
 ---
-// Component Imports
-import { getAllBlogPosts } from "../../lib/prismicio";
-import * as prismicH from "@prismicio/helpers";
-
 import BlogPostPreview from '../../components/BlogPostPreview.astro';
 import Base from '../../layouts/Base.astro';
-import SliceZone from "../../components/SliceZone.astro";
 
-// Component Script:
-// You can write any JavaScript/TypeScript that you'd like here.
-// It will run during the build, but never in the browser.
-// All variables are available to use in the HTML template below.
 let title = 'Blog';
-// const page = await getPageByUID("blog");
-const blogPosts = await getAllBlogPosts();
 
-// Data Fetching: List all Markdown posts in the repo.
-const formattedPosts = await blogPosts.map((post) => {
-	return {
-		url: post.url,
-		title: prismicH.asText(post.data.title),
-		date: post.data.date,
-		description: prismicH.asText(post.data.description),
-	};
-});
-// const allPosts = await Astro.glob('./blog/*.mdx');
-// const publishablePosts = allPosts.filter(({ frontmatter }) => frontmatter.draft !== true);
-// const sortedPosts = publishablePosts.sort(({ frontmatter: a }, { frontmatter: b }) => new Date(b.publishDate).valueOf() - new Date(a.publishDate).valueOf());
-
-// Full Astro Component Syntax:
-// https://docs.astro.build/core-concepts/astro-components/
+const publishedPosts = (await Astro.glob("./posts/*.md")).sort(
+  (a, b) =>
+    new Date(b.frontmatter.pubDate).valueOf() -
+    new Date(a.frontmatter.pubDate).valueOf()
+).filter((post) => !post.frontmatter.draft && !post.frontmatter.rssOnly);
 ---
 
 <Base>
-	<!-- <SliceZone slices={page.data.slices} /> -->
 	<div class="content">
 		<section aria-label="Blog post list">
-			{formattedPosts.length === 0 &&
+			{publishedPosts.length === 0 &&
 				<h1 class="latest">Bummer! Nothing yet.</h1>
 				<p>Looks like you found this page while it's still being populated. I'm afraid you'll have to try again another time.</p>
 			}
 
-			{formattedPosts.length > 0 &&
+			{publishedPosts.length > 0 &&
 				<h1 class="latest display">{title}</h1>
 				<>
-					{formattedPosts.map((p) => <BlogPostPreview post={p} />)}
+					{publishedPosts.map((p) => <BlogPostPreview post={p} />)}
 				</>
 			}
 		</section>

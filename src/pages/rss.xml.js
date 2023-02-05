@@ -1,23 +1,19 @@
 import rss from '@astrojs/rss';
-import { getAllBlogPosts } from "../lib/prismicio";
-import * as prismicH from "@prismicio/helpers";
+import sanitizeHtml from 'sanitize-html';
 
-const blogPosts = await getAllBlogPosts();
-
-// Data Fetching: List all Markdown posts in the repo.
-const formattedPosts = await blogPosts.map((post) => {
-  return {
-    link: post.url,
-    title: prismicH.asText(post.data.title),
-    pubDate: post.data.date,
-    description: prismicH.asText(post.data.description)
-  };
-});
+const postImportResult = import.meta.glob('./blog/posts/*.md', { eager: true });
+const publishedPosts = Object.values(postImportResult).filter((post) => !post.frontmatter.draft);
 
 export const get = () => rss({
   title: 'Charles Villard',
   description: 'Devlog and portfolio of Charles Villard, software engineer',
   site: 'https://charlesvillard.co',
-  items: formattedPosts,
+  items: publishedPosts.map((post) => ({
+    link: post.url,
+    title: post.frontmatter.title,
+    pubDate: post.frontmatter.pubDate,
+    description: post.frontmatter.description,
+    content: sanitizeHtml(post.compiledContent())
+  })),
   customData: `<language>en-us</language>`,
 });

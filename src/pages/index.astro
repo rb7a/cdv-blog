@@ -1,9 +1,6 @@
 ---
-// Component Imports
 import BlogPostPreview from '../components/BlogPostPreview.astro';
 import Base from '../layouts/Base.astro';
-// import * as prismicH from "@prismicio/helpers";
-// import { getAllBlogPosts } from "../lib/prismicio";
 
 let title = 'Charles Villard';
 let employer = 'HPE';
@@ -11,26 +8,11 @@ let employerSite = 'https://www.hpe.com';
 let job = 'Software Engineer'
 let blogTitle = 'Blog';
 
-// Data Fetching: List all Markdown posts in the repo.
-// const blogPosts = await getAllBlogPosts();
-
-// const formattedPosts = await blogPosts.map((post) => {
-//   return {
-//     url: post.url,
-//     title: prismicH.asText(post.data.title),
-//     date: post.data.date,
-//     description: prismicH.asText(post.data.description)
-//   };
-// });
-
-const posts = (await Astro.glob("./blog/posts/*.md")).sort(
+const publishedPosts = (await Astro.glob("./blog/posts/*.md")).sort(
   (a, b) =>
     new Date(b.frontmatter.pubDate).valueOf() -
     new Date(a.frontmatter.pubDate).valueOf()
 ).filter((post) => !post.frontmatter.draft && !post.frontmatter.rssOnly);
-
-
-console.log(posts)
 ---
 
 <Base title={title} featuredimage="./../images/headshot.png">
@@ -54,12 +36,12 @@ console.log(posts)
       </section>
     </div>
 
-    <!-- {
-    formattedPosts.length !== 0 &&
+    {
+    publishedPosts.length !== 0 &&
       <section aria-label="Blog post list">
         <h2 class="latest display">{blogTitle}</h2>
-        {formattedPosts.map((p) => <BlogPostPreview post={p} />)}
+        {publishedPosts.map((p) => <BlogPostPreview post={p} />)}
       </section>
-    } -->
+    }
   </div>
 </Base>

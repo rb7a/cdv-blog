@@ -1,0 +1,14 @@
+---
+import dayjs from 'dayjs'
+import customParseFormat from 'dayjs/plugin/customParseFormat';
+
+export interface Props {
+	date: string;
+}
+
+const { date } = Astro.props;
+
+const formattedDate = dayjs(date).format('MMMM D, YYYY');
+---
+
+<p class="publish-date">{formattedDate}</p>

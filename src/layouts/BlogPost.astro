@@ -1,5 +1,4 @@
 ---
-import * as prismicH from "@prismicio/helpers";
 import Base from '../layouts/Base.astro';
 import BlogPost from '../components/BlogPost.astro';
 export interface Props {
@@ -7,6 +6,7 @@ export interface Props {
 	content: {
 		description: string;
 		featuredImage: string;
+		featuredImageAlt: string;
 		title: string;
 		pubDate: string;
 		updatedDate?: string;
@@ -16,7 +16,7 @@ export interface Props {
 }
 
 const {
-	content: { title, description, featuredImage, pubDate, updatedDate, rssOnly},
+	content: { title, description, featuredImage, featuredImageAlt, pubDate, updatedDate, rssOnly},
 	url,
 	compiledContent
 } = Astro.props;
@@ -33,6 +33,8 @@ const {
 		publishDate={pubDate}
 		author="Charles Villard"
 		authorLink="https://twitter.com/cdvillard"
+		featuredImage={featuredImage}
+		featuredImageAlt={featuredImageAlt}
 	>
 		<slot />
 	</BlogPost>
