@@ -1,5 +1,5 @@
 ---
-layout: ../layouts/BlogPost.astro
+layout: ../../../layouts/BlogPost.astro
 title: Keeping a record
 description: On the practice of recording your career
 pubDate: 2023-01-19T12:00:28-05:00
