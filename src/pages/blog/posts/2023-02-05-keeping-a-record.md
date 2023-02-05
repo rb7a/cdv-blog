@@ -3,7 +3,7 @@ layout: ../layouts/BlogPost.astro
 title: Keeping a record
 description: On the practice of recording your career
 pubDate: 2023-01-19T12:00:28-05:00
-draft: true
+draft: false
 rssOnly: false
 featuredImage: assets/79681901-80b6-4f5b-8a29-2b84cd8d75b1_anigif_sub-buzz-3720-1499712431-1-1-.gif
 featuredImageAlt: Donald Glover giving his opinion about your blogging habits.
