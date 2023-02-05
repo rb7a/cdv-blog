@@ -3,7 +3,7 @@ layout: ../layouts/BlogPost.astro
 title: On the way home from JamstackConf 2022
 description: Heading home from Jamstack Conf 2022, and trying to contain all I
   learned in one brain.
-pubDate: 2023-02-05T13:34:51.773-05:00
+pubDate: 2022-11-11T12:00:51-05:00
 draft: true
 rssOnly: false
 featuredImage: assets/20221108_134222-copy.jpeg
