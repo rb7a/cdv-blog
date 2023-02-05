@@ -55,8 +55,11 @@ The real highlight for me around this topic was the edge runtimes panel. Despite
 
 ## So, so much more and so little time.
 
-![Charlie Gerard teaching the audience how to scan planes with WebUSB (legally!)](assets/08e139e8-646b-40b2-9d55-e63a182b2194_20221108_134209.avif)
 
+
+
+
+![](assets/08e139e8-646b-40b2-9d55-e63a182b2194_20221108_134209.avif)
 I'm missing a lot here. It's really hard to bottle my experience at this conference and confidently say I'm doing Phil justice here. Everything I've touched on doesn't even cover the "hallway track." When I missed talks, I was having fascinating conversations with vendors at their booths, with folks about their thoughts on challenges I'm trying to solve, or even just in passing. Nevertheless, it was nothing short of a fantastic experience.
 
 I'd like to shout out to everyone who made my time at Jamstack Conf 2022 such a delight! Thank yous again to [Jo Franchetti](https://twitter.com/thisisjofrank), [Alex Trost](https://twitter.com/trostcodes), [Matt Biilmann](https://twitter.com/biilmann), [Sara Viera](https://twitter.com/NikitaFTW), [Ben Hong](https://twitter.com/bencodezen),  [Brian Douglas](https://twitter.com/bdougieyo), [Chris Bach](https://twitter.com/chr_bach), and [Jem Young](https://twitter.com/jemyoung), as well as to [Caleb Jasik](https://twitter.com/calebjasik), [Misko Hevery](https://twitter.com/mhevery), [Dana Lawson](https://www.linkedin.com/in/dglawson/), [Zach Leatherman](https://twitter.com/zachleat/), [Phil Hawksworth](https://twitter.com/philhawksworth), [Jason Lengstorf](https://twitter.com/jlengstorf), [Monica Sarbu](https://twitter.com/monicasarbu), and anyone else I may have forgotten! I know everyone here is just a regular person, but it'd be a lie to say I wasn't a bit starstruck.
