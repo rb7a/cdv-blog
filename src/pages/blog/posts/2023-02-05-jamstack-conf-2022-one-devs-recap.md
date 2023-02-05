@@ -24,10 +24,6 @@ In my mini-recap of Jamstack Conf, I mentioned a few themes strung across the wh
 
 Recordings of the talk are starting to make their way onto [the @JamstackConf YouTube channel](https://www.youtube.com/@JamstackConf), so I'll add links to the ones I mention here as they're made available. Until then, I'll try and do the general vibe of the conference and Phil Hawksworth's hosting justice.
 
-
-
-
-
 ## Abstraction (or "How Third-Party Tools Help Take the Pain Away")
 
 As Bud Abbott once said, "Now wouldn't this be a fine [baseball] team without a pitcher?" Well, wouldn't the Jamstack be a fine architecture without abstractions? Every year, Jamstack Conf highlights what abstractions can do for developers. This year was no different, with presentations covering libraries, frameworks, and as-a-Service... services.
@@ -59,12 +55,7 @@ The real highlight for me around this topic was the edge runtimes panel. Despite
 
 ## So, so much more and so little time.
 
-
-
-
-
-![](assets/08e139e8-646b-40b2-9d55-e63a182b2194_20221108_134209.avif)
-Some talks don't fall into those topics but were still absolutely fantastic. Charlie Gerard taught us all how we can get data from planes (legally!) I could listen to Miriam Suzanne talk about CSS all day, but she only had about 20 minutes to tell us about container queries, which simply had to suffice. Sitting in on a workshop with Colby Fayock and learning about Cloudinary was a blast, and it warmed my heart to hear Laurie Voss say the [Jamstack survey shows Web Components are gaining traction](https://www.youtube.com/watch?v=b8Vm0XXuBCQ)!
+![Charlie Gerard teaching the audience how to scan planes with WebUSB (legally!)](assets/08e139e8-646b-40b2-9d55-e63a182b2194_20221108_134209.avif)
 
 I'm missing a lot here. It's really hard to bottle my experience at this conference and confidently say I'm doing Phil justice here. Everything I've touched on doesn't even cover the "hallway track." When I missed talks, I was having fascinating conversations with vendors at their booths, with folks about their thoughts on challenges I'm trying to solve, or even just in passing. Nevertheless, it was nothing short of a fantastic experience.
 
