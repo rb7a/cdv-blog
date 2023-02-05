@@ -6,7 +6,7 @@ import mdx from "@astrojs/mdx";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://charlesvillard.co",
+  site: "https://charlesvillard.co/",
   integrations: [preact(), image(), mdx(), sitemap()],
   vite: {
     ssr: {

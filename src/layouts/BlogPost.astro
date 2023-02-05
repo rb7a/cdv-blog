@@ -2,25 +2,35 @@
 import * as prismicH from "@prismicio/helpers";
 import Base from '../layouts/Base.astro';
 import BlogPost from '../components/BlogPost.astro';
+export interface Props {
+	url: string;
+	content: {
+		description: string;
+		featuredImage: string;
+		title: string;
+		pubDate: string;
+		updatedDate?: string;
+		rssOnly?: boolean;
+		draft?: boolean;
+	}
+}
 
-const { blogPost } = Astro.props;
-
-console.log('blogPost @ BlogPost.astro', blogPost)
-
-const { data, url } = blogPost;
-const { title, description, date, featuredimage } = data;
+const {
+	content: { title, description, featuredImage, pubDate, updatedDate, rssOnly},
+	url,
+	compiledContent
+} = Astro.props;
 ---
 
 <Base
-	title={prismicH.asText(title)}
-	description={prismicH.asText(description)}
+	title={title}
+	description={description}
 	permalink={`https://charlesvillard.co${url}`}
-	featuredimage={featuredimage.url}
+	featuredimage={featuredImage}
 >
 	<BlogPost
 		title={title}
-		publishDate={date}
-		heroImage={featuredimage}
+		publishDate={pubDate}
 		author="Charles Villard"
 		authorLink="https://twitter.com/cdvillard"
 	>
