@@ -55,10 +55,6 @@ The real highlight for me around this topic was the edge runtimes panel. Despite
 
 ## So, so much more and so little time.
 
-
-
-
-
 ![](assets/08e139e8-646b-40b2-9d55-e63a182b2194_20221108_134209-1-copy.jpg)
 I'm missing a lot here. It's really hard to bottle my experience at this conference and confidently say I'm doing Phil justice here. Everything I've touched on doesn't even cover the "hallway track." When I missed talks, I was having fascinating conversations with vendors at their booths, with folks about their thoughts on challenges I'm trying to solve, or even just in passing. Nevertheless, it was nothing short of a fantastic experience.
 
