@@ -6,7 +6,7 @@ description: One developer's recap of Netlify's Jamstack Conf 2022. It's me. I'm
 pubDate: 2022-11-29T12:00:33-05:00
 draft: false
 rssOnly: false
-featuredImage: /assets/a873caca-b355-4e47-8d24-b3ec2c350879_20221108_162354.jpeg
+featuredImage: /assets/media/a873caca-b355-4e47-8d24-b3ec2c350879_20221108_162354.jpeg
 featuredImageAlt: Phil Hawksworth getting the crowd ready for the next speaker
   at Jamstack Conf 2022
 ---
@@ -55,7 +55,8 @@ The real highlight for me around this topic was the edge runtimes panel. Despite
 
 ## So, so much more and so little time.
 
-![](assets/08e139e8-646b-40b2-9d55-e63a182b2194_20221108_134209-1-copy.jpg)
+![Charlie Gerard teaching us how to collect data from planes flying overhead with WebUSB and Jamstack tools (legally!)](/assets/media/08e139e8-646b-40b2-9d55-e63a182b2194_20221108_134209-1-copy.jpg)
+
 I'm missing a lot here. It's really hard to bottle my experience at this conference and confidently say I'm doing Phil justice here. Everything I've touched on doesn't even cover the "hallway track." When I missed talks, I was having fascinating conversations with vendors at their booths, with folks about their thoughts on challenges I'm trying to solve, or even just in passing. Nevertheless, it was nothing short of a fantastic experience.
 
 I'd like to shout out to everyone who made my time at Jamstack Conf 2022 such a delight! Thank yous again to [Jo Franchetti](https://twitter.com/thisisjofrank), [Alex Trost](https://twitter.com/trostcodes), [Matt Biilmann](https://twitter.com/biilmann), [Sara Viera](https://twitter.com/NikitaFTW), [Ben Hong](https://twitter.com/bencodezen),  [Brian Douglas](https://twitter.com/bdougieyo), [Chris Bach](https://twitter.com/chr_bach), and [Jem Young](https://twitter.com/jemyoung), as well as to [Caleb Jasik](https://twitter.com/calebjasik), [Misko Hevery](https://twitter.com/mhevery), [Dana Lawson](https://www.linkedin.com/in/dglawson/), [Zach Leatherman](https://twitter.com/zachleat/), [Phil Hawksworth](https://twitter.com/philhawksworth), [Jason Lengstorf](https://twitter.com/jlengstorf), [Monica Sarbu](https://twitter.com/monicasarbu), and anyone else I may have forgotten! I know everyone here is just a regular person, but it'd be a lie to say I wasn't a bit starstruck.
