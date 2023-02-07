@@ -5,7 +5,7 @@ description: On the practice of recording your career
 pubDate: 2023-01-19T12:00:28-05:00
 draft: false
 rssOnly: false
-featuredImage: /assets/79681901-80b6-4f5b-8a29-2b84cd8d75b1_anigif_sub-buzz-3720-1499712431-1-1-.gif
+featuredImage: /assets/media/79681901-80b6-4f5b-8a29-2b84cd8d75b1_anigif_sub-buzz-3720-1499712431-1-1-.gif
 featuredImageAlt: Donald Glover giving his opinion about your blogging habits.
 ---
 When I started learning web dev, I had built a portfolio and blog. The work featured mainly websites for loved ones or agency work and a few odd posts. It made it way easier to get eyes on my resume.
