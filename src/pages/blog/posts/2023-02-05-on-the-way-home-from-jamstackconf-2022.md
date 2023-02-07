@@ -6,7 +6,7 @@ description: Heading home from Jamstack Conf 2022, and trying to contain all I
 pubDate: 2022-11-11T12:00:51-05:00
 draft: false
 rssOnly: false
-featuredImage: /assets/20221108_134222-copy.jpeg
+featuredImage: /assets/media/20221108_134222-copy.jpeg
 featuredImageAlt: Charlie Gerard giving a brilliant talk about (legally!)
   getting data from airplanes using radio waves and JavaScript.
 ---
