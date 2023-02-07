@@ -7,8 +7,8 @@ const config = {
 		branch: 'main'
 	},
 	logo_url: '/safari-pinned-tab.svg',
-	media_folder: 'public/assets',
-	public_folder: 'assets',
+	media_folder: 'public/assets/media',
+	public_folder: '/assets/media',
 	site_url: 'https://charlesvillard.co',
 	display_url: 'https://charlesvillard.co',
 	collections: [
