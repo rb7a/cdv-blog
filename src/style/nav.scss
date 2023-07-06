@@ -1,5 +1,5 @@
 .header {
-  padding-bottom: 3rem;
+  padding-bottom: var(--size-8);
 
   .container {
     width: 100%;
@@ -7,8 +7,7 @@
     flex-flow: column nowrap;
 
     .branded-text {
-      margin-left: -.125rem;
-      font-size: 1.25rem;
+      font-size: var(--size-4);
     }
 
     .nav,
@@ -25,14 +24,14 @@
         // margin-top: .5rem;
 
         .navbar-item {
-          margin-right: 2rem;
+          margin-right: var(--size-7);
           font-weight: 700;
         }
       }
 
       > .dark-mode {
         label[for="darkMode"] {
-          margin-right: .5rem;
+          margin-right: var(--size-2);
         }
       }
     }
@@ -45,10 +44,9 @@
       .navbar-menu {
         width: auto;
         justify-self: flex-end;
-        // margin-left: 2rem;
 
         .navbar-item {
-          margin-right: 2rem;
+          margin-right: var(--size-2);
         }
       }
     }

@@ -18,7 +18,8 @@ html {
 }
 
 body {
-	max-width: 1240px;
+	// max-width: 1240px;
+	max-width: 80ch;
 	margin: 0 auto;
 	padding: 3rem 1rem;
 	color: var(--text);
@@ -48,7 +49,7 @@ body {
 	}
 
 	h1, h2, h3,  h4, h5 {
-		margin: 3rem 0 1.38rem;
+		margin: var(--size-8) 0 1.38rem;
 		font-weight: 700;
 		color: var(--text);
 	}

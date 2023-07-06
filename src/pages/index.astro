@@ -8,6 +8,8 @@ let employerSite = 'https://www.hpe.com';
 let job = 'Software Engineer'
 let blogTitle = 'Blog';
 
+const headshot = Math.floor(Math.random() * 3)
+
 const publishedPosts = (await Astro.glob("./blog/posts/*.md")).sort(
   (a, b) =>
     new Date(b.frontmatter.pubDate).valueOf() -
@@ -19,7 +21,7 @@ const publishedPosts = (await Astro.glob("./blog/posts/*.md")).sort(
   <div class="home">
     <div class="hero">
       <div class="headshot" >
-        <img src="https://images.prismic.io/cdvblog/c3ed6091-78c9-47b4-8369-b570e1b70ada_Mask+Group.png?auto=compress,format" class="headshot-image" alt="Photo of Charles Villard" />
+        <img src={`/assets/media/headshot-${headshot}.png`} class="headshot-image" alt="Photo of Charles Villard" />
       </div>
       <section class="intro">
         <h1 class="branded-text display">
@@ -30,7 +32,7 @@ const publishedPosts = (await Astro.glob("./blog/posts/*.md")).sort(
           I build websites.
         </h1>
         <p>
-          I'm a {job} at <a class="link" href={employerSite}>{employer}</a>, an organizer moderator for <a class="link" href="https://frontend.miami">Front End Miami</a>, and sometimes a public speaker. I enjoy writing about design systems, static site generators, JavaScript, CSS, and more! Welcome!
+          I'm a {job} at <a class="link" href={employerSite}>{employer}</a>, an organizer and moderator for <a class="link" href="https://frontend.miami">Front End Miami</a>, and sometimes a public speaker. I enjoy writing about design systems, static site generators, JavaScript, CSS, and more!
         </p>
 
       </section>
