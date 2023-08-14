@@ -1,10 +1,10 @@
 @charset "utf-8";
 
 @font-face {
-  font-family: MeutasSoft;
+  font-family: Roboto;
   font-style: normal;
   font-weight: 400;
-  src: url("/assets/fonts/MeutasSoft-Light.otf") format("opentype");
+  src: url("/assets/fonts/Roboto-Regular.ttf") format("opentype");
   font-display: swap;
 }
 
@@ -40,7 +40,9 @@
   --c-transparent: rgba(0, 0, 0, 0);
   --c-white: #FFF;
 
-  font-family: MeutasSoft, system-ui, "Helvetica Neue", sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  --font-content: Roboto, "Helvetica Neue", "Apple Color Emoji", "Segoe UI Emoji", system-ui, sans-serif;
+  --font-header: MeutasSoft, "Helvetica Neue", "Apple Color Emoji", "Segoe UI Emoji", system-ui, sans-serif;
+  font-family: var(--font-content);
 
   // Font sizes
   --fs-display: var(--font-size-8);

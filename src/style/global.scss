@@ -49,6 +49,7 @@ body {
 	}
 
 	h1, h2, h3,  h4, h5 {
+		font-family: var(--font-header);
 		margin: var(--size-8) 0 1.38rem;
 		font-weight: 700;
 		color: var(--text);
