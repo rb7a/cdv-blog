@@ -1,48 +1,38 @@
 .home {
   .hero {
-    flex: 1;
-    display: grid;
-    grid-template-areas:
-      "headshot"
-      "intro";
     height: min-content;
-    padding: var(--size-5) 0;
+    padding: var(--size-6) 0;
 
     .headshot {
-      grid-area: headshot;
       display: flex;
       flex-direction: column;
       justify-content: center;
       img {
-        width: 400px;
-        margin: 0 auto -10vh;
+        z-index: -100;
+        max-width: 400px;
+        width: 100%;
+        margin: 0 auto -5rem;
+        transition: transform .25s ease-in;
       }
     }
 
     .intro {
-      grid-area: intro;
       z-index: 100;
-      p {font-size: var(--font-size-fluid-1);}
-
       .branded-text {
         margin-top: 0;
-        font-size: var(--font-size-fluid-3);
       }
     }
 
-    @media (min-width: 900px) {
-        grid-template-columns: repeat(6, 1fr);
-        grid-template-areas:
-          "intro intro intro headshot headshot headshot";
-
-      .headshot > img {
-        margin-bottom: 0;
-        transform: scale(1.25)
-      }
-    }
   }
 
-  .content :global(main > * + *) {
-		margin-top: 1rem;
-	}
+  .content {
+    grid-area: blog;
+  }
+  @media (min-width: 900px) {
+    .headshot > img {
+      margin-bottom: 0;
+      transform: scale(1.25);
+      transition: transform .25s ease-out;
+    }
+  }
 }

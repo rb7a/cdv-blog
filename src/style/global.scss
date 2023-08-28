@@ -5,7 +5,7 @@
 
 html {
 	background-color: $background-color;
-	height: auto;
+	// height: auto;
 
 	&.dark-mode {
     --text: var(--gray-1);
@@ -19,6 +19,7 @@ html {
 
 body {
 	// max-width: 1240px;
+	min-width: 375px; // iPhone SE width
 	max-width: 80ch;
 	margin: 0 auto;
 	padding: 3rem 1rem;
@@ -73,6 +74,7 @@ body {
 	}
 
 	.display {
+		font-family: var(--font-header);
 		font-weight: 900;
 		text-transform: uppercase;
 	}

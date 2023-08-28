@@ -8,8 +8,6 @@ let employerSite = 'https://www.hpe.com';
 let job = 'Software Engineer'
 let blogTitle = 'Blog';
 
-const headshot = Math.floor(Math.random() * 3)
-
 const publishedPosts = (await Astro.glob("./blog/posts/*.md")).sort(
   (a, b) =>
     new Date(b.frontmatter.pubDate).valueOf() -
@@ -17,19 +15,16 @@ const publishedPosts = (await Astro.glob("./blog/posts/*.md")).sort(
 ).filter((post) => !post.frontmatter.draft && !post.frontmatter.rssOnly);
 ---
 
-<Base title={title} featuredimage="./../images/headshot.png">
+<Base title={title} featuredimage="./../images/headshot-0.png">
   <div class="home">
     <div class="hero">
       <div class="headshot" >
-        <img src={`/assets/media/headshot-${headshot}.png`} class="headshot-image" alt="Photo of Charles Villard" />
+        <img src={`/assets/media/headshot-0.png`} class="headshot-image" alt="Photo of Charles Villard" />
       </div>
       <section class="intro">
         <h1 class="branded-text display">
           <small>Hi, my name is</small>
-          <br/>
-          Charles Villard.
-          <br/>
-          I build websites.
+          <br/> Charles Villard.<br/> I code stuff.
         </h1>
         <p>
           I'm a {job} at <a class="link" href={employerSite}>{employer}</a>, an organizer and moderator for <a class="link" href="https://frontend.miami">Front End Miami</a>, and sometimes a public speaker. I enjoy writing about design systems, static site generators, and JavaScript!
@@ -39,7 +34,7 @@ const publishedPosts = (await Astro.glob("./blog/posts/*.md")).sort(
 
     {
     publishedPosts.length !== 0 &&
-      <section aria-label="Blog post list">
+      <section class="content" aria-label="Blog post list">
         <h2 class="latest display">{blogTitle}</h2>
         {publishedPosts.map((p) => <BlogPostPreview post={p} />)}
       </section>
