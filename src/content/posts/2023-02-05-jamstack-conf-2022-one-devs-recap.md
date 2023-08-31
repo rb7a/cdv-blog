@@ -1,5 +1,4 @@
 ---
-layout: ../../../layouts/BlogPost.astro
 title: Jamstack Conf 2022 - One Dev's Recap
 description: One developer's recap of Netlify's Jamstack Conf 2022. It's me. I'm
   the developer.

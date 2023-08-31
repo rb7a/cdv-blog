@@ -1,14 +1,15 @@
 ---
+import { getCollection } from "astro:content";
 import BlogPostPreview from '../../components/BlogPostPreview.astro';
 import Base from '../../layouts/Base.astro';
 
 let title = 'Blog';
 
-const publishedPosts = (await Astro.glob("./posts/*.md")).sort(
+const publishedPosts = (await getCollection("posts")).sort(
   (a, b) =>
-    new Date(b.frontmatter.pubDate).valueOf() -
-    new Date(a.frontmatter.pubDate).valueOf()
-).filter((post) => !post.frontmatter.draft && !post.frontmatter.rssOnly);
+    new Date(b.data.pubDate).valueOf() -
+    new Date(a.data.pubDate).valueOf()
+).filter((post) => !post.data.draft && !post.data.rssOnly);
 ---
 
 <Base>

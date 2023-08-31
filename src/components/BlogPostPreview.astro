@@ -9,11 +9,11 @@ const { post } = Astro.props;
 
 <div class="post-preview">
 	<small class="publish-date">
-		<DateTime date={post.frontmatter.pubDate} />
+		<DateTime date={post.data.pubDate} />
 	</small>
-	<h3 class="title"><a href={post.url}>{post.frontmatter.title}</a></h3>
-	<p>{post.frontmatter.description}</p>
+	<h3 class="title"><a href={`blog/${post.slug}`}>{post.data.title}</a></h3>
+	<p>{post.data.description}</p>
 	<div>
-		<a href={post.url}>Read more</a>
+		<a href={`blog/${post.slug}`}>Read more</a>
 	</div>
 </div>

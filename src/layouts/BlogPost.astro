@@ -18,14 +18,13 @@ export interface Props {
 const {
 	content: { title, description, featuredImage, featuredImageAlt, pubDate, updatedDate, rssOnly},
 	url,
-	compiledContent
 } = Astro.props;
 ---
 
 <Base
 	title={title}
 	description={description}
-	permalink={`https://charlesvillard.co${url}`}
+	permalink={`https://charlesvillard.co/blog/${url}`}
 	featuredimage={featuredImage}
 >
 	<BlogPost

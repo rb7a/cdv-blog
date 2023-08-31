@@ -1,5 +1,4 @@
 ---
-layout: ../../../layouts/BlogPost.astro
 title: On the way home from JamstackConf 2022
 description: Heading home from Jamstack Conf 2022, and trying to contain all I
   learned in one brain.
