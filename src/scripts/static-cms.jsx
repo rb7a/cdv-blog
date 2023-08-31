@@ -15,7 +15,7 @@ const config = {
 		{
 			name: 'blog',
 			label: 'Blog',
-			folder: 'src/pages/blog/posts',
+			folder: 'src/content/posts',
 			create: true,
 			slug: '{{year}}-{{month}}-{{day}}-{{slug}}',
 			summary: "{{pubDate}} - {{title}} - Draft: {{draft}}",
@@ -27,12 +27,6 @@ const config = {
 				}
 			},
 			fields: [
-				{
-					label: 'Layout',
-					name: 'layout',
-					widget: 'hidden',
-					default: '../../../layouts/BlogPost.astro'
-				},
 				{label: "Title", name: "title", widget: "string"},
 				{label: "Description", name: "description", widget: "string"},
 				{label: "Publish Date", name: "pubDate", widget: "datetime"},
