@@ -25,6 +25,7 @@
 }
 
 @import "../../node_modules/open-props/open-props.min.css";
+@import "../../node_modules/open-props/colors-hsl.min.css";
 @import "../../node_modules/open-props/normalize.min.css";
 
 
@@ -33,10 +34,10 @@
 }
 
 :root {
-  --c-green:#4d854a;
+  --c-green: var(--teal-8);
   --c-light-green: #40d139;
   --c-red:#ce0063;
-  --c-gray-400:#6C6C6C;
+  --c-gray:var(--gray-8);
   --c-transparent: rgba(0, 0, 0, 0);
   --c-white: #FFF;
 
@@ -54,9 +55,13 @@
 
   --text: var(--gray-8);
   --text-strong: var(--gray-8);
-  --background: var(--gray-0);
   --link: var(--gray-8);
   --link-decoration: var(--c-green);
+
+  --background: var(--brown-0);//hsl(53, 53%, 94%);
+  --dot-color: hsl(var(--gray-9-hsl) / 30%);
+  --dot-size: 1.5px;
+  --dot-space: .25in;
 
   // @media (prefers-color-scheme: dark) {
   //   --text: var(--gray-1);

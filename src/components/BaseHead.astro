@@ -53,6 +53,7 @@ const pagePermalink = permalink;
 	<!-- https://chriscoyier.net/2023/01/19/dark-mode-via-a-smallish-script-in-the-head-avoiding-fart/ -->
 	<script>
 		const COOKIE_NAME = 'darkmode';
+		const darkModeToggle = document.getElementById('darkMode');
 
 		// Variable to prepare for unchecking the checkbox if the user prefers light mode.
 		let uncheckBox = false;
@@ -66,6 +67,7 @@ const pagePermalink = permalink;
 			document.documentElement.classList.add('dark-mode');
 			document.documentElement.style.colorScheme = 'dark';
 			document.cookie = `${COOKIE_NAME}=true; expires=Fri, 31 Dec 9999 23:59:59 GMT;"`
+			darkModeToggle.checked = true;
 		}
 
 		// If the user has the dark mode cookie, respect the cookie.
@@ -89,8 +91,8 @@ const pagePermalink = permalink;
 		// Gotta wait to do DOM stuff until DOM is ready
 		addEventListener('DOMContentLoaded', (event) => {
 			// window.darkMode is the <input type="checkbox" />
-			window.darkMode.addEventListener("click", () => {
-				if (window.darkMode.checked) {
+			darkModeToggle?.addEventListener("click", () => {
+				if (darkModeToggle?.checked) {
 					enableDarkMode();
 				} else {
 					disableDarkMode();
@@ -98,7 +100,7 @@ const pagePermalink = permalink;
 			});
 			// Make sure the UI reflects the current state.
 			if (uncheckBox) {
-				window.darkMode.checked = false;
+				darkModeToggle.checked = false;
 			}
 		});
 	</script>
