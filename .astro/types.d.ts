@@ -197,6 +197,13 @@ declare module 'astro:content' {
   collection: "posts";
   data: InferEntrySchema<"posts">
 } & { render(): Render[".md"] };
+"2023-09-21-we-need-to-talk-about-webops-so-we-can-stop-talking-about-webops.md": {
+	id: "2023-09-21-we-need-to-talk-about-webops-so-we-can-stop-talking-about-webops.md";
+  slug: "2023-09-21-we-need-to-talk-about-webops-so-we-can-stop-talking-about-webops";
+  body: string;
+  collection: "posts";
+  data: InferEntrySchema<"posts">
+} & { render(): Render[".md"] };
 };
 
 	};
