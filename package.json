@@ -24,6 +24,7 @@
     "@staticcms/core": "^1.2.6",
     "astro-icon": "^0.8.0",
     "dayjs": "^1.11.7",
+    "markdown-it": "^13.0.2",
     "open-props": "^1.5.5",
     "preact": "^10.11.3",
     "sanitize-html": "^2.9.0"
