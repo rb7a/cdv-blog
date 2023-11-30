@@ -11,7 +11,7 @@ const { post } = Astro.props;
 	<small class="publish-date">
 		<DateTime date={post.data.pubDate} />
 	</small>
-	<h3 class="title"><a href={`blog/${post.slug}`}>{post.data.title}</a></h3>
+	<h3 class="title"><a href={`./${post.slug}`}>{post.data.title}</a></h3>
 	<p>{post.data.description}</p>
 	<div>
 		<a href={`blog/${post.slug}`}>Read more</a>
