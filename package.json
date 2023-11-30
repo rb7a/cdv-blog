@@ -6,8 +6,7 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
-    "preview": "astro preview",
-    "slicemachine": "start-slicemachine"
+    "preview": "astro preview"
   },
   "devDependencies": {
     "@astrojs/mdx": "^0.16.0",
