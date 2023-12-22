@@ -9,17 +9,17 @@
     "preview": "astro preview"
   },
   "devDependencies": {
-    "@astrojs/mdx": "^0.16.0",
-    "@astrojs/preact": "^2.0.2",
-    "@astrojs/sitemap": "^1.0.1",
-    "astro": "^3.0.2",
+    "@astrojs/mdx": "^2.0.2",
+    "@astrojs/preact": "^3.0.1",
+    "@astrojs/sitemap": "^3.0.3",
+    "astro": "^4.0.7",
     "autoprefixer": "^10.4.13",
     "prettier": "^2.8.3",
     "sass": "^1.58.0",
     "yarn-upgrade-all": "^0.7.2"
   },
   "dependencies": {
-    "@astrojs/rss": "^2.1.0",
+    "@astrojs/rss": "^4.0.1",
     "@staticcms/core": "^1.2.6",
     "astro-icon": "^0.8.0",
     "dayjs": "^1.11.7",
