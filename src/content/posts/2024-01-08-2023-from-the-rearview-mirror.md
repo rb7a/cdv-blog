@@ -27,4 +27,4 @@ There were plenty of obstacles and red tape to get through, and challenges I won
 
 Not long after I completed and handed off the dashboard build, I got the opportunity to work in a vageuly defined subsection of front-end development. A number of applications were being prepared for a new offering, and it necessiated an update to our micro-frontend architecture to ensure we could host applications not only in the cloud, but also on-premises. This meant divesting ourselves of libraries like single-spa-react and adjust to hosting applications as individual SPAs.
 
-Unfortunately, its work that won't make it into production. 
+Unfortunately, its work that won't make it into production.
