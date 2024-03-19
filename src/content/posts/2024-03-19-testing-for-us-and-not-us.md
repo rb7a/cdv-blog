@@ -3,10 +3,10 @@ title: Testing for 'U's and not 'u's
 description: In a world where code coverage rules with an iron fist, someone
   needs to standup for developer productivity.
 pubDate: 2024-03-18T23:44:08.786-04:00
-draft: true
+draft: false
 rssOnly: false
-featuredImage: /assets/media/relaunching-blog.jpg
-featuredImageAlt: placeholder.
+featuredImage: ""
+featuredImageAlt: ""
 ---
 It's fifteen minutes ‘til the hour, what most people call “midnight”. Tonight, I'm calling that "end of day."
 
