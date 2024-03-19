@@ -32,8 +32,8 @@ const config = {
 				{label: "Publish Date", name: "pubDate", widget: "datetime"},
 				{label: "Draft", name: "draft", widget: "boolean", default: true},
 				{label: "RSS Only", name:"rssOnly",widget:"boolean",default:false},
-				{label: "Featured Image", name: "featuredImage", widget: "image" },
-				{label: "Featured Image Alt", name: "featuredImageAlt", widget: "string" },
+				{label: "Featured Image", name: "featuredImage", widget: "image", required: false},
+				{label: "Featured Image Alt", name: "featuredImageAlt", widget: "string", required: false},
 				{label: "Body", name: "body", widget: "markdown"},
 			]
 		}
