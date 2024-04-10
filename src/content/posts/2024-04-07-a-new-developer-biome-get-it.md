@@ -9,7 +9,9 @@ rssOnly: false
 ---
 These days at work, I'm responsible for maintaining a new global common header built using TypeScript and linted using ESLint. These are bog standard tools in our industry these days. However, setting up these tools can be a lot.
 
-Visual Studio Code offers some TypeScript intellisense out of the box whether or not TypeScript is in use, but linting requires adding a few packages to your project. In my experience, this typically won't stop a build in the way ESLint can be made to. An alternative to ESLint that I would recommend is [Biome.js](https://www.biomejs.dev), which comes with linting and formatting for many languages built-in including TypeScript. This means no ESLint-specific dependencies and plugins just to have TypeScript in the environment.
+Visual Studio Code offers some TypeScript Intellisense out of the box whether or not TypeScript is in use, but linting requires adding ESLint plus a few packages to your project. For smaller projects, this isn't the end of the world, but it adds more dependencies to track, manage, and potentially update if they become the subject of a critical issue or CVE.
+
+An alternative to ESLint I've started trying out is [Biome.js](https://www.biomejs.dev). The history behind this package is fascinating, but long story short, it spawned from the abandoned work of Rome Tools. which comes with linting and formatting for many languages built-in including TypeScript. This means no ESLint-specific dependencies and plugins just to have TypeScript in the environment.
 
 So while all of these are developer dependencies, the difference is still pretty significant. For my particular project, I ended up replacing of this:
 
