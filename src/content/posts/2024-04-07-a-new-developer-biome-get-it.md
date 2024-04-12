@@ -4,14 +4,12 @@ description: Developer experience is just as much about shedding bytes and time
   off the user experience as website performance is. Biome helps with that in a
   major way.
 pubDate: 2024-04-07T17:20:14.945-04:00
-draft: true
+draft: false
 rssOnly: false
 ---
-These days at work, I'm responsible for maintaining a new global common header built using TypeScript and linted using ESLint. These are bog standard tools in our industry these days. However, setting up these tools can be a lot.
+These days at work, I'm responsible for maintaining a new global common header. It's built with web components using Microsoft FAST elements and TypeScript, with ESLint for linting and formatting. The setup is pretty bog-standard, and really common these days. Visual Studio Code offers Intellisense for TypeScript and JavaScript out of the box, but adding ESLint for TypeScript requires adding a few other packages to your project. Which may not be the end of the world, but it does mean more dependencies to download and manage, which inherently chips away at the developer experience.
 
-Visual Studio Code offers some TypeScript Intellisense out of the box whether or not TypeScript is in use, but linting requires adding ESLint plus a few packages to your project. For smaller projects, this isn't the end of the world, but it adds more dependencies to track, manage, and potentially update if they become the subject of a critical issue or CVE.
-
-An alternative to ESLint I've started trying out is [Biome.js](https://www.biomejs.dev). The history behind this package is fascinating, but long story short, it spawned from the abandoned work of Rome Tools. which comes with linting and formatting for many languages built-in including TypeScript. This means no ESLint-specific dependencies and plugins just to have TypeScript in the environment.
+An alternative to ESLint I've started trying out is [Biome.js](https://www.biomejs.dev). The history behind this package is fascinating, but long story short, it spawned from the abandoned work of Rome Tools, an project promising to replace ESLint and Prettier unfortunately plagued with problems. Biome is still aims to provide that complete ecosystem with linting and formatting for many flavors of JavaScript built-in including TypeScript. This means no ESLint-specific dependencies and plugins just to have TypeScript in the environment.
 
 So while all of these are developer dependencies, the difference is still pretty significant. For my particular project, I ended up replacing of this:
 
