@@ -4,8 +4,8 @@ description: Developer experience is just as much about shedding bytes and time
   off the user experience as website performance is. Biome helps with that in a
   major way.
 pubDate: 2024-04-07T17:20:14.945-04:00
-featuredImage:
-featuredImageAlt:
+featuredImage: ""
+featuredImageAlt: ""
 draft: false
 rssOnly: false
 ---
