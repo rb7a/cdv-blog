@@ -220,6 +220,20 @@ declare module 'astro:content' {
   collection: "posts";
   data: InferEntrySchema<"posts">
 } & { render(): Render[".md"] };
+"2024-01-08-2023-from-the-rearview-mirror.md": {
+	id: "2024-01-08-2023-from-the-rearview-mirror.md";
+  slug: "2024-01-08-2023-from-the-rearview-mirror";
+  body: string;
+  collection: "posts";
+  data: InferEntrySchema<"posts">
+} & { render(): Render[".md"] };
+"2024-01-18-first-rule-of-open-source-contributions-dont-contribute.md": {
+	id: "2024-01-18-first-rule-of-open-source-contributions-dont-contribute.md";
+  slug: "2024-01-18-first-rule-of-open-source-contributions-dont-contribute";
+  body: string;
+  collection: "posts";
+  data: InferEntrySchema<"posts">
+} & { render(): Render[".md"] };
 };
 
 	};

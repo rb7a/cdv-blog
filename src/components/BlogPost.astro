@@ -1,6 +1,7 @@
 ---
 import DateTime from './DateTime.astro';
 import Author from './Author.astro';
+import PostComments from './PostComments.astro';
 
 export interface Props {
 	title: string;
@@ -41,6 +42,7 @@ const { title, publishDate, featuredImage, featuredImageAlt, author, authorLink 
 			</main>
 		</div>
 	</article>
+	<PostComments />
 </div>
 
 <style>

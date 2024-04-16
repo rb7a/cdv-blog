@@ -12,14 +12,14 @@ html {
 	background-attachment: fixed;
 
 	&.dark-mode {
-    --text: var(--gray-1);
-    --text-strong: var(--gray-1);
-    --background: var(--gray-9);
-    --background-2: var(--c-gray-400);
-    --link:var(--gray-1);
-    --link-decoration: var(--c-light-green);
-	--dot-color: hsl(var(--brown-0-hsl) / 30%);
-  }
+		--text: var(--gray-1);
+		--text-strong: var(--gray-1);
+		--background: var(--gray-9);
+		--background-2: var(--c-gray-400);
+		--link:var(--gray-1);
+		--link-decoration: var(--c-light-green);
+		--dot-color: hsl(var(--brown-0-hsl) / 30%);
+	}
 }
 
 body {
