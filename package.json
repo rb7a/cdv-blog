@@ -12,6 +12,8 @@
     "@astrojs/mdx": "^3.0.0",
     "@astrojs/preact": "^3.0.1",
     "@astrojs/sitemap": "^3.0.3",
+    "@tinacms/cli": "^1.5.43",
+    "@types/node": "^20.12.7",
     "astro": "^4.0.7",
     "autoprefixer": "^10.4.13",
     "prettier": "^2.8.3",
@@ -26,6 +28,7 @@
     "markdown-it": "^13.0.2",
     "open-props": "^1.5.5",
     "preact": "^10.11.3",
-    "sanitize-html": "^2.9.0"
+    "sanitize-html": "^2.9.0",
+    "tinacms": "^1.6.1"
   }
 }

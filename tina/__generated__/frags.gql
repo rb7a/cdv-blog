@@ -1,0 +1,11 @@
+fragment PostParts on Post {
+  __typename
+  title
+  pubDate
+  description
+  featuredImage
+  featuredImageAlt
+  rssOnly
+  draft
+  body
+}
