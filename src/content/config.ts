@@ -7,10 +7,10 @@ const postsCollection = defineCollection({
       title: z.string(),
       pubDate: z.date(),
       description: z.string(),
-      featuredImage: z.string(),
-      featuredImageAlt: z.string(),
-      rssOnly: z.boolean(),
-	    draft: z.boolean()
+      featuredImage: z.string().default(""),
+      featuredImageAlt: z.string().default(""),
+      rssOnly: z.boolean().default(false),
+	    draft: z.boolean().default(true)
     })
 });
 // Export a single `collections` object to register your collection(s)

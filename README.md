@@ -26,8 +26,8 @@ All commands are run from the root of the project, from a terminal:
 
 - [X] Figure out how to leverage Astro's functionality in JavaScript utility functions like in [utils/getPosts.js](./src/utils/getPosts.js).
 - [X] Improve the writing functionality for my blog with prismic!
-- [ ] Remove Prismic dependency in favor of portability and control over content
-- [ ] Render posts using Markdown or MDX
+- [X] Remove Prismic dependency in favor of portability and control over content
+- [X] Render posts using Markdown or MDX
 - [ ] Implement code highlighting
 - [ ] Figure out the best way to host media without compromising on performance
 - [ ] Write more content!
