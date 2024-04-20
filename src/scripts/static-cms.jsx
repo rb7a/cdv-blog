@@ -1,4 +1,5 @@
 import CMS from '@staticcms/core';
+import '@staticcms/core/dist/main.css';
 
 const config = {
 	backend: {
@@ -22,16 +23,19 @@ const config = {
 			sortable_fields: {
 				fields:['updatedDate', 'pubDate'],
 				default:{
-					field: 'updatedDate',
+					field: 'pubDate',
 					direction: 'Descending'
 				}
 			},
-			view_groups:[
-				{
-					label: "Drafts",
-					field: "draft"
-				},
-			],
+			view_groups:{
+				groups: [
+					{
+						name: "drafts",
+						label: "Drafts",
+						field: "draft"
+					},
+				]
+			},
 			fields: [
 				{label: "Title", name: "title", widget: "string"},
 				{label: "Description", name: "description", widget: "string"},
