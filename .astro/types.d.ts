@@ -220,6 +220,48 @@ declare module 'astro:content' {
   collection: "posts";
   data: InferEntrySchema<"posts">
 } & { render(): Render[".md"] };
+"2024-01-08-2023-from-the-rearview-mirror.md": {
+	id: "2024-01-08-2023-from-the-rearview-mirror.md";
+  slug: "2024-01-08-2023-from-the-rearview-mirror";
+  body: string;
+  collection: "posts";
+  data: InferEntrySchema<"posts">
+} & { render(): Render[".md"] };
+"2024-01-18-first-rule-of-open-source-contributions-dont-contribute.md": {
+	id: "2024-01-18-first-rule-of-open-source-contributions-dont-contribute.md";
+  slug: "2024-01-18-first-rule-of-open-source-contributions-dont-contribute";
+  body: string;
+  collection: "posts";
+  data: InferEntrySchema<"posts">
+} & { render(): Render[".md"] };
+"2024-03-19-testing-for-us-and-not-us.md": {
+	id: "2024-03-19-testing-for-us-and-not-us.md";
+  slug: "2024-03-19-testing-for-us-and-not-us";
+  body: string;
+  collection: "posts";
+  data: InferEntrySchema<"posts">
+} & { render(): Render[".md"] };
+"2024-04-07-a-new-developer-biome-get-it.md": {
+	id: "2024-04-07-a-new-developer-biome-get-it.md";
+  slug: "2024-04-07-a-new-developer-biome-get-it";
+  body: string;
+  collection: "posts";
+  data: InferEntrySchema<"posts">
+} & { render(): Render[".md"] };
+"2024-04-17-in-the-defense-of-um.md": {
+	id: "2024-04-17-in-the-defense-of-um.md";
+  slug: "2024-04-17-in-the-defense-of-um";
+  body: string;
+  collection: "posts";
+  data: InferEntrySchema<"posts">
+} & { render(): Render[".md"] };
+"2024-04-20-test.md": {
+	id: "2024-04-20-test.md";
+  slug: "2024-04-20-test";
+  body: string;
+  collection: "posts";
+  data: InferEntrySchema<"posts">
+} & { render(): Render[".md"] };
 };
 
 	};

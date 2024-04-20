@@ -15,6 +15,7 @@
       "@astro/image/client"
     ],
     "strictNullChecks": true,
-    "allowJs": true
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true
   }
 }

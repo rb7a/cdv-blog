@@ -7,8 +7,8 @@ let title = 'Blog';
 
 const publishedPosts = (await getCollection("posts")).sort(
   (a, b) =>
-    new Date(b.data.pubDate).valueOf() -
-    new Date(a.data.pubDate).valueOf()
+    new Date(b.data.updatedDate || b.data.pubDate).valueOf() -
+    new Date(a.data.updatedDate || a.data.pubDate).valueOf()
 ).filter((post) => !post.data.draft && !post.data.rssOnly);
 ---
 

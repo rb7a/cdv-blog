@@ -26,6 +26,9 @@ export const GET = async (context) => {
       link: `/blog/${post.slug}/`,
       content: sanitizeHtml(parser.render(post.body)),
       customData: `<language>en-us</language>`,
+      customData: `
+        <updated>${post.data.updatedDate ? post.data.updatedDate : ""}
+      `
     })),
   })
 };

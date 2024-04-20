@@ -7,11 +7,12 @@ export interface Props {
 	author: string;
 	authorLink: string;
 	publishDate: string;
+	updatedDate: string;
 	featuredImage: string;
 	featuredImageAlt: string;
 }
 
-const { title, publishDate, featuredImage, featuredImageAlt, author, authorLink } = Astro.props;
+const { title, publishDate, updatedDate, featuredImage, featuredImageAlt, author, authorLink } = Astro.props;
 ---
 
 <div class="layout">
@@ -19,7 +20,15 @@ const { title, publishDate, featuredImage, featuredImageAlt, author, authorLink 
 		<div>
 			<header>
 				<h1>{title}</h1>
-				<DateTime date={publishDate} />
+				<p>
+
+					{
+						updatedDate
+							? <span>Posted <DateTime date={publishDate} />, updated on <DateTime date={updatedDate} /></span>
+							: <span>Posted <DateTime date={publishDate} /></span>
+					}
+					</span>
+				</p>
 				<Author name={author} href={authorLink} />
 			</header>
 			<main>
