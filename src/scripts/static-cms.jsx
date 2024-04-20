@@ -10,7 +10,7 @@ const config = {
 	media_folder: 'public/assets/media',
 	public_folder: '/assets/media',
 	site_url: 'https://charlesvillard.co',
-	display_url: 'https://charlesvillard.co',
+	display_url: import.meta.env.MODE === 'development' ? 'http://localhost:4321' : 'https://charlesvillard.co',
 	collections: [
 		{
 			name: 'blog',

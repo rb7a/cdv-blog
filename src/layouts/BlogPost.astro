@@ -1,6 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
-import BlogPost from '../components/BlogPost.astro';
+import Post from '../components/BlogPost.astro';
 
 interface BlogContent {
 	description: string;
@@ -29,14 +29,15 @@ const {
 	permalink={`https://charlesvillard.co/blog/${url}`}
 	featuredimage={featuredImage}
 >
-	<BlogPost
+	<Post
 		title={title}
 		publishDate={pubDate}
+		updatedDate={updatedDate}
 		author="Charles Villard"
 		authorLink="https://twitter.com/cdvillard"
 		featuredImage={featuredImage}
 		featuredImageAlt={featuredImageAlt}
 	>
 		<slot />
-	</BlogPost>
+	</Post>
 </Base>
