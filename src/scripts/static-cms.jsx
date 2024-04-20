@@ -20,16 +20,23 @@ const config = {
 			slug: '{{year}}-{{month}}-{{day}}-{{slug}}',
 			summary: "{{pubDate}} - {{title}} - Draft: {{draft}}",
 			sortable_fields: {
-				fields:['pubDate'],
+				fields:['updatedDate', 'pubDate'],
 				default:{
-					field: 'pubDate',
+					field: 'updatedDate',
 					direction: 'Descending'
 				}
 			},
+			view_groups:[
+				{
+					label: "Drafts",
+					field: "draft"
+				},
+			],
 			fields: [
 				{label: "Title", name: "title", widget: "string"},
 				{label: "Description", name: "description", widget: "string"},
 				{label: "Publish Date", name: "pubDate", widget: "datetime"},
+				{label: "Updated Date", name: "updatedDate", widget: "datetime", required: false},
 				{label: "Draft", name: "draft", widget: "boolean", default: true},
 				{label: "RSS Only", name:"rssOnly",widget:"boolean",default:false},
 				{label: "Featured Image", name: "featuredImage", widget: "image", required: false},

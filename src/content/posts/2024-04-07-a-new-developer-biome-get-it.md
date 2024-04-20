@@ -41,7 +41,7 @@ Total size of files             :    5.874MB
 
 ```
 
-…and effectively getting the same thing. 
+…and effectively getting the same thing.
 
 All of the packages I get to remove are just developer dependencies and won't directly affect the end user's experience, but the difference and benefits are still pretty significant. Considering the primary consumer of this packages are product teams looking to maintain consistent branding, this change means less code for them to download and install. It also means less surface areas for potential issues and threats, which translates to Dependabot having less to scan and fret over.
 
