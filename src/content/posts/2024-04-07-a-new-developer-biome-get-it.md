@@ -4,6 +4,7 @@ description: Developer experience is just as much about shedding bytes and time
   off the user experience as website performance is. Biome helps with that in a
   major way.
 pubDate: 2024-04-07T17:20:14.945-04:00
+updatedDate: 2024-04-20T17:26:04-04:00
 draft: false
 rssOnly: false
 featuredImage: ""
@@ -18,15 +19,10 @@ For my particular project, implementing Biome meant replacing all of this…:
 ```
 
 @typescript-eslint/eslint-plugin:    2.680MB
-
 @typescript-eslint/parser       :    0.018MB
-
 eslint-plugin-headers           :    0.052MB
-
 eslint-config-airbnb-base       :    0.094MB
-
 eslint                          :    3.030MB
-
 ____________________________________________
 
 Total size of files             :    5.874MB
