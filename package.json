@@ -9,7 +9,7 @@
     "preview": "astro preview"
   },
   "devDependencies": {
-    "@astrojs/mdx": "^2.0.2",
+    "@astrojs/mdx": "^3.0.0",
     "@astrojs/preact": "^3.0.1",
     "@astrojs/sitemap": "^3.0.3",
     "astro": "^4.0.7",

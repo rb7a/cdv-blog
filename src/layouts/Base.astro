@@ -14,14 +14,12 @@ export interface Props {
 const { props } = Astro;
 ---
 <html lang="en">
-  <head>
 		<BaseHead
       title={props.title}
       description={props.description}
       permalink={props.permalink}
       featuredimage={props.featuredimage}
     />
-  </head>
 
   <body>
     <Navigation arePostsPublished={ true } />
