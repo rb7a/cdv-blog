@@ -13,7 +13,7 @@ export default defineConfig({
   // Get this from tina.io
   clientId: "cdv-blog",
   // Get this from tina.io
-  token: "8cf8672a-7c67-4046-857e-e54f45e937d1",
+  token: "ccae3147-013b-4061-9b12-b6b5c70dc307",
 
   build: {
     outputFolder: "admin",
