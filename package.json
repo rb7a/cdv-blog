@@ -1,6 +1,6 @@
 {
-  "name": "@example/blog",
-  "version": "0.0.1",
+  "name": "cdv-blog",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "astro dev",
@@ -9,23 +9,24 @@
     "preview": "astro preview"
   },
   "devDependencies": {
-    "@astrojs/mdx": "^3.0.0",
-    "@astrojs/preact": "^3.0.1",
-    "@astrojs/sitemap": "^3.0.3",
-    "astro": "^4.0.7",
-    "autoprefixer": "^10.4.13",
-    "prettier": "^2.8.3",
-    "sass": "^1.58.0",
-    "yarn-upgrade-all": "^0.7.2"
+    "@astrojs/mdx": "^2.3.1",
+    "@astrojs/preact": "^3.4.0",
+    "@astrojs/sitemap": "^3.1.5",
+    "@tinacms/cli": "^1.5.46",
+    "@types/node": "^20.14.2",
+    "astro": "^4.10.0",
+    "autoprefixer": "^10.4.19",
+    "prettier": "^2.8.8",
+    "sass": "^1.77.4"
   },
   "dependencies": {
-    "@astrojs/rss": "^4.0.1",
-    "@staticcms/core": "^4.0.0",
-    "astro-icon": "^0.8.0",
-    "dayjs": "^1.11.7",
+    "@astrojs/rss": "^4.0.6",
+    "astro-icon": "^0.8.2",
+    "dayjs": "^1.11.11",
     "markdown-it": "^13.0.2",
-    "open-props": "^1.5.5",
-    "preact": "^10.11.3",
-    "sanitize-html": "^2.9.0"
+    "open-props": "^1.7.4",
+    "preact": "^10.22.0",
+    "sanitize-html": "^2.13.0",
+    "tinacms": "^1.6.4"
   }
 }
