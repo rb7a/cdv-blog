@@ -241,6 +241,13 @@ declare module 'astro:content' {
   collection: "posts";
   data: InferEntrySchema<"posts">
 } & { render(): Render[".md"] };
+"2024-06-06-an-argument-against-capabilities-focused-engineering.md": {
+	id: "2024-06-06-an-argument-against-capabilities-focused-engineering.md";
+  slug: "2024-06-06-an-argument-against-capabilities-focused-engineering";
+  body: string;
+  collection: "posts";
+  data: InferEntrySchema<"posts">
+} & { render(): Render[".md"] };
 };
 
 	};
