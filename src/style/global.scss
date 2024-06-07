@@ -18,7 +18,8 @@ html {
     --background-2: var(--c-gray-400);
     --link:var(--gray-1);
     --link-decoration: var(--c-light-green);
-	--dot-color: hsl(var(--brown-0-hsl) / 30%);
+		--dot-color: hsl(var(--brown-0-hsl) / 30%);
+		--main-background: rgba(33, 37, 41, .8)
   }
 }
 
@@ -110,7 +111,7 @@ body {
 		// flex-grow: 2;
 		padding: 0 0;
 		grid-area: main;
-		background-color: rgba(250, 244, 235, 0.5);
+		background-color: var(--main-background);
 		// @media (min-width: 400px) {
 		// 	padding: var(--size-8) 0;
 		// }
