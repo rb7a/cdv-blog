@@ -21,6 +21,19 @@ var config_default = defineConfig({
   schema: {
     collections: [
       {
+        ui: {
+          // Example of beforeSubmit
+          beforeSubmit: async ({
+            form,
+            cms,
+            values
+          }) => {
+            return {
+              ...values,
+              updatedDate: (/* @__PURE__ */ new Date()).toISOString()
+            };
+          }
+        },
         name: "post",
         label: "Posts",
         path: "src/content/posts",
@@ -36,6 +49,12 @@ var config_default = defineConfig({
             type: "datetime",
             name: "pubDate",
             label: "Publish Date",
+            required: true
+          },
+          {
+            type: "datetime",
+            name: "updatedDate",
+            label: "Updated Date",
             required: true
           },
           {
