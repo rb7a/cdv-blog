@@ -1,7 +1,7 @@
 ---
-updatedDate: '2024-04-29T11:15:52.000Z'
 title: 'Astro''s great, but what about 11ty?'
 pubDate: 2024-04-30T04:00:00.000Z
+updatedDate: 2024-05-01T04:00:00.000Z
 description: 'Astro has taken off like a rocket, but what about Eleventy?'
 rssOnly: false
 draft: true

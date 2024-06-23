@@ -48,6 +48,12 @@ export default defineConfig({
             required: true,
           },
           {
+            type: "datetime",
+            name: "updatedDate",
+            label: "Updated Date",
+            required: true,
+          },
+          {
             type: "string",
             name: "description",
             label: "Description"
