@@ -5,7 +5,8 @@ const branch =
   process.env.GITHUB_BRANCH ||
   process.env.VERCEL_GIT_COMMIT_REF ||
   process.env.HEAD ||
-  "tina";
+  "tina" ||
+  "main";
 
 export default defineConfig({
   branch,
