@@ -8,7 +8,7 @@ description: >-
 draft: true
 ---
 
-The song-and-dance routine that is "finding a job in tech" seems more difficult than ever in 2024. I know many people with extensive technical backgrounds who can't land interviews, let alone get hired. The reasons for that are potentially myriad. Gluts of talent due to layoffs, a lack of investment in specific areas of development, and shifts toward using AI to filter candidates despite potential programmatic biases have been in headlines for the state of the tech job market in some capacity. While they may be factors, we as an industry need to consider another possibility. Maybe those of us technologists looking for jobs are getting in our own way as well, and I want to call out the issue with my whole chest:
+## The song-and-dance routine that is "finding a job in tech" seems more difficult than ever in 2024. I know many people with extensive technical backgrounds who can't land interviews, let alone get hired. The reasons for that are potentially myriad. Gluts of talent due to layoffs, a lack of investment in specific areas of development, and shifts toward using AI to filter candidates despite potential programmatic biases have been in headlines for the state of the tech job market in some capacity. While they may be factors, we as an industry need to consider another possibility. Maybe those of us technologists looking for jobs are getting in our own way as well, and I want to call out the issue with my whole chest:
 
 **If you're applying for a job, you need to do it with feeling.** You must put in the effort; you must actually try.
 
@@ -36,4 +36,6 @@ In a way, I understand it. I've filed my fair share of applications with just a 
 \
 What amazed me most was the sense of apathy towards filling out an application when I heard those numbers. To hear that more than 340 people who filled out the application, supposedly looking for meaningful employment, were either too tired or didn't care enough to fill out the application was disheartening. But in the face of the current hiring rates in the tech industry, that apathy makes the popular discourse around bashing companies for using AI to select candidates look very weak.
 
-## Practice your tempo
+## Practice your footwork
+
+One constant gripe I've seen over my years of applying to jobs is that job applications always seem inconvenient. We got mad when we had to list each job in the application and our resume. We didn't want to include extra details like languages or answer culture-fit questions. Some of these complaints have been valid, and I'm glad we don't need to deal with them anymore! But it will always take some effort to fill out job applications, and it will take some more to fill out a convincing one. To that end, I want to share some pointers that have helped me.
