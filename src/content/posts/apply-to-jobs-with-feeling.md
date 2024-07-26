@@ -8,7 +8,7 @@ description: >-
 draft: true
 ---
 
-## The song-and-dance routine that is "finding a job in tech" seems more difficult than ever in 2024. I know many people with extensive technical backgrounds who can't land interviews, let alone get hired. The reasons for that are potentially myriad. Gluts of talent due to layoffs, a lack of investment in specific areas of development, and shifts toward using AI to filter candidates despite potential programmatic biases have been in headlines for the state of the tech job market in some capacity. While they may be factors, we as an industry need to consider another possibility. Maybe those of us technologists looking for jobs are getting in our own way as well, and I want to call out the issue with my whole chest:
+The song-and-dance routine that is "finding a job in tech" seems more difficult than ever in 2024. I know many people with extensive technical backgrounds who can't land interviews, let alone get hired. The reasons for that are potentially myriad. Gluts of talent due to layoffs, a lack of investment in specific areas of development, and shifts toward using AI to filter candidates despite potential programmatic biases have been in headlines for the state of the tech job market in some capacity. While they may be factors, we as an industry need to consider another possibility. Maybe those of us technologists looking for jobs are getting in our own way as well, and I want to call out the issue with my whole chest:
 
 **If you're applying for a job, you need to do it with feeling.** You must put in the effort; you must actually try.
 
