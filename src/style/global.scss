@@ -10,6 +10,7 @@ html {
 		var(--dot-color);
 	background-size: var(--dot-space) var(--dot-space);
 	background-attachment: fixed;
+	font-size: 100%;
 
 	&.dark-mode {
     --text: var(--gray-1);
@@ -31,8 +32,9 @@ body {
 	padding: 3rem 1rem;
 	color: var(--text);
 	line-height: 2rem;
+	background-color: var(--main-background);
 
-	p, ul {
+	p, ul, pre {
 		margin-bottom: 1rem;
 	}
 
@@ -79,6 +81,18 @@ body {
 		font-size: var(--fs-h4);
 	}
 
+	p {
+		max-inline-size: 100%;
+	}
+
+	pre {
+		padding: var(--size-4)
+	}
+
+	code {
+		font-size: var(--font-size-1);
+	}
+
 	.display {
 		font-family: var(--font-header);
 		font-weight: 900;
@@ -111,7 +125,6 @@ body {
 		// flex-grow: 2;
 		padding: 0 0;
 		grid-area: main;
-		background-color: var(--main-background);
 		// @media (min-width: 400px) {
 		// 	padding: var(--size-8) 0;
 		// }

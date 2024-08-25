@@ -248,6 +248,20 @@ declare module 'astro:content' {
   collection: "posts";
   data: InferEntrySchema<"posts">
 } & { render(): Render[".md"] };
+"Theres-no-20-in-file-system-naming.md": {
+	id: "Theres-no-20-in-file-system-naming.md";
+  slug: "theres-no-20-in-file-system-naming";
+  body: string;
+  collection: "posts";
+  data: InferEntrySchema<"posts">
+} & { render(): Render[".md"] };
+"apply-to-jobs-with-feeling.md": {
+	id: "apply-to-jobs-with-feeling.md";
+  slug: "apply-to-jobs-with-feeling";
+  body: string;
+  collection: "posts";
+  data: InferEntrySchema<"posts">
+} & { render(): Render[".md"] };
 };
 
 	};
