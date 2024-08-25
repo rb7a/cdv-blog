@@ -6,7 +6,7 @@ description: Ever wondered why programmers don't want space in their directory n
 draft: true
 ---
 
-For the last few years of my career, I've focused on front-end web development. This translates to me working within file systems, but the code I write usually doesn't actually manipulate files. So when I hit a weird bug while refreshing my Node basics, I was reminded of a question I'd always had when I was first learning to code: why do programmers seem to avoid adding spaces to their directory names?
+For the last few years of my career, I've focused on front-end web development. This translates to me working within file systems, but the code I typically write doesn't manipulate files. So when I hit a weird bug while refreshing my Node basics, I was reminded of a question I'd always had when I was first learning to code: why do programmers seem to avoid adding spaces to their directory names?
 
 During the "FS module" chapter of [Scott Moss' Introduction to Node v3](https://frontendmasters.com/courses/node-js-v3/) on Frontend Masters, Moss introduces his students to the [fsPromises.readFile](https://nodejs.org/api/fs.html#fspromisesreadfilepath-options) method, using it to asynchronously read the project's `package.json` file. The code is pretty straightforward:
 
