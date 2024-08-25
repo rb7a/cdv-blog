@@ -87,11 +87,11 @@ body {
 
 	pre {
 		padding: var(--size-4)
+		min-width: 100%;
 	}
 
 	code {
 		font-size: var(--font-size-1);
-		max-inline-size: 100%;
 	}
 
 	.display {
