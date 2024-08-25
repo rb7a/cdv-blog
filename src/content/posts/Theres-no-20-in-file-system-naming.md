@@ -70,7 +70,7 @@ The resulting output was an array of file names that existed in the directory I 
 }
 ```
 
-That %20 in the pathname represents a UTF-8 encoded space character. If we take a look at another command-line tool that can read pathnames, pwd, which returns the path of the directory the user is currently in, the output looks a little different. 
+That %20 in the pathname represents a UTF-8 encoded space character. If we take a look at another command-line tool that can read pathnames, `pwd`, which returns the path of the directory the user is currently in, the output looks a little different.
 
 ```powershell
 # truncated the pathname for privacy and readability
