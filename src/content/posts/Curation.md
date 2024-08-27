@@ -6,5 +6,8 @@ description: 'Algorithms can produce things. Conversation and community, not so 
 draft: true
 ---
 
-Some of my favorite Internet finds are websites dedicated to telling their readers about a single subject. Curated and maintained by a single person or a community of folks in their spare time, they are rarely terribly fancy. They might have a blog, update feed, or tools of some kind, but these particular kinds of websites are intentionally designed to stand as independent, growing, evergreen repositories of information about a single subject.\
-\
+Some of my favorite Internet finds are websites dedicated to telling their readers about a single subject. Curated and maintained by a single person or a community of folks in their spare time, they are rarely terribly fancy. They might have a blog, update feed, or tools of some kind, but these particular kinds of websites are intentionally designed to stand as independent, growing, evergreen repositories of information about a single subject.
+
+![](</public/assets/media/Screenshot 2024-08-26 at 11.40.35 PM.png>)
+
+I loved finding these kinds of websites when I was learning how to code, like Shay Howe's Learn to Code HTML & CSS, and Jon Chan's Bento.
