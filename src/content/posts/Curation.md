@@ -18,4 +18,4 @@ I think the coolest thing about Chad's Job Search Resources site is that it's no
 
 It's a sentiment I hold for more than just websites, and one I'm not alone in holding. [Jeremy](https://adactio.com/journal/21241 "Jeremy") has [talked](https://adactio.com/journal/21278) about this before. [Cassidy](https://cassidoo.co/post/human-curation/) has [discussed](https://cassidoo.co/post/seattle-internet/) it as well. The Internet can, will, and probably should evolve, but it was supposed to be a resource for humans to connect through. The directions companies have taken the Internet through their practices and legislation have leveled up its capabilities but seemingly at the cost of curiosity and genuine organic interest. The Internet we know today doesn't offer the same sense of wonderment when surfing through new and unfamiliar parts as it once had.
 
-It can still have though. We may just need to build it ourselves.
+It still can, though. We may just need to build it ourselves.
