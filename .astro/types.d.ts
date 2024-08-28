@@ -248,6 +248,27 @@ declare module 'astro:content' {
   collection: "posts";
   data: InferEntrySchema<"posts">
 } & { render(): Render[".md"] };
+"By-the-46th-episode.md": {
+	id: "By-the-46th-episode.md";
+  slug: "by-the-46th-episode";
+  body: string;
+  collection: "posts";
+  data: InferEntrySchema<"posts">
+} & { render(): Render[".md"] };
+"Curation.md": {
+	id: "Curation.md";
+  slug: "curation";
+  body: string;
+  collection: "posts";
+  data: InferEntrySchema<"posts">
+} & { render(): Render[".md"] };
+"Giving-grace.md": {
+	id: "Giving-grace.md";
+  slug: "giving-grace";
+  body: string;
+  collection: "posts";
+  data: InferEntrySchema<"posts">
+} & { render(): Render[".md"] };
 "Theres-no-20-in-file-system-naming.md": {
 	id: "Theres-no-20-in-file-system-naming.md";
   slug: "theres-no-20-in-file-system-naming";
