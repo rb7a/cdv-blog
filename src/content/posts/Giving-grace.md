@@ -3,6 +3,7 @@ title: Giving grace
 pubDate: 2024-08-27T04:00:00.000Z
 updatedDate: 2024-08-28T04:00:00.000Z
 description: 'Sometimes, rest is sweeter.'
+draft: true
 ---
 
 I have a confession to make: despite having kept up with my commitment publishing to my blog every day for what's now three days in a row, I am only human. While I was drafting my post about [human curation](https://charlesvillard.co/blog/curation/), I was truly and utterly exhausted from the culmination of a busy work day and a severe case of [revenge bedtime procrastination](https://www.verywellmind.com/what-is-revenge-bedtime-procrastination-5189591). I was trying to drum up my thoughts while also calling into a late-night push-to-production meeting with about 100 of my closest co-workers, just in case something needed a last-minute bug fix.
