@@ -1,4 +1,4 @@
-import { defineConfig } from "tinacms";
+import { defineConfig, Form, TinaCMS } from "tinacms";
 
 // Your hosting provider likely exposes this as an environment variable
 const branch =
@@ -33,6 +33,34 @@ export default defineConfig({
         name: "post",
         label: "Posts",
         path: "src/content/posts",
+        ui: {
+          filename: {
+            readonly: false,
+          },
+          beforeSubmit: async ({
+            form,
+            cms,
+            values,
+          }: {
+            form: Form
+            cms: TinaCMS
+            values: Record<string, any>
+            }) => {
+            if (form.crudType === 'create') {
+              return {
+                ...values,
+                pubDate: new Date().toISOString(),
+              }
+            }
+
+            if (form.crudType === 'update') {
+              return {
+                ...values,
+                updatedDate: new Date().toISOString(),
+              }
+            }
+          },
+        },
         fields: [
           {
             type: "string",
@@ -45,13 +73,19 @@ export default defineConfig({
             type: "datetime",
             name: "pubDate",
             label: "Publish Date",
-            required: true,
+            description: "This will be generated at first publish",
+            ui: {
+              timeFormat: "HH:mm",
+            }
           },
           {
             type: "datetime",
             name: "updatedDate",
             label: "Updated Date",
-            required: true,
+            description: "This will be generated if it's already published on save.",
+            ui: {
+              timeFormat: "HH:mm"
+            }
           },
           {
             type: "string",

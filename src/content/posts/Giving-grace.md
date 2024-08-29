@@ -1,7 +1,7 @@
 ---
-title: Giving grace
-pubDate: 2024-08-27T04:00:00.000Z
-updatedDate: 2024-08-28T04:00:00.000Z
+title: Giving yourself grace
+pubDate: 2024-08-28T00:00:00.000Z
+updatedDate: 2024-08-29T03:55:18.401Z
 description: 'Sometimes, rest is sweeter.'
 draft: false
 ---
