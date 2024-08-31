@@ -1,7 +1,8 @@
 ---
 title: Learn your tools
 pubDate: 2024-08-31T04:51:30.339Z
-draft: true
+updatedDate: 2024-08-31T05:01:24.850Z
+draft: false
 ---
 
 A typical pattern most developers get caught in when learning the tools of their trade is learning the 20% of the available functionality that can get them through 80% of their work, which is perfectly understandable. I'm no different. Once we can get started on work, why dive too much deeper? The downside of that mindset is that we miss out on beneficial functionality that won't come up without some digging.
@@ -14,11 +15,11 @@ A solid strategy to learn these features is to hunt them down while working on p
 
 The homepage of my site features a blog list sorted by a simple [Javascript sort](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort) method before it renders the posts on the page. That code sorts the posts by newest first based on each post's `updatedDate` and `pubDate` properties. I use [Tina.io](https://tina.io/) for my CMS. When configuring the [content model](https://tina.io/docs/schema/) for a project, each "collection" of a particular class requires a field type for each property on that class. In this case, the `updatedDate` and `pubDate` properties of my post were of field type `datetime`, which returns a Date string in ISO string format.
 
-I would have liked to set a new Date for these values as a default when a new post editor was opened, but I couldn't find a reliable way to do so, likely due to a version mismatch between what I installed and what the docs described. So to be sure I didn't publish a new post without these dates set, I made them required fields as a reminder to manually update them. This wasn't ideal and was extremely clunky, but it suited my needs.
+I would have liked to set a new Date for these values as a default for a new post but I couldn't find a reliable way to do so, likely due to a version mismatch between what I installed and what the docs described. So, to be sure I didn't publish a new post without these dates set, I made them required fields as a reminder to manually update them. It was far from ideal, but it suited my needs.
 
-I published ["Curation"](/blog/curation) pretty late into the night on August 27th, followed by ["Giving yourself grace"](/blog/giving-grace) the night after. The code was pushed up to GitHub and picked up by Netlify, which ran the build commands for Tina and Astro. All lights came back green, all good.
+I published ["Curation"](/blog/curation) pretty late on August 27th, followed by ["Giving yourself grace"](/blog/giving-grace) the night after. The code was pushed to GitHub and picked up by Netlify, which ran the build commands for Tina and Astro. All lights came back green, all good.
 
-At least, it would have been except for the fact that the post at the top of the blog list was still "Curation." I found "Giving yourself grace" below the fold. Why?
+At least, it would have been, except that the post at the top of the blog list was still "Curation." I found "Giving yourself grace" below the fold. Why?
 
 Well, when I had written those content models, the definition of the `updatedDate` and `pubDate` fields were pretty barebones, just setting the field name, a readable name, and the type of `datetime`.
 
@@ -54,7 +55,7 @@ export default defineConfig({
 });
 ```
 
-This lightweight definition defaults to an ISO date string with just the year, month, date, and a localized time value of midnight GMT. That meant both "Curation" and "Giving yourself grace" had `pubDate` values of `2024-08-27T04:00:00.000Z` and weren't sorted at all in the blog list, which visually was rendered out of order.
+This lightweight definition defaults to an ISO date string with just the year, month, date, and a localized time value of midnight GMT. That meant both "Curation" and "Giving yourself grace" had `pubDate` values of `2024-08-27T04:00:00.000Z` and weren't sorted at all in the blog list, which was rendered out of order.
 
 ## The solution
 
