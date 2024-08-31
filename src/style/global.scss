@@ -90,6 +90,11 @@ body {
 		min-width: 100%;
 	}
 
+	img {
+		max-height: 600px;
+		margin: 0 auto;
+	}
+
 	code {
 		font-size: var(--font-size-1);
 	}
