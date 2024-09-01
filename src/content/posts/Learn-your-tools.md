@@ -1,7 +1,8 @@
 ---
 title: Learn your tools
 pubDate: 2024-08-31T04:51:30.339Z
-updatedDate: 2024-08-31T05:01:24.850Z
+updatedDate: 2024-09-01T02:45:25.245Z
+description: Your tools have more depth than you think.
 draft: false
 ---
 
