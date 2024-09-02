@@ -21,7 +21,7 @@ const publishedPosts = (await getCollection("posts")).sort(
 			}
 
 			{publishedPosts.length > 0 &&
-				<h1 class="latest display">{title}</h1>
+				<h1 class="display">{title}</h1>
 				<>
 					{publishedPosts.map((p) => <BlogPostPreview post={p} />)}
 				</>

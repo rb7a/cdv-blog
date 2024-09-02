@@ -13,7 +13,7 @@ const { updatedDate, pubDate, title, description } = data;
 	<small class="publish-date">
 		<p>{updatedDate ? "Updated" : "Posted"} <DateTime date={updatedDate || pubDate} /></p>
 	</small>
-		<h3 class="title"><a href={`/blog/${slug}`}>{title}</a></h3>
+		<h2 class="title"><a href={`/blog/${slug}`}>{title}</a></h2>
 		<p>{description}</p>
 	<div>
 		<a href={`/blog/${slug}`}>Read more</a>

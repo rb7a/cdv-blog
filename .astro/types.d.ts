@@ -157,13 +157,6 @@ declare module 'astro:content' {
   collection: "posts";
   data: InferEntrySchema<"posts">
 } & { render(): Render[".md"] };
-"2023-08-28-build-more-than-your-blog.md": {
-	id: "2023-08-28-build-more-than-your-blog.md";
-  slug: "2023-08-28-build-more-than-your-blog";
-  body: string;
-  collection: "posts";
-  data: InferEntrySchema<"posts">
-} & { render(): Render[".md"] };
 "2023-09-21-we-need-to-talk-about-webops-so-we-can-stop-talking-about-webops.md": {
 	id: "2023-09-21-we-need-to-talk-about-webops-so-we-can-stop-talking-about-webops.md";
   slug: "2023-09-21-we-need-to-talk-about-webops-so-we-can-stop-talking-about-webops";
@@ -265,6 +258,13 @@ declare module 'astro:content' {
 "Giving-grace.md": {
 	id: "Giving-grace.md";
   slug: "giving-grace";
+  body: string;
+  collection: "posts";
+  data: InferEntrySchema<"posts">
+} & { render(): Render[".md"] };
+"Learn-your-tools.md": {
+	id: "Learn-your-tools.md";
+  slug: "learn-your-tools";
   body: string;
   collection: "posts";
   data: InferEntrySchema<"posts">
