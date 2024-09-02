@@ -3,11 +3,10 @@ import { getCollection } from 'astro:content';
 import BlogPostPreview from '../components/BlogPostPreview.astro';
 import Base from '../layouts/Base.astro';
 
-let title = 'Charles Villard';
-let employer = 'HPE';
-let employerSite = 'https://www.hpe.com';
-let job = 'Software Engineer'
-let blogTitle = 'Blog';
+const employer = 'HPE';
+const employerSite = 'https://www.hpe.com';
+const job = 'Software Engineer'
+const blogTitle = 'Blog';
 
 const posts = await getCollection("posts");
 
@@ -17,7 +16,7 @@ const publishedPosts = (posts).sort((a, b) =>
   .filter((post) => !post.data.draft && !post.data.rssOnly);
 ---
 
-<Base title={title} featuredimage="./../assets/media/headshot-0.png">
+<Base featuredimage="./../assets/media/headshot-0.png">
   <div class="home">
     <div class="hero">
       <img class="headshot" src="./../assets/media/headshot-4.jpeg" alt="">
