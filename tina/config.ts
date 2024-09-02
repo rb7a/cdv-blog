@@ -90,7 +90,8 @@ export default defineConfig({
           {
             type: "string",
             name: "description",
-            label: "Description"
+            label: "Description",
+            required: true
           },
           {
             type: "string",
