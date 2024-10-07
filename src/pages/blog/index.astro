@@ -4,7 +4,7 @@ import BlogPostPreview from '../../components/BlogPostPreview.astro';
 import Base from '../../layouts/Base.astro';
 
 let title = 'Blog';
-
+console.log(await getCollection("posts"))
 const publishedPosts = (await getCollection("posts")).sort(
   (a, b) =>
     new Date(b.data.updatedDate || b.data.pubDate).valueOf() -

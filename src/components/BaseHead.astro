@@ -58,7 +58,7 @@ const pagePermalink = permalink;
 	<!-- https://chriscoyier.net/2023/01/19/dark-mode-via-a-smallish-script-in-the-head-avoiding-fart/ -->
 	<script>
 		const COOKIE_NAME = 'darkmode';
-		const darkModeToggle = document.getElementById('darkMode');
+		const darkModeToggle = document.getElementById('darkMode') as HTMLInputElement;
 
 		// Variable to prepare for unchecking the checkbox if the user prefers light mode.
 		let uncheckBox = false;

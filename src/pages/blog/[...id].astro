@@ -1,5 +1,5 @@
 ---
-import { getCollection } from 'astro:content';
+import { type CollectionEntry, getCollection, render } from 'astro:content';
 import BlogPost from '../../layouts/BlogPost.astro';
 
 export async function getStaticPaths() {
@@ -7,16 +7,16 @@ export async function getStaticPaths() {
   return blogEntries
     .filter(entry => !entry.data.draft && !entry.data.rssOnly)
     .map(entry => ({
-    params: { slug: entry.slug }, props: { entry },
-  }));
+      params: { id: decodeURI(entry.id) }, props: { entry },
+    }));
 }
 
-const { entry } = Astro.props;
-const { Content } = await entry.render();
+const { entry }: { entry: CollectionEntry<'posts'> } = Astro.props;
+const { Content } = await render(entry);
 ---
 <BlogPost
   content={entry.data}
-  url={entry.slug}
+  url={entry.id}
 >
   <Content />
 </BlogPost>
