@@ -1,7 +1,7 @@
 ---
 title: What environments social media can create
 pubDate: 2024-10-24T14:16:17.179Z
-updatedDate: 2024-10-24T15:14:12.069Z
+updatedDate: 2024-10-24T15:34:53.018Z
 description: Product of our surroundings
 draft: false
 ---
@@ -14,6 +14,6 @@ As that platform stands today, I hardly recognize it as the same environment any
 
 In becoming a part of people's daily lives, the Internet is a part of their environment and is thus impactful to how they view themselves, others, and the world around them. Many people still don't see the Internet as anything more than a reference tool, but just as many are constantly connected, whose ages skew increasingly younger. These younger users see Internet access as an expectation of their everyday world, not a new feature like older generations. That's why the online social environments we develop must treat trust and safety as first-class concerns, moreso than performance, profitability, and features.
 
-Twitter, despite all of its warts and issues, grew some understanding of those concerns over time. The current regime running what was once Twitter doesn't understand that, nor do they seem to care. Their [latest revisions](https://metricool.com/x-twitter-changes-block-feature) to the platform say as much. 
+Twitter, despite all of its warts and issues, grew some understanding of those concerns over time. The current regime running what was once Twitter doesn't understand that, nor do they seem to care. Their [latest revisions](https://metricool.com/x-twitter-changes-block-feature) to the platform say as much.
 
-The reach the platform provides can't be denied, and I have continued using it, but what reach I've enjoyed there has been the product of the time I had invested in building my network and presence there. I'm not one of the larger creators on the platform, receiving ad revenue for engagement. Nor am I one of the platform's subscribers, receiving access to features. My investment in the platform paid out when I was able to speak and interact with people in my industry in a way I enjoyed. Many of those creators have since moved on. So to that end, I'll likely start looking to [bluer skies](https://bsky.app/profile/cdvillard.bsky.social) and other places to make my mark, if this trend continues.
+The reach the platform provides can't be denied, and I have continued using it, but what reach I've enjoyed there has been the product of the time I had invested in building my network and presence there. I'm not one of the larger creators on the platform, receiving ad revenue for engagement. Nor am I one of the platform's subscribers, receiving access to features. My investment in the platform paid out when I was able to speak and interact with people in my industry in a way I enjoyed. Many of those creators have since moved on. So to that end, I'll likely start looking to [bluer skies](https://bsky.app/profile/charlesvillard.co "bluer skies") and other places to make my mark, if this trend continues.
