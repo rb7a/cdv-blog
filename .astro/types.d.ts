@@ -276,6 +276,13 @@ declare module 'astro:content' {
   collection: "posts";
   data: InferEntrySchema<"posts">
 } & { render(): Render[".md"] };
+"What-environments-social-media-can-create.md": {
+	id: "What-environments-social-media-can-create.md";
+  slug: "what-environments-social-media-can-create";
+  body: string;
+  collection: "posts";
+  data: InferEntrySchema<"posts">
+} & { render(): Render[".md"] };
 "apply-to-jobs-with-feeling.md": {
 	id: "apply-to-jobs-with-feeling.md";
   slug: "apply-to-jobs-with-feeling";
