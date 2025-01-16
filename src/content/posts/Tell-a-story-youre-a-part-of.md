@@ -1,7 +1,7 @@
 ---
 title: Tell a story you're a part of.
 pubDate: 2025-01-16T23:30:34.338Z
-updatedDate: 2025-01-16T23:35:30.727Z
+updatedDate: 2025-01-16T23:43:20.175Z
 description: Sometimes the story you need to tell isn't about just you.
 draft: true
 ---
@@ -14,4 +14,19 @@ This is a fairly common question to get asked, and it always seems daunting to a
 
 > What's a complex project you've worked on...?
 
-Imagine getting asked this while you're ordering a meal at a restaurant, on the spot. I'd wager your first thought may be, Oh, goodness. What's a complex project I worked on? What work did I complete that was genuinely complex, let alone relevant to the next job I want to get? I would wager that, for most people, the first response is to scroll through their job history in their minds and find the most complex project they delivered, start to finish, top to bottom, that they made the calls on.
+Imagine getting asked this while you're ordering a meal at a restaurant, on the spot. I'd wager your first thought may be, Oh, goodness. What's a complex project I worked on? What work did I complete that was genuinely complex, let alone relevant to the next job I want to get? 
+
+I would wager that, for most people, the first response is to scroll through their job history in their minds and find the most complex project they delivered, start to finish, top to bottom, that they made the calls on. I'm hardly innocent of this myself. I can count on my fingers how many times I answered similar questions with a vote of confidence, and that would be a good guess at best.
+
+The reality of it is this line of questioning, and others like it, are not meant to derive answers from us about us. In this age of AI-driven web scrappers, I presume you who are reading this are like me and are human. We naturally tend to center ourselves when we're asked questions about what we've done. However, these prompts are instead meant to invoke answers now about how we solo-conquered a big scary problem as the main character. Instead, it's encouraging us to talk about our smaller part in a larger whole.\
+\
+
+
+```javascript
+// Well, remember that it's not asking you how you handled a complex project on your own, but  what complex projects did your work touch and how your work affected that project. For example, if I were a mid-level front-end developer, I could describe how my work on a UI team developing the code for a major dashboard refresh improved accessibility, and how I had to have hard conversations with design about how parts of that UI couldn't be animated or couldn't be rendered as sticky for XYZ reason. Even though at the end of the say, I just coded some layouts that were requested by the design team.
+
+```
+
+\
+\
+It's not a question about how you climbed the mountain. It's more about how you and maybe your team worked to make climbing that mountain easier, even if your part in that seemed small at the time.
