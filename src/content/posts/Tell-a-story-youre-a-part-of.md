@@ -1,6 +1,7 @@
 ---
 title: Tell a story you're a part of.
 pubDate: 2025-01-16T23:30:34.338Z
+updatedDate: 2025-01-16T23:35:30.727Z
 description: Sometimes the story you need to tell isn't about just you.
 draft: true
 ---
@@ -13,4 +14,4 @@ This is a fairly common question to get asked, and it always seems daunting to a
 
 > What's a complex project you've worked on...?
 
-Imagine getting asked this while you're ordering a meal at a restaurant, on the spot. Oh, goodness. What's a complex project I worked on? What work did I complete that was genuinely complex, let alone relevant to the next job I want to get?
+Imagine getting asked this while you're ordering a meal at a restaurant, on the spot. I'd wager your first thought may be, Oh, goodness. What's a complex project I worked on? What work did I complete that was genuinely complex, let alone relevant to the next job I want to get? I would wager that, for most people, the first response is to scroll through their job history in their minds and find the most complex project they delivered, start to finish, top to bottom, that they made the calls on.
