@@ -1,20 +1,20 @@
 ---
 title: Tell a story you're a part of.
 pubDate: 2025-01-16T23:30:34.338Z
-updatedDate: 2025-01-17T17:24:41.545Z
+updatedDate: 2025-01-17T17:33:33.240Z
 description: Sometimes the story you need to tell isn't about just you.
-draft: true
+draft: false
 ---
 
 A friend was preparing for a job interview at a pretty high-profile startup when he reached out for advice in an online community we both frequent. The recruiters had laid out some expectations for the interview that seemed pretty bog-standard, but one particular item prompted my friend to seek some guidance. Paraphrasing a bit, the prompt stated interviewees were expected to talk about a few things including:
 
 > What's a complex project you've worked on, relevant to this position? Who did you collaborate with? How did you contribute to the project? What were some challenges you overcame? How did your work affect the project in the end?
 
- That first part can hit the panic button pretty hard.
+That first part can hit the panic button pretty hard.
 
 > What's a complex project you've worked on...?
 
-It's a fairly common question to get asked in interviews, especially for tech-related jobs, and yet, it always seems daunting to answer. 
+It's a fairly common question to get asked in interviews, especially for tech-related jobs, and yet, it always seems daunting to answer.
 
 Imagine someone walking up and asking this right when you're about to order some food. I'd wager your first thought may be, "Wait, what? I trying to get a sandwich."\
 \
@@ -22,7 +22,7 @@ Give it a second, let it sink in, and your next thought may be, "Oh, goodness. W
 
 For most people, this is likely when they scroll through their job history in their minds and find the most complex project they led and delivered, start to finish, top to bottom, soup to nuts. I'm hardly innocent of this myself. I can count on my fingers how many times I answered similar questions with a vote of confidence, and that would be a good guess at best.
 
-For my friend, the nuance of answering this question wasn't about what complex project he solved, but that he hadn't solved any complex problems yet, in his mind. He hadn't worked in software development that long. How was he to honestly answer this with only so much work experience under his belt? 
+For my friend, the nuance of answering this question wasn't about what complex project he solved, but that he hadn't solved any complex problems yet, in his mind. He hadn't worked in software development that long. How was he to honestly answer this with only so much work experience under his belt?
 
 ## Main character syndrome
 
@@ -50,9 +50,9 @@ What if you're the only one on the team solving those problems? What if you've b
 
 When my friend asked about how to respond, he also served up another interesting question: What counts as "complex?" Other friends in the community chipped in on this one.
 
-One pointed out, "Complexity doesn't necessarily have to be strictly technical." The complications of any given project could refer to resource constraints, prioritization, or regulatory and standards compliance of one kind or another. It's common to even have conflicting milestones on the same project that make it difficult to navigate towards a single outcome. 
+One pointed out, "Complexity doesn't necessarily have to be strictly technical." The complications of any given project could refer to resource constraints, prioritization, or regulatory and standards compliance of one kind or another. It's common to even have conflicting milestones on the same project that make it difficult to navigate towards a single outcome.
 
-Someone else added, and I'm paraphrasing a little, that the important bit of talking about one's role in a complex project is "your ability to recognize that there was a system, that it was complex, that you recognized it as complex instead of diving head-first only to regret it a week later, and how your actions treated it as the complex project that it was." This is a sharp edge I've cut myself on numerous times. Learning how to identify a system or project as complex takes time and experience, but that learning can be done through experimentation and study. 
+Someone else added, and I'm paraphrasing a little, that the important bit of talking about one's role in a complex project is "your ability to recognize that there was a system, that it was complex, that you recognized it as complex instead of diving head-first only to regret it a week later, and how your actions treated it as the complex project that it was." This is a sharp edge I've cut myself on numerous times. Learning how to identify a system or project as complex takes time and experience, but that learning can be done through experimentation and study.
 
 ***
 
