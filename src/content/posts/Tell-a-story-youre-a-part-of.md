@@ -1,7 +1,7 @@
 ---
 title: Tell a story you're a part of.
 pubDate: 2025-01-16T23:30:34.338Z
-updatedDate: 2025-01-17T15:28:24.137Z
+updatedDate: 2025-01-17T15:44:14.097Z
 description: Sometimes the story you need to tell isn't about just you.
 draft: true
 ---
@@ -36,11 +36,11 @@ Suddenly, answering this just got a lot easier, didn't it?
 
 ## Part of the sum
 
-Typically, most people working on software, let alone anything in general, don't solve complex projects all on their own. Any given project is usually broken down into tasks and delegated to people, often based on their specialties or bandwidth, in hopefully the most effective way. Sure, sometimes there are highly passionate, high-output contributors whose work supports the outcomes of the project at large, but they're outliers and even their work doesn't usually meet the project's goals in and of itself. Heck, Batman could thwart the best-laid plans of many villains, but even he had Alfred.
+Typically, most people working on software, let alone anything in general, don't solve complex projects all on their own. Any given project is usually broken down into tasks and delegated to people, often based on their specialties or bandwidth, in hopefully the most effective way. Sure, sometimes there are highly passionate, high-output contributors whose work supports the outcomes of the project to an outsized degree, but they're outliers and even their work doesn't usually meet the project's goals in and of itself. Heck, Batman could thwart the best-laid plans of many villains, but even he had Alfred.
 
-The question isn't meant to evoke tales about how we solo-conquered a big scary problem as the main character. Instead, it's encouraging us to talk about our smaller part in a larger whole. 
+ A mid-level front-end developer may just develop components and layouts all day, but could easily speak to how their tough conversation with a designer about an animation improved the feature's accessibility. A junior backend developer may just fix buggy API code all day, but he could speak about how his collaboration with QA improved performance and memory usage. The question isn't meant to evoke tales about how we solo-conquered a big scary problem as the main character. It's trying to understand what roles you've played on a team, and how your work affected outcomes.
 
-It's not a question about how you climbed the mountain. It's more about how you and maybe your team worked to make climbing that mountain easier, even if your part in that seemed small at the time.
+Ultimately, being asked what complex project you've worked on is a chance for us to talk about our smaller part in a larger whole. It's not a question about how you climbed the mountain. It's more about how you and maybe your team worked to make climbing that mountain easier.
 
 A friend of mine was preparing for an upcoming job interview at a pretty high-profile startup. The recruiter's expectations for the interview seemed pretty bog-standard but one particular item prompted my friend to seek some guidance. Paraphrasing a bit, interviewees were expected to answer the following:
 
