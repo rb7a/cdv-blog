@@ -1,7 +1,7 @@
 ---
 title: Tell a story you're a part of.
 pubDate: 2025-01-16T23:30:34.338Z
-updatedDate: 2025-01-17T15:48:26.412Z
+updatedDate: 2025-01-17T16:00:42.973Z
 description: Sometimes the story you need to tell isn't about just you.
 draft: true
 ---
@@ -24,7 +24,7 @@ For my friend, the nuance of answering this question wasn't about what complex p
 
 ## Main character syndrome
 
-In this day, the age of AI-driven web scrappers, I presume you who are reading this are like me and are human. We naturally tend to center ourselves when we're asked questions about what we've done. It's natural, but it can also be uncomfortable for a lot of people. Let's take a second to re-interpret the prompt, though.
+In this day, the age of AI-driven web scrappers, I presume you who are reading this are like me and are human. We humans naturally tend to center ourselves when asked questions about what we've done. For many, talking about ourselves, let alone talking about our work and selling ourselves up, is probably one of the most uncomfortable positions to be in. Let's take a second to re-interpret the prompt, though.
 
 Instead of thinking about it as:
 
@@ -34,13 +34,15 @@ Let's try interpreting it as:
 
 > What work have you done that has contributed to a complex project?
 
-Suddenly, answering this just got a lot easier, didn't it?
+Suddenly, answering this just got a lot easier, didn't it? Talking about your part in a complex role can be a lot easier than talking about a complex project you had to take on.
+
+A mid-level front-end developer faced with this question, for example, may think that just coding components and layouts all day won't cut it. However, perhaps they had a tough conversation with a designer who wanted to animate a feature. They could speak about how that conversation prompted a thread of work that improved the feature's accessibility.
+
+A junior backend developer's job may just fix buggy API code all day, but he could speak about how his collaboration with QA improved performance and memory usage. The question isn't meant to evoke tales about how we solo-conquered a big scary problem as the main character. It's trying to understand what roles you've played on a team, and how your work affected outcomes.
 
 ## Part of the sum
 
-Typically, most people working on software, let alone anything in general, don't solve complex projects all on their own. Any given project is usually broken down into tasks and delegated to people, often based on their specialties or bandwidth, in hopefully the most effective way. Sure, sometimes there are highly passionate, high-output contributors whose work supports the outcomes of the project to an outsized degree, but they're outliers and even their work doesn't usually meet the project's goals in and of itself. Heck, Batman could thwart the best-laid plans of many villains, but even he had Alfred.
-
- A mid-level front-end developer may just develop components and layouts all day, but could easily speak to how their tough conversation with a designer about an animation improved the feature's accessibility. A junior backend developer may just fix buggy API code all day, but he could speak about how his collaboration with QA improved performance and memory usage. The question isn't meant to evoke tales about how we solo-conquered a big scary problem as the main character. It's trying to understand what roles you've played on a team, and how your work affected outcomes.
+Typically, most people working on software, let alone anything in general, don't solve complex projects all on their own. Any given project is usually broken down into tasks and delegated to people, often based on their specialties or bandwidth, in hopefully the most effective way. Sure, sometimes there are highly passionate, high-output contributors whose work supports the outcomes of the project to an outsized degree, but they're outliers. Even their work doesn't usually meet the project's goals in and of itself. Batman could thwart the best-laid plans of many villains, but even he had Alfred.
 
 Ultimately, being asked what complex project you've worked on is a chance for us to talk about our smaller part in a larger whole. It's not a question about how you climbed the mountain. It's more about how you and maybe your team worked to make climbing that mountain easier.
 
