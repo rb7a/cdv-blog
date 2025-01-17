@@ -1,12 +1,12 @@
 ---
 title: Tell a story you're a part of.
 pubDate: 2025-01-16T23:30:34.338Z
-updatedDate: 2025-01-17T15:44:14.097Z
+updatedDate: 2025-01-17T15:44:32.247Z
 description: Sometimes the story you need to tell isn't about just you.
 draft: true
 ---
 
-A friend of mine was preparing for an upcoming job interview at a pretty high-profile startup. The recruiter's expectations for the interview seemed pretty bog-standard, but one particular item prompted my friend to seek some guidance. Paraphrasing a bit, the prompt stated interviewees were expected to talk about a few things including:
+A friend of mine was preparing for a job interview at a pretty high-profile startup. The recruiter's expectations for the interview seemed pretty bog-standard, but one particular item prompted my friend to seek some guidance. Paraphrasing a bit, the prompt stated interviewees were expected to talk about a few things including:
 
 > What's a complex project you've worked on, relevant to this position? Who did you collaborate with? How did you contribute to the project? What were some challenges you overcame? How did you work affect the project in the end?
 
