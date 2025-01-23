@@ -1,5 +1,5 @@
 ---
-import { Icon } from 'astro-icon';
+import { Icon } from 'astro-icon/components';
 
 let today = new Date();
 let year = today.getFullYear();
@@ -7,17 +7,14 @@ let year = today.getFullYear();
 <footer class="footer">
   <span class="branded-text display">© {year} Charles Villard  ☕️</span>
   <div class="social">
+    <a aria-label="link to Charles Villard's BlueSky account" class="social-link" target="_blank" rel="noreferrer noopener" href="https://bsky.app/profile/charlesvillard.co">
+      <Icon class="icon" name="simple-icons:bluesky" />
+    </a>
     <a aria-label="link to Charles Villard's Twitter account" class="social-link" target="_blank" rel="noreferrer noopener" href="https://twitter.com/cdvillard">
       <Icon class="icon" name="mdi:twitter" />
     </a>
-    <a aria-label="link to Charles Villard's Mastodon account" class="social-link" target="_blank" rel="noreferrer noopener" rel="me" href="https://notacult.social/@charlieDevs">
-      <Icon class="icon" name="mdi:mastodon" />
-    </a>
     <a aria-label="link to Charles Villard's Linkedin account" class="social-link" target="_blank" rel="noreferrer noopener" href="https://linkedin.com/in/cdvillard">
       <Icon class="icon" name="mdi:linkedin" />
-    </a>
-    <a aria-label="link to Charles Villard's Polywork account" class="social-link" target="_blank" rel="noreferrer noopener" href="https://www.polywork.com/cdvillard">
-      <Icon class="icon" name="simple-icons:polywork" />
     </a>
     <a aria-label="link to Charles Villard's Github account" class="social-link" target="_blank" rel="noreferrer noopener" href="https://github.com/cdvillard">
       <Icon class="icon" name="mdi:github" />
