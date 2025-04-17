@@ -1,7 +1,7 @@
 ---
-title: Leveraging GitHub CoPilot for git commits
+title: Leveraging GitHub CoPilot for Git commits
 pubDate: 2025-04-03T20:16:33.388Z
-updatedDate: 2025-04-17T02:57:54.397Z
+updatedDate: 2025-04-17T03:02:23.252Z
 description: Sometimes it's the small things in AI.
 draft: false
 ---
@@ -19,4 +19,4 @@ Either way, it sure beats my commit history being a mix of:
 * "Remove a comment," and
 * "Please work now"
 
-Oh, and before I'm labeled an AI doubter, or worse, not a team player, I'm not saying I'd never use tools like Cursor or that I'd never vibe code. Normalizing on a set of tools is normal for an organization, and it's a practice companies exercised before AI was a thing. I'm simply taking my time to bring it into my personal workflows. 
+Oh, and before I'm labeled an AI doubter, or worse, not a team player, I'm not saying I'd never use tools like Cursor or that I'd never vibe code. Normalizing on a set of tools is normal for an organization, and it's a practice companies exercised before AI was a thing. I'm simply taking my time to bring it into my personal workflows.
