@@ -1,25 +1,64 @@
 ---
-	let { arePostsPublished } = Astro.props;
+const { arePostsPublished } = Astro.props;
 ---
+
 <header class="header">
 	<div class="container">
-		<a href="/" class="navbar-item display branded-text">
-			Charles Villard
-		</a>
+		<a href="/" class="navbar-item display branded-text"> Charles Villard </a>
 		<div class="nav">
 			<nav id="navbarMenu" class="navbar-menu">
-					<a href="/about" class="navbar-item">About</a>
-					{
-						arePostsPublished &&
-						<a href="/blog" class="navbar-item">Blog</a>
-					}
-					<a href="/ai" class="navbar-item">AI Usage</a>
-					<a href="/public/CDVillardResumeOct2024.pdf" class="navbar-item">Resume</a>
+				<a href="/about" class="navbar-item">About</a>
+				{
+					arePostsPublished && (
+						<a href="/blog" class="navbar-item">
+							Blog
+						</a>
+					)
+				}
+				<a href="/ai" class="navbar-item">AI Usage</a>
+				<a href="/resume/CDVillardResumeOct2024.pdf" class="navbar-item"
+					>Resume</a
+				>
 			</nav>
 			<div class="dark-mode">
 				<label for="darkMode">Dark? </label>
-				<input id="darkMode" class="navbar-item" type="checkbox">
+				<input id="darkMode" class="navbar-item" type="checkbox" />
 			</div>
 		</div>
 	</div>
 </header>
+
+<script is:inline>
+	const toggle = document.getElementById("darkMode");
+
+	const theme = (() => {
+		const localStorageTheme = localStorage?.getItem("theme") ?? "";
+		if (["dark-mode", "light-mode"].includes(localStorageTheme)) {
+			return localStorageTheme;
+		}
+		if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+			return "dark-mode";
+		}
+		return "light-mode";
+	})();
+
+	if (theme === "light-mode") {
+		document.documentElement.classList.remove("dark-mode");
+		toggle.checked = false;
+	} else {
+		document.documentElement.classList.add("dark-mode");
+		toggle.checked = true;
+	}
+
+	window.localStorage.setItem("theme", theme);
+
+	const handleToggleClick = () => {
+		const element = document.documentElement;
+		element.classList.toggle("dark-mode");
+
+		const isDark = element.classList.contains("dark-mode");
+		localStorage.setItem("theme", isDark ? "dark-mode" : "light-mode");
+	};
+
+	toggle?.addEventListener("change", handleToggleClick);
+</script>

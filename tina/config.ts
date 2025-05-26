@@ -1,4 +1,4 @@
-import { defineConfig, Form, TinaCMS } from "tinacms";
+import { defineConfig, type Form, type TinaCMS } from "tinacms";
 
 // Your hosting provider likely exposes this as an environment variable
 const branch =
