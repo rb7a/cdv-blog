@@ -28,24 +28,37 @@ const { arePostsPublished } = Astro.props;
 	</div>
 </header>
 
-<script>
-	const COOKIE_NAME = "darkmode";
-	const darkModeControl = document.getElementById(
-		"darkMode",
-	) as HTMLInputElement;
+<script is:inline>
+	const toggle = document.getElementById("darkMode");
 
-	darkModeControl?.addEventListener("change", (event) => {
-		const target = event.target as HTMLInputElement;
-		if (target.checked) {
-			document.documentElement.classList.add("dark-mode");
-			document.documentElement.style.colorScheme = "dark";
-			document.cookie = `${COOKIE_NAME}=true; expires=Fri, 31 Dec 9999 23:59:59 GMT;"`;
-			darkModeControl.checked = true;
-		} else {
-			document.documentElement.classList.remove("dark-mode");
-			document.documentElement.style.colorScheme = "light";
-			document.cookie = `${COOKIE_NAME}=false; expires=Fri, 31 Dec 9999 23:59:59 GMT;"`;
-			darkModeControl.checked = false;
+	const theme = (() => {
+		const localStorageTheme = localStorage?.getItem("theme") ?? "";
+		if (["dark-mode", "light-mode"].includes(localStorageTheme)) {
+			return localStorageTheme;
 		}
-	});
+		if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+			return "dark-mode";
+		}
+		return "light-mode";
+	})();
+
+	if (theme === "light-mode") {
+		document.documentElement.classList.remove("dark-mode");
+		toggle.checked = false;
+	} else {
+		document.documentElement.classList.add("dark-mode");
+		toggle.checked = true;
+	}
+
+	window.localStorage.setItem("theme", theme);
+
+	const handleToggleClick = () => {
+		const element = document.documentElement;
+		element.classList.toggle("dark-mode");
+
+		const isDark = element.classList.contains("dark-mode");
+		localStorage.setItem("theme", isDark ? "dark-mode" : "light-mode");
+	};
+
+	toggle?.addEventListener("change", handleToggleClick);
 </script>
