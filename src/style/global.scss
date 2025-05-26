@@ -96,8 +96,11 @@ body {
 	}
 
 	code {
-		color: var(--code);
 		font-size: var(--font-size-1);
+
+		html.dark-mode & {
+			color: var(--gray-8);
+		}
 	}
 
 	.display {

@@ -255,6 +255,13 @@ declare module 'astro:content' {
   collection: "posts";
   data: InferEntrySchema<"posts">
 } & { render(): Render[".md"] };
+"DRAFT---Sludge.md": {
+	id: "DRAFT---Sludge.md";
+  slug: "draft---sludge";
+  body: string;
+  collection: "posts";
+  data: InferEntrySchema<"posts">
+} & { render(): Render[".md"] };
 "Giving-grace.md": {
 	id: "Giving-grace.md";
   slug: "giving-grace";
@@ -265,6 +272,13 @@ declare module 'astro:content' {
 "Learn-your-tools.md": {
 	id: "Learn-your-tools.md";
   slug: "learn-your-tools";
+  body: string;
+  collection: "posts";
+  data: InferEntrySchema<"posts">
+} & { render(): Render[".md"] };
+"Leet-Heat-Travelogue.md": {
+	id: "Leet-Heat-Travelogue.md";
+  slug: "leet-heat-travelogue";
   body: string;
   collection: "posts";
   data: InferEntrySchema<"posts">
@@ -304,12 +318,21 @@ declare module 'astro:content' {
   collection: "posts";
   data: InferEntrySchema<"posts">
 } & { render(): Render[".md"] };
+"leveraging-copilot-for-git-commits.md": {
+	id: "leveraging-copilot-for-git-commits.md";
+  slug: "leveraging-copilot-for-git-commits";
+  body: string;
+  collection: "posts";
+  data: InferEntrySchema<"posts">
+} & { render(): Render[".md"] };
 };
 
 	};
 
 	type DataEntryMap = {
-		
+		"slides": {
+};
+
 	};
 
 	type AnyEntryMap = ContentEntryMap & DataEntryMap;

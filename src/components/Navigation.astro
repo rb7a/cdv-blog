@@ -1,25 +1,51 @@
 ---
-	let { arePostsPublished } = Astro.props;
+const { arePostsPublished } = Astro.props;
 ---
+
 <header class="header">
 	<div class="container">
-		<a href="/" class="navbar-item display branded-text">
-			Charles Villard
-		</a>
+		<a href="/" class="navbar-item display branded-text"> Charles Villard </a>
 		<div class="nav">
 			<nav id="navbarMenu" class="navbar-menu">
-					<a href="/about" class="navbar-item">About</a>
-					{
-						arePostsPublished &&
-						<a href="/blog" class="navbar-item">Blog</a>
-					}
-					<a href="/ai" class="navbar-item">AI Usage</a>
-					<a href="/public/CDVillardResumeOct2024.pdf" class="navbar-item">Resume</a>
+				<a href="/about" class="navbar-item">About</a>
+				{
+					arePostsPublished && (
+						<a href="/blog" class="navbar-item">
+							Blog
+						</a>
+					)
+				}
+				<a href="/ai" class="navbar-item">AI Usage</a>
+				<a href="/resume/CDVillardResumeOct2024.pdf" class="navbar-item"
+					>Resume</a
+				>
 			</nav>
 			<div class="dark-mode">
 				<label for="darkMode">Dark? </label>
-				<input id="darkMode" class="navbar-item" type="checkbox">
+				<input id="darkMode" class="navbar-item" type="checkbox" />
 			</div>
 		</div>
 	</div>
 </header>
+
+<script>
+	const COOKIE_NAME = "darkmode";
+	const darkModeControl = document.getElementById(
+		"darkMode",
+	) as HTMLInputElement;
+
+	darkModeControl?.addEventListener("change", (event) => {
+		const target = event.target as HTMLInputElement;
+		if (target.checked) {
+			document.documentElement.classList.add("dark-mode");
+			document.documentElement.style.colorScheme = "dark";
+			document.cookie = `${COOKIE_NAME}=true; expires=Fri, 31 Dec 9999 23:59:59 GMT;"`;
+			darkModeControl.checked = true;
+		} else {
+			document.documentElement.classList.remove("dark-mode");
+			document.documentElement.style.colorScheme = "light";
+			document.cookie = `${COOKIE_NAME}=false; expires=Fri, 31 Dec 9999 23:59:59 GMT;"`;
+			darkModeControl.checked = false;
+		}
+	});
+</script>

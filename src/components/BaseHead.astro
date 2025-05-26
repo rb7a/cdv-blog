@@ -3,34 +3,49 @@ export interface Props {
 	title?: string;
 	description?: string;
 	permalink?: string;
-	featuredimage?:string;
+	featuredimage?: string;
 }
 const {
 	title,
-	description = 'Devlog and portfolio of Charles Villard, software engineer',
+	description = "Devlog and portfolio of Charles Villard, software engineer",
 	permalink = import.meta.env.SITE,
-	featuredimage = "https://images.prismic.io/cdvblog/55fc6926-399b-4cdb-bad8-0f174d607943_headshot.png?auto=compress,format"
+	featuredimage = "https://images.prismic.io/cdvblog/55fc6926-399b-4cdb-bad8-0f174d607943_headshot.png?auto=compress,format",
 } = Astro.props;
 
 const pageTitle = title;
 const pageDescription = description;
 const pagePermalink = permalink;
 ---
+
 <head>
 	<!-- Global Metadata -->
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width" />
-	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=1">
-	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=1">
-	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=1">
-	<link rel="manifest" href="/site.webmanifest?v=1">
-	<link rel="mask-icon" href="/safari-pinned-tab.svg?v=1" color="#663399">
-	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=1">
-	<meta name="msapplication-TileColor" content="#f1f3f5">
-	<meta name="theme-color" content="#f1f3f5">
+	<link
+		rel="apple-touch-icon"
+		sizes="180x180"
+		href="/apple-touch-icon.png?v=1"
+	/>
+	<link
+		rel="icon"
+		type="image/png"
+		sizes="32x32"
+		href="/favicon-32x32.png?v=1"
+	/>
+	<link
+		rel="icon"
+		type="image/png"
+		sizes="16x16"
+		href="/favicon-16x16.png?v=1"
+	/>
+	<link rel="manifest" href="/site.webmanifest?v=1" />
+	<link rel="mask-icon" href="/safari-pinned-tab.svg?v=1" color="#663399" />
+	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=1" />
+	<meta name="msapplication-TileColor" content="#f1f3f5" />
+	<meta name="theme-color" content="#f1f3f5" />
 	<!-- Primary Meta Tags -->
 	<title>{pageTitle}</title>
-	<meta name="title" content={pageTitle}>
+	<meta name="title" content={pageTitle} />
 	<meta name="description" content={pageDescription} />
 
 	<!-- Open Graph / Facebook -->
@@ -51,62 +66,78 @@ const pagePermalink = permalink;
 	<link rel="preconnect" href="https://fonts.gstatic.com" />
 
 	<!-- Fathom - beautiful, simple website analytics -->
-		<script src="https://cdn.usefathom.com/script.js" data-site="GKITFKWR" defer></script>
+	<script src="https://cdn.usefathom.com/script.js" data-site="GKITFKWR" defer
+	></script>
 	<!-- / Fathom -->
 
 	<!-- Dark mode script borrowed from Chris Coiyer -->
 	<!-- https://chriscoyier.net/2023/01/19/dark-mode-via-a-smallish-script-in-the-head-avoiding-fart/ -->
 	<script>
-		const COOKIE_NAME = 'darkmode';
-		const darkModeToggle = document.getElementById('darkMode');
+		const COOKIE_NAME = "darkmode";
+		const cookie = document.cookie
+			.split(";")
+			.some((item) => item.trim().startsWith(`${COOKIE_NAME}=true`));
+		console.log(cookie);
 
-		// Variable to prepare for unchecking the checkbox if the user prefers light mode.
-		let uncheckBox = false;
-		function disableDarkMode() {
-			document.documentElement.classList.remove('dark-mode');
-			document.documentElement.style.colorScheme = 'light';
-			document.cookie = `${COOKIE_NAME}=false; expires=Fri, 31 Dec 9999 23:59:59 GMT;"`
-
-		}
-		function enableDarkMode() {
-			document.documentElement.classList.add('dark-mode');
+		if (cookie || (window.matchMedia && (window.matchMedia('(prefers-color-scheme: dark)').matches))) {
+			const darkModeToggle = document.getElementById(
+				"darkMode",
+			) as HTMLInputElement;
+			document.documentElement.classList.add("dark-mode");
 			document.documentElement.style.colorScheme = 'dark';
 			document.cookie = `${COOKIE_NAME}=true; expires=Fri, 31 Dec 9999 23:59:59 GMT;"`
 			darkModeToggle.checked = true;
 		}
+		// 	const COOKIE_NAME = 'darkmode';
+		// 	const darkModeToggle = document.getElementById('darkMode');
 
-		// If the user has the dark mode cookie, respect the cookie.
-		if (document.cookie.split(';').some((item) => item.trim().startsWith(`${COOKIE_NAME}=true`))) {
-			enableDarkMode();
+		// 	// Variable to prepare for unchecking the checkbox if the user prefers light mode.
+		// 	let uncheckBox = false;
+		// 	function disableDarkMode() {
+		// 		document.documentElement.classList.remove('dark-mode');
+		// 		document.documentElement.style.colorScheme = 'light';
+		// 		document.cookie = `${COOKIE_NAME}=false; expires=Fri, 31 Dec 9999 23:59:59 GMT;"`
 
-		// If the user has the light mode cookie, respect the cookie.
-		} else if (document.cookie.split(';').some((item) => item.trim().startsWith(`${COOKIE_NAME}=false`))) {
-			disableDarkMode();
-			uncheckBox = true;
-		// If the user doesn't have the cookie, then check the system preferences.
-	} else {
-			// If the user prefers dark mode, or doesn't care, enable dark mode.
-			if (window.matchMedia && (window.matchMedia('(prefers-color-scheme: dark)').matches || window.matchMedia('(prefers-color-scheme: no-preference)').matches)) {
-				enableDarkMode();
-				// User prefers light mode via system preferences.
-			} else {
-				disableDarkMode();
-			}
-		}
-		// Gotta wait to do DOM stuff until DOM is ready
-		addEventListener('DOMContentLoaded', (event) => {
-			// window.darkMode is the <input type="checkbox" />
-			darkModeToggle?.addEventListener("click", () => {
-				if (darkModeToggle?.checked) {
-					enableDarkMode();
-				} else {
-					disableDarkMode();
-				}
-			});
-			// Make sure the UI reflects the current state.
-			if (uncheckBox) {
-				darkModeToggle.checked = false;
-			}
-		});
+		// 	}
+		// 	function enableDarkMode() {
+		// 		document.documentElement.classList.add('dark-mode');
+		// 		document.documentElement.style.colorScheme = 'dark';
+		// 		document.cookie = `${COOKIE_NAME}=true; expires=Fri, 31 Dec 9999 23:59:59 GMT;"`
+		// 		darkModeToggle.checked = true;
+		// 	}
+
+		// 	// If the user has the dark mode cookie, respect the cookie.
+		// 	if (document.cookie.split(';').some((item) => item.trim().startsWith(`${COOKIE_NAME}=true`))) {
+		// 		enableDarkMode();
+
+		// 	// If the user has the light mode cookie, respect the cookie.
+		// 	} else if (document.cookie.split(';').some((item) => item.trim().startsWith(`${COOKIE_NAME}=false`))) {
+		// 		disableDarkMode();
+		// 		uncheckBox = true;
+		// 	// If the user doesn't have the cookie, then check the system preferences.
+		// } else {
+		// 		// If the user prefers dark mode, or doesn't care, enable dark mode.
+		// 		if (window.matchMedia && (window.matchMedia('(prefers-color-scheme: dark)').matches || window.matchMedia('(prefers-color-scheme: no-preference)').matches)) {
+		// 			enableDarkMode();
+		// 			// User prefers light mode via system preferences.
+		// 		} else {
+		// 			disableDarkMode();
+		// 		}
+		// 	}
+		// 	// Gotta wait to do DOM stuff until DOM is ready
+		// 	addEventListener('DOMContentLoaded', (event) => {
+		// 		// window.darkMode is the <input type="checkbox" />
+		// 		darkModeToggle?.addEventListener("click", () => {
+		// 			if (darkModeToggle?.checked) {
+		// 				enableDarkMode();
+		// 			} else {
+		// 				disableDarkMode();
+		// 			}
+		// 		});
+		// 		// Make sure the UI reflects the current state.
+		// 		if (uncheckBox) {
+		// 			darkModeToggle.checked = false;
+		// 		}
+		// 	});
 	</script>
 </head>

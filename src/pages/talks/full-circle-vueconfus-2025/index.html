@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+	<html class="sl-root decks export offline loaded">
+        <base href="/talks/full-circle-vueconfus-2025/">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover, minimal-ui">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<link rel="manifest" href='data:application/manifest+json,{"display": "standalone", "name": "Full-Cirlce: a time traveler&#39;s perspective on Vue"}' />
+		<title>Full-Cirlce: a time traveler&#39;s perspective on Vue</title>
+
+		<meta name="description" content="Charles Villard&#39;s VueConf US 2025 talk about coming back to Vue and exploring the then and now of a ten-year-old stalwart of a frontend framework">
+
+		<link rel="stylesheet" type="text/css" href="lib/offline-v2.css">
+
+
+
+		<!-- User CSS -->
+		<style id="user-css-output" type="text/css">
+			.reveal .slide-background {
+  background-color: #faf4eb;
+}
+.reveal .sl-block-content .then {
+  color: #4fc08d;
+}
+.reveal .sl-block-content .now {
+  background: -webkit-linear-gradient(315deg, #42d392 25%, #647eff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+		</style>
+	</head>
+	<body class="reveal-viewport theme-font-montserrat theme-color-white-blue">
+		<div class="reveal">
+			<div class="slides">
+				<section data-id="388a0501ca580ca1a58418808040a553"><div class="sl-block sl-block-group" data-block-type="group" data-name="group-98550c" data-block-id="2ffd9ad1c36ffb79646140cbad08f8fb"><div class="sl-block-content sl-block-group-content" style="transform-origin: 473.75px 241.5px; z-index: 10;">
+<div class="sl-block" data-block-type="text" style="width: 400px; left: 69.25px; top: 46.5px; height: auto;" data-block-id="67c53575fc85596c720a1b3e712aecf2"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 12;"><h1><span style="font-size:4.0em">👋</span></h1></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-bb4387" data-block-id="ad5d3d9aae9683555302d6fd6619bc58" style="width: 338px; height: 338px; left: 540.25px; top: 72.5px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 11; border-style: solid; border-width: 1px; border-radius: 100px;"><img class="" data-natural-width="1000" data-natural-height="1000" data-lazy-loaded="" data-src="vcus2025-full-cirlce/b7968f0635007444ccf59101403bf331.png"></div></div>
+</div></div>
+<div class="sl-block" data-block-type="text" data-name="text-d9ab60" data-block-id="07464f0e75a1b8a567fd5f85938ebcf7" style="height: auto; width: 800px; left: 73.75px; top: 436.5px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<p style="text-align:left"><span style="font-size:2.0em"><strong>Charles Villard</strong></span></p>
+
+<p style="text-align:left">Frontend Engineer, Hewlett-Packard Enterprise</p>
+
+<p style="text-align:left">🌐  https://www.charlesvillard.co</p>
+</div></div>
+<div class="sl-block" data-block-type="text" data-name="text-bfeeb6" data-block-id="da92349ca2f36d5c15c6d4bdd36e20bb" style="height: auto; width: 337px; left: 553.75px; top: 568.5px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;"><p style="text-align:left">🦋  @charlesvillard.co</p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 337px; left: 73.75px; top: 614.5px;" data-block-id="44f59c2b2db8a50603cd6249b06b52c8" data-name="text-297101"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15;"><p style="text-align:left">😶  @cdvillard</p></div></div></section><section data-id="f128b4bbcc38cce49af7f7fa3e1ad1e2"><div class="sl-block" data-block-type="image" style="width: 588px; height: 313.933px; left: 40.325px; top: 40.411px; min-width: 1px; min-height: 1px;" data-name="image-7354ce" data-block-id="ffed0d941836dbf90284aeb2fd735482"><div class="sl-block-content" style="z-index: 10;"><img class="" data-natural-width="2200" data-natural-height="1069" data-crop-x="0.352778" data-crop-y="0.313638" data-crop-width="0.342657" data-crop-height="0.376499" style="left: -605px; top: -262px; width: 1716px; height: 834px;" data-lazy-loaded="" data-src="vcus2025-full-cirlce/e5d0f8631742c4fdf5b5779e29246735.png"></div></div>
+<div class="sl-block" data-block-type="image" style="width: 558.175px; height: 313.937px; left: 367.825px; top: 179.191px; min-width: 1px; min-height: 1px;" data-name="image-861951" data-block-id="e3d28fe643537f95e990f77d2ef6c401"><div class="sl-block-content" style="z-index: 11;"><img class="" data-natural-width="1906" data-natural-height="1072" data-lazy-loaded="" data-src="vcus2025-full-cirlce/ede83f7db3fea4908b75ca490fb1bc4b.png"></div></div>
+<div class="sl-block" data-block-type="image" style="width: 558.175px; height: 354.308px; left: 161.825px; top: 329.16px; min-width: 1px; min-height: 1px;" data-name="image-8966ba" data-block-id="7140fe792569784f8aab6745b8faa874"><div class="sl-block-content" style="z-index: 12;"><img class="" data-natural-width="1191" data-natural-height="756" data-lazy-loaded="" data-src="vcus2025-full-cirlce/e89d2a86d88105137526aa1445cd4085.png"></div></div></section><section data-id="5d4f6873f60248ff511abd831f13d63c" data-auto-animate=""><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 189px; height: auto;" data-block-id="e1720b60e7e8ff42650aecc2680afca3" data-name="text-704b9c"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;"><h1>Full-Circle</h1></div></div>
+<div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 287px; height: auto;" data-block-id="c9b61c38dbebe775036ab8c50ccb7f48" data-name="text-b72978"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Subtitle" style="z-index: 11;"><h2>A time-traveler's perspective on Vue</h2></div></div></section><section class="stack" data-id="e204dcb14e18385f6d8d3ba8f06839e5"><section data-id="2ab156028893f3bb7a13de864daf3735"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 178.5px; height: auto;" data-block-id="66e5540b327e649f38b3795e639f7063"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h1><span style="font-size:1.4em">What?!</span></h1>
+
+<h1>A history lesson?!<br>
+Why talk about this?!</h1>
+</div></div></section><section data-id="144c7ec50c18be1e7175f10705763954"><div class="sl-block" data-block-type="image" data-name="image-681cfc" style="width: 841.929px; height: 593.784px; left: 59.0355px; top: 36.2px; min-width: 1px; min-height: 1px;" data-block-id="554da75093ba1c954b855027de425234"><div class="sl-block-content" style="z-index: 10;"><img class="" data-natural-width="1284" data-natural-height="924" data-lazy-loaded="" data-crop-x="0" data-crop-y="0.009977" data-crop-width="1" data-crop-height="0.980045" style="left: 0px; top: -6px; width: 842px; height: 606px;" data-src="vcus2025-full-cirlce/be610d5cd8e5a42ad5d93c9166a47e70.png"></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-f95d26" style="height: auto; width: 888px; left: 40px; top: 629.984px;" data-block-id="0b7adb4b94376cd899f32eb7b8bcea77"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; background-color: rgb(250, 244, 235);"><p style="text-align:left"><span style="font-size:0.5em">https://www.vuemastery.com/conferences/vuejs-live-2024/10-years-of-vue-the-past-and-the-future/</span></p></div></div></section><section data-id="9d5635ed95293407418ab2ea72cd1e25"><div class="sl-block" data-block-type="image" data-name="image-681cfc" data-block-id="fb4f219c675f0dd5face8662af6b5e61" style="width: 841.929px; height: 593.784px; left: 59.0355px; top: 36.2px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 10;"><img class="" data-natural-width="854" data-natural-height="1329" data-lazy-loaded="" data-crop-x="0.016355" data-crop-y="0" data-crop-width="0.983645" data-crop-height="0.445784" style="left: -14px; top: 0px; width: 856px; height: 1332px;" data-src="vcus2025-full-cirlce/61e1cd40ed3872eb81041041f94b05f7.png"></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-f95d26" style="height: auto; width: 645px; left: 40px; top: 629.984px;" data-block-id="f6cf3e6a37a8407c8160093e35372257"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; background-color: rgb(250, 244, 235);"><p style="text-align:left">https://blog.vuejs.org/posts/vue-3-one-piece</p></div></div></section><section data-id="2214a67b55a9d9d2ed0998dc133753bf"><div class="sl-block" data-block-type="image" data-name="image-cc73de" data-block-id="f37eeaafa016ae6c73481188dec500d7" style="width: 896.728px; height: 588px; left: 31.636px; top: 41px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 10;"><img class="" data-natural-width="1837" data-natural-height="1350" data-lazy-loaded="" data-crop-x="0" data-crop-y="0" data-crop-width="1" data-crop-height="0.892261" style="left: 0px; top: 0px; width: 897px; height: 659px;" data-src="vcus2025-full-cirlce/814e9611d6fd73c65341fb47d8a5cc31.png"></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-f95d26" data-block-id="847b62b9e337c132734161211c6f4878" style="height: auto; width: 600px; left: 31.636px; top: 630px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; background-color: rgb(250, 244, 235);"><p style="text-align: left;">https://www.monterail.com/stateofvue</p></div></div></section><section data-id="439ea91a6ad960f50d844bd0b35ff2ad">
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-a7e108" data-block-id="12c88235bed1bfb319146f6c5ec5e59e"><div class="sl-block-content sl-block-group-content fragment fade-right" style="transform-origin: 469.497px 140px; z-index: 15;" data-fragment-index="0">
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-b66f0d" data-block-id="12d811cc93b6cc6ade891f047940a544"><div class="sl-block-content sl-block-group-content" style="transform-origin: 151.989px 140px; z-index: 16;">
+<div class="sl-block" data-block-type="image" data-name="image-d90fb1" data-block-id="fbd98cf9c70f450403a84e7a5d17affa" style="width: 185.989px; height: 164px; left: 58.9945px; top: 58px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 17;"><img class="" data-natural-width="600" data-natural-height="600" data-crop-x="0.161667" data-crop-y="0.201667" data-crop-width="0.676667" data-crop-height="0.596667" style="left: -44px; top: -55px; width: 275px; height: 275px;" data-lazy-loaded="" data-src="vcus2025-full-cirlce/032e90ed8d1e8450c80b50162dc57a10.png"></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-c0edda" data-block-id="d4585c7e236f361bc7a4600f288f77a4" style="height: auto; width: 69px; left: 169.994px; top: 183px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 18; color: rgb(53, 73, 94);"><p><strong>v2.0</strong></p></div></div>
+</div></div>
+<div class="sl-block" data-block-type="text" data-name="text-f51b41" data-block-id="145f0c76f8337412bd3a35ebebbff22a" style="height: auto; width: 600px; left: 280px; top: 97.0002px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 19;"><p style="text-align: left;"><span style="font-size:2.0em">September 2016</span></p></div></div>
+</div></div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-ff61a5" data-block-id="18970c86b0da0a0d75093ee9f7662350"><div class="sl-block-content sl-block-group-content fragment fade-right" style="transform-origin: 457.44px 560px; z-index: 20;" data-fragment-index="2">
+<div class="sl-block sl-block-group" data-block-type="group" data-block-id="1e670de5380849b15a398dbaeb455268" data-name="group-d53ddd"><div class="sl-block-content sl-block-group-content" style="transform-origin: 151.989px 560px; z-index: 21;">
+<div class="sl-block" data-block-type="image" style="width: 185.989px; height: 164px; left: 58.9945px; top: 478px; min-width: 1px; min-height: 1px;" data-origin-id="46f20e51f7e22c5c3b601d9709e2d81f" data-block-id="ea5a27508461ae2bb970ba5bf39dfa96" data-name="image-0b41b9"><div class="sl-block-content" style="z-index: 22;"><img class="" data-natural-width="600" data-natural-height="600" data-crop-x="0.161667" data-crop-y="0.201667" data-crop-width="0.676667" data-crop-height="0.596667" style="left: -44px; top: -55px; width: 275px; height: 275px;" data-lazy-loaded="" data-src="vcus2025-full-cirlce/032e90ed8d1e8450c80b50162dc57a10.png"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 69px; left: 169.994px; top: 603px;" data-origin-id="d837f6898db1a421d17c6b143977594a" data-block-id="1a0e2564265fc09cd0494ae37e2c66f1" data-name="text-c82701"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 23; color: rgb(53, 73, 94);"><p><strong>v3.0</strong></p></div></div>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 575.885px; left: 280px; top: 525px;" data-block-id="8b1ee64ffdc802a1d846a9e6d57b8a34" data-name="text-c43a39"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 24;"><p style="text-align: left;"><span style="font-size:2.0em">September 2020</span></p></div></div>
+</div></div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-ab5191" data-block-id="fe9ab4b3635c1541ffbbd2083d506f93"><div class="sl-block-content sl-block-group-content fragment fade-right" style="transform-origin: 469.497px 350px; z-index: 10;" data-fragment-index="1">
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 280px; top: 311px;" data-block-id="31f470f5b5fb4d17da4db54867700a63" data-name="text-6605dc"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;"><p style="text-align:left"><span style="font-size:2.0em">February 2019</span></p></div></div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-034432" data-block-id="0e2fb78c978a8cb0d4192db58825723c"><div class="sl-block-content sl-block-group-content" style="transform-origin: 151.989px 350px; z-index: 11;">
+<div class="sl-block" data-block-type="text" style="height: auto; width: 69px; left: 169.994px; top: 393px;" data-origin-id="d4585c7e236f361bc7a4600f288f77a4" data-block-id="d837f6898db1a421d17c6b143977594a" data-name="text-b7540b"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; color: rgb(53, 73, 94);"><p><strong>v2.6</strong></p></div></div>
+<div class="sl-block" data-block-type="image" style="width: 185.989px; height: 164px; left: 58.9945px; top: 268px; min-width: 1px; min-height: 1px;" data-origin-id="fbd98cf9c70f450403a84e7a5d17affa" data-block-id="46f20e51f7e22c5c3b601d9709e2d81f" data-name="image-9cf574"><div class="sl-block-content" style="z-index: 12;"><img class="" data-natural-width="600" data-natural-height="600" data-crop-x="0.161667" data-crop-y="0.201667" data-crop-width="0.676667" data-crop-height="0.596667" style="left: -44px; top: -55px; width: 275px; height: 275px;" data-lazy-loaded="" data-src="vcus2025-full-cirlce/032e90ed8d1e8450c80b50162dc57a10.png"></div></div>
+</div></div>
+</div></div></section><section data-id="22b04483bb7477dd4e467783b100d528"><div class="sl-block" data-block-type="text" style="width: 864px; left: 38px; top: 53.5px; height: auto;" data-block-id="cd91c0954b0a1e77acecf5bb145c7947"><div class="sl-block-content" data-placeholder-tag="h1" style="font-size: 200%; text-align: left; z-index: 10;" data-placeholder-text="Text"><h2>Engineering decisions<br>
+have long shelf lives.</h2></div></div></section><section data-id="da04659ed03a51f791cab4c6dda0dc99"><div class="sl-block" data-block-type="text" style="width: 930px; left: 0px; top: 133px; height: auto;" data-block-id="7d9ca9e891c4d3440ea220dc0959c9fc"><div class="sl-block-content" data-placeholder-tag="h1" style="font-size: 200%; text-align: left; z-index: 10;" data-placeholder-text="Text"><ul>
+	<li>
+	<p><span style="font-size:1.2em">Codebase scope/size</span></p>
+	</li>
+	<li>
+	<p><span style="font-size:1.2em">Time and budget</span></p>
+	</li>
+	<li>
+	<p><span style="font-size:1.2em">v2-locked dependencies</span></p>
+	</li>
+	<li>
+	<p><span style="font-size:1.2em">Service-level agreements</span></p>
+	</li>
+</ul></div></div></section><section data-id="e8a3462034aff7c8114c280cbf55134f"><div class="sl-block" data-block-type="image" data-name="image-4fae25" data-block-id="bc4bbd5fbd2dffbb10ece0c3e6078489" style="width: 411.588px; height: 618px; left: 274.206px; top: 41px; min-width: 1px; min-height: 1px;"><div class="sl-block-style" style="z-index: 10; transform: rotate(0deg);"><div class="sl-block-content" style="z-index: 10;"><img class="" data-natural-width="333" data-natural-height="500" data-lazy-loaded="" data-src="vcus2025-full-cirlce/2b75209eec3bcb30c4eba124dfac97f4.png"></div></div></div></section><section data-id="009aacfa02a0eab9e2d3e9320f81d42c"><div class="sl-block" data-block-type="text" style="width: 864px; left: 48px; top: 135.75px; height: auto;" data-block-id="1bbee432b416bdebbbc9e7fff45e48b1"><div class="sl-block-content fragment" data-placeholder-tag="h1" style="font-size: 200%; text-align: left; z-index: 10;" data-placeholder-text="Text" data-fragment-index="0"><p><span style="font-size:1.2em">This talk won't make you<br>
+an expert on anything!</span></p></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-b9c29a" data-block-id="9f78262bf2d172b79e11f755b2eda66d" style="height: auto; width: 853px; left: 48px; top: 420px;"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;" data-animation-trigger="click" data-animation-trigger-id="self" data-fragment-index="2"><p style="text-align:left"><span style="font-size:2.0em"><span style="color:rgb(0, 0, 0); text-align:left">But you'll know where to look.</span></span></p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 832px; left: 48px; top: 332px;" data-block-id="d273bf2982f8721598dd36dc7d6f8493" data-name="text-210d75"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;" data-animation-trigger="click" data-animation-trigger-id="self" data-fragment-index="1"><p style="text-align:left"><span style="font-size:2.0em"><span style="color:rgb(0, 0, 0); text-align:left">I guarantee it!</span></span></p></div></div></section></section><section data-id="b2e16434365c5c8be697ca2493c73614"><div class="sl-block" data-block-type="text" data-name="text-623e1b" data-block-id="189982ca2bbe86f62b140520944fa2a2" style="height: auto; width: 400px; left: 43.505px; top: 280px;">
+    <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; line-height: 1.69;" data-has-line-height="">
+        <ul>
+            <li><span style="font-size:1.6em">Initialization</span></li>
+            <li><span style="font-size:1.6em">Components</span></li>
+            <li><span style="font-size:1.6em">Developer tools</span></li>
+            <li><span style="font-size:1.6em">Routing</span></li>
+        </ul>
+    </div>
+</div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 453px; left: 453px; top: 280px;" data-block-id="2f94649e58ff4823e8e8a0c449e11510" data-name="text-cd50df">
+    <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; line-height: 1.69;" data-has-line-height="">
+        <ul>
+            <li><span style="font-size:1.6em">Client-side State</span></li>
+            <li><span style="font-size:1.6em">Async State</span></li>
+            <li><span style="font-size:1.6em">Meta-Frameworks</span></li>
+            <li><span style="font-size:1.6em">Testing</span></li>
+        </ul>
+    </div>
+</div>
+
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-615538" data-block-id="1be30fb8c54480dacc47820cf0ad78c4">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 240px 140px; z-index: 12;">
+        <div class="sl-block then" data-block-type="text" style="height: auto; width: 87.005px; left: 196.498px; top: 73.25px;" data-block-id="8c8cc02d32fb2e068d5539f492bea50a" data-name="text-20e5da">
+            <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; color: rgb(79, 192, 141);">
+                <p><strong>THEN</strong></p>
+            </div>
+        </div>
+        <div class="sl-block" data-block-type="text" style="height: auto; width: 134.858px; left: 172.571px; top: 92.75px;" data-origin-id="1a0e2564265fc09cd0494ae37e2c66f1" data-name="text-c82701" data-block-id="e03e3606381a33dd6e6d12118af43d7b">
+            <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; color: rgb(53, 73, 94); font-size: 293%;">
+                <p><strong>v2</strong></p>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="sl-block sl-block-group" data-block-type="group" data-block-id="22bb3ac8697a4e7f4f409761b420b150" data-name="group-ca7d69">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 679.5px 140px; z-index: 16;">
+        <div class="sl-block then" data-block-type="text" style="height: auto; width: 87.005px; left: 635.998px; top: 73.25px;" data-origin-id="8c8cc02d32fb2e068d5539f492bea50a" data-block-id="55c6dfa74e5615cc06543b2189140232" data-name="text-bddd01">
+            <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 18; color: rgb(79, 192, 141);">
+                <p><strong class="now">NOW</strong></p>
+            </div>
+        </div>
+        <div class="sl-block" data-block-type="text" style="height: auto; width: 134.858px; left: 612.071px; top: 92.75px;" data-origin-id="e03e3606381a33dd6e6d12118af43d7b" data-block-id="aa9792b57af59d45559aecf9e1134eed" data-name="text-9c0390">
+            <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 17; color: rgb(53, 73, 94); font-size: 293%;">
+                <p><strong class="now">v3</strong></p>
+            </div>
+        </div>
+    </div>
+</div></section><section class="stack" data-id="3ad95434e50fae5b56962e962f5b4945"><section data-id="ca64d7d85f4e22415451ee55f298d8f5"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 266px; height: auto;" data-block-id="8a2153571f5a20c1fd0a520ac6587116"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;"><h1>Starting a new<br>
+Vue Project</h1></div></div></section><section data-id="ce6d58320c52b92aef6cd54b63a952c8"><div class="sl-block" data-block-type="text" style="width: 860.623px; left: 49.6885px; top: 210px; height: auto;" data-block-id="65b598c280b899d9d32548b21cb2c6fb">
+    <div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 10;"><h2>Both offer script tag includes</h2></div>
+</div>
+
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-615538" data-block-id="4dfc570a38f7ee4bf32aa34da11bdb3f">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 748.141px 70px; z-index: 11;">
+        <div class="sl-block then" data-block-type="text" style="height: auto; width: 66.1962px; left: 715.043px; top: 35.75px;" data-name="text-20e5da" data-origin-id="8c8cc02d32fb2e068d5539f492bea50a" data-block-id="da3dd4197ae4dbdb19acd93f98496331">
+            <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; color: rgb(79, 192, 141); font-size: 70%;"><p><strong>THEN</strong></p></div>
+        </div>
+        <div class="sl-block" data-block-type="text" style="height: auto; width: 63.0244px; left: 716.63px; top: 55.25px;" data-origin-id="e03e3606381a33dd6e6d12118af43d7b" data-name="text-c82701" data-block-id="9488ac706dcd8296ab30d46a2520af82">
+            <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; color: rgb(53, 73, 94); font-size: 125%;"><p><strong>v2</strong></p></div>
+        </div>
+
+    </div>
+</div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-ca7d69" data-block-id="5c05a60b1b46cf81011ea8a08b0cc4f9">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 850.154px 70px; z-index: 14;">
+        <div class="sl-block then" data-block-type="text" style="height: auto; width: 59.6935px; left: 820.307px; top: 35.75px;" data-origin-id="55c6dfa74e5615cc06543b2189140232" data-name="text-bddd01" data-block-id="d9073e343391fd03471814de882f69c0">
+            <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16; color: rgb(79, 192, 141); font-size: 70%;">
+                <p><strong class="now">NOW</strong></p>
+            </div>
+        </div>
+        <div class="sl-block" data-block-type="text" style="height: auto; width: 58.6178px; left: 820.307px; top: 55.25px;" data-origin-id="aa9792b57af59d45559aecf9e1134eed" data-name="text-9c0390" data-block-id="a3599fa795b744861aa88ae9edb1cc73">
+            <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15; color: rgb(53, 73, 94); font-size: 125%;">
+                <p><strong class="now">v3</strong></p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 40.6526px; left: 779.654px; top: 42.5px;" data-name="text-94f160" data-block-id="570f7cf7bc5250e983802058d1f82104"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 17; font-size: 125%;"><p><strong>+</strong></p></div></div>
+<div class="sl-block" data-block-type="code" data-name="code-4bad6f" data-block-id="280d6069921b3aa420dcd9274b7039bb" style="width: 861.088px; height: 236.273px; left: 49.456px; top: 294.019px;"><div class="sl-block-content notranslate" data-highlight-theme="zenburn" data-code-frame="none" style="z-index: 18;"><pre style="font-size: 18px; line-height: 22px; tab-size: 4;" class="xml"><code data-line-numbers="" style="padding: 15px;">&lt;!-- Vue v2 Development --&gt;
+&lt;script src="https://cdn.jsdelivr.net/npm/vue@2.7.16/dist/vue.js"&gt;&lt;/script&gt;
+
+&lt;!-- Vue v2 Production --&gt;
+&lt;script src="https://cdn.jsdelivr.net/npm/vue@2.7.16"&gt;&lt;/script&gt;
+
+&lt;!-- Vue v3 Global Build --&gt;
+&lt;script src="https://unpkg.com/vue@3/dist/vue.global.js"&gt;&lt;/script&gt;
+</code></pre></div></div></section><section data-id="4d86a20811559c43f65b806c92229af3"><div class="sl-block" data-block-type="text" style="width: 413px; left: 25.0984px; top: 254.946px; height: auto;" data-block-id="52250867e6479c7324e9fb95b0395a0c"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 10;"><p><span style="font-size:1.4em"><code>petite-vue</code></span></p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 501.158px; left: 25.0984px; top: 630px;" data-name="text-9d2c98" data-block-id="36c94dfa30819de204520495f34815c4"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;"><p>https://github.com/vuejs/petite-vue</p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 294.902px; left: 25.0984px; top: 328.054px;" data-name="text-da879f" data-block-id="7a5ffadedd75ee2b314afd6bcc0fef80"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;"><p style="text-align: left;">Subset of Vue 3 features optimized for progressive enhancement</p></div></div>
+<div class="sl-block" data-block-type="code" data-name="code-89f600" data-block-id="bb8b857b686f13f91d0801814d51ea7f" style="width: 550.126px; height: 435.607px; left: 364.937px; top: 132.196px;"><div class="sl-block-content notranslate" data-highlight-theme="zenburn" data-code-frame="none" style="z-index: 13;"><pre class="xml" style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">&lt;script src="https://unpkg.com/petite-vue"&gt;&lt;/script&gt;
+&lt;script&gt;
+  PetiteVue.createApp({
+    // exposed to all expressions
+    count: 0,
+    // getters
+    get plusOne() {
+      return this.count + 1
+    },
+    // methods
+    increment() {
+      this.count++
+    }
+  }).mount()
+&lt;/script&gt;
+
+&lt;!-- v-scope value can be omitted --&gt;
+&lt;div v-scope&gt;
+  &lt;p&gt;{{ count }}&lt;/p&gt;
+  &lt;p&gt;{{ plusOne }}&lt;/p&gt;
+  &lt;button @click="increment"&gt;increment&lt;/button&gt;
+&lt;/div&gt;</code></pre></div></div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-ca7d69" data-block-id="2accfad71365e2d0b49049b6d932b849">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 850.154px 70px; z-index: 14;">
+        <div class="sl-block then" data-block-type="text" style="height: auto; width: 59.6935px; left: 820.307px; top: 35.75px;" data-name="text-bddd01" data-origin-id="2f820e25112f94b8ff239dd7779263d0" data-block-id="5f60032989ee40c0d1edcb31f87c4fea">
+            <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16; color: rgb(79, 192, 141); font-size: 70%;">
+                <p><strong class="now">NOW</strong></p>
+            </div>
+        </div>
+        <div class="sl-block" data-block-type="text" style="height: auto; width: 58.6178px; left: 820.307px; top: 55.25px;" data-name="text-9c0390" data-origin-id="3034fc5081dcac19be172bd91860ba12" data-block-id="fb6ea0d6c4042fe51b79e268e0e058fd">
+            <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15; color: rgb(53, 73, 94); font-size: 125%;">
+                <p><strong class="now">v3</strong></p>
+            </div>
+        </div>
+    </div>
+</div></section><section data-id="f55aafaf9329114c933478a8d71c7650"><div class="sl-block" data-block-type="text" style="width: 413px; left: 33.5px; top: 235px; height: auto;" data-block-id="2067a9bc3d5f10e0b8bea502dc63dd69"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 13;"><h2>Vue CLI</h2></div></div>
+<div class="sl-block" data-block-type="text" style="width: 329px; left: 33.5px; top: 309px; height: auto;" data-block-id="8de3c8b6b2ebf0b3b5c0bee81f07be2b"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec metus justo. Aliquam erat volutpat." style="z-index: 14; text-align: left;"><p><span style="color:rgb(44, 62, 80)">Full system for rapid Vue.js development</span></p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 33.5px; top: 630px;" data-name="text-de71cc" data-block-id="8e57ab608eadb591ee0245978f2b9bb5"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 18;"><p style="text-align: left;">https://cli.vuejs.org/</p></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-849eb5" data-block-id="eeccecb7aa827ca52ddb8c43941e2afc" style="width: 546px; height: 509px; left: 378px; top: 121px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 19;"><img class="" data-natural-width="546" data-natural-height="509" data-lazy-loaded="" data-src="vcus2025-full-cirlce/e07d62f8693efb2408fa944124618977.png"></div></div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-615538" data-block-id="aaeff04742165a78d450518ba1bcf711">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 849.616px 70px; z-index: 10;">
+        <div class="sl-block then" data-block-type="text" style="height: auto; width: 66.1962px; left: 816.518px; top: 35.75px;" data-name="text-20e5da" data-origin-id="da3dd4197ae4dbdb19acd93f98496331" data-block-id="f3f7b892bbc37d96c14b4a97c4bb4a92">
+            <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; color: rgb(79, 192, 141); font-size: 70%;"><p><strong>THEN</strong></p></div>
+        </div>
+        <div class="sl-block" data-block-type="text" style="height: auto; width: 63.0244px; left: 818.105px; top: 55.25px;" data-origin-id="9488ac706dcd8296ab30d46a2520af82" data-name="text-c82701" data-block-id="fbad5e57538c9ba2d984ced803344f2c">
+            <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; color: rgb(53, 73, 94); font-size: 125%;"><p><strong>v2</strong></p></div>
+        </div>
+
+    </div>
+</div></section><section data-id="0a13a80d3bda32338bc42eb30413a81b"><div class="sl-block" data-block-type="text" style="width: 413px; left: 33.5px; top: 235px; height: auto;" data-block-id="8d43d92cc4d7028ace07451432e90c66"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 10;"><h2><code>create-vue</code></h2></div></div>
+<div class="sl-block" data-block-type="text" style="width: 329px; left: 33.5px; top: 310px; height: auto;" data-block-id="ba565880951142514ecfa11f4bd945d0"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec metus justo. Aliquam erat volutpat." style="z-index: 11; text-align: left;"><p><span style="color:rgb(33, 53, 71)">Official Vite-powered project scaffolding tool</span></p></div></div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-ca7d69" data-block-id="428c70c3d216b8b89e7fbbe21c6ccd15">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 850.154px 70px; z-index: 12;">
+        <div class="sl-block then" data-block-type="text" style="height: auto; width: 59.6935px; left: 820.307px; top: 35.75px;" data-name="text-bddd01" data-block-id="2f820e25112f94b8ff239dd7779263d0">
+            <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; color: rgb(79, 192, 141); font-size: 70%;">
+                <p><strong class="now">NOW</strong></p>
+            </div>
+        </div>
+        <div class="sl-block" data-block-type="text" style="height: auto; width: 58.6178px; left: 820.307px; top: 55.25px;" data-name="text-9c0390" data-block-id="3034fc5081dcac19be172bd91860ba12">
+            <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; color: rgb(53, 73, 94); font-size: 125%;">
+                <p><strong class="now">v3</strong></p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 33.5px; top: 630px;" data-name="text-de71cc" data-block-id="b7b07544ce5fb72e975d6a7a1761d64e"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15;"><p style="text-align:left">https://github.com/vuejs/create-vue</p></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-981052" data-block-id="ef5f2cbe75c2109657e3bf012538cfa8" style="width: 523px; height: 513px; left: 401px; top: 119px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 17;"><img class="" data-natural-width="523" data-natural-height="513" data-lazy-loaded="" data-src="vcus2025-full-cirlce/ae160a55c14ac9b6c256d96f1148a4d3.png"></div></div></section></section><section class="stack" data-id="d23c356cdd433b3e52cf955dd230aca4"><section data-id="698af05556feb39f12956afe3a3db332"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 266px; height: auto;" data-block-id="7cda0487b3ff9d759f1fab9d4a5bdbc5"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;"><h1>Building Vue Components</h1></div></div></section><section data-id="b54baec636914829af6b269960c8242b"><div class="sl-block" data-block-type="image" data-name="image-ff6a05" data-block-id="5335a3448c1906478b27ae95ff807a3e" style="width: 765.324px; height: 503px; left: 97.338px; top: 70px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 10;"><img class="" data-natural-width="601" data-natural-height="395" data-lazy-loaded="" data-src="vcus2025-full-cirlce/d7d4a487ea3ceff535df077b23fc3b7a.png"></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-b94c9f" data-block-id="ecafa4a67386ca314b7deeb627f6e8ea" style="height: auto; width: 836px; left: 44px; top: 630px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;"><p>https://nitter.net/youyuxi/status/1902652712061395204#m</p></div></div></section><section data-id="ddeef6767ac084b983e5665ff7b6f898"><div class="sl-block" data-block-type="text" style="width: 413px; left: 33.75px; top: 130px; height: auto;" data-block-id="49e89f17567f940496014cda2694339d"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 13;"><h2>Vue 2.6.x</h2></div></div>
+<div class="sl-block" data-block-type="text" style="width: 436px; left: 33.75px; top: 204px; height: auto;" data-block-id="b5af987508a1bdfa2b35fda328a2ebaf"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec metus justo. Aliquam erat volutpat." style="z-index: 14; text-align: left; line-height: 1.495;" data-has-line-height="">
+<p><span style="font-size:1.0em"><span style="color:rgb(44, 62, 80)">Established DX Patterns</span></span></p>
+
+<ul>
+	<li><span style="font-size:1.0em"><span style="color:rgb(44, 62, 80)">​Options API</span></span></li>
+	<li><span style="font-size:1.0em">Reactivity via <code>Object.defineProperty</code></span></li>
+	<li><span style="font-size:1.0em">Two-way data-binding</span></li>
+	<li><span style="font-size:1.0em"><code>v-</code> directives</span></li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 33.5px; top: 630px;" data-name="text-de71cc" data-block-id="7ef32b3f6b8eff08571086b91cfdf094"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15;"><p style="text-align:left">https://v2.vuejs.org/</p></div></div>
+
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-615538" data-block-id="81ed74a49f787050cf12e7fcb49f135e">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 849.616px 70px; z-index: 10;">
+        <div class="sl-block then" data-block-type="text" style="height: auto; width: 66.1962px; left: 816.518px; top: 35.75px;" data-name="text-20e5da" data-block-id="23efc73b51f771e87110b46efeb2977b">
+            <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; color: rgb(79, 192, 141); font-size: 70%;"><p><strong>THEN</strong></p></div>
+        </div>
+        <div class="sl-block" data-block-type="text" style="height: auto; width: 63.0244px; left: 818.105px; top: 55.25px;" data-name="text-c82701" data-block-id="5e95a794a5138236f16b350087721649">
+            <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; color: rgb(53, 73, 94); font-size: 125%;"><p><strong>v2</strong></p></div>
+        </div>
+
+    </div>
+</div>
+<div class="sl-block" data-block-type="code" data-name="code-1b84d9" data-block-id="c30b05debddfc640952927511c47445a" style="width: 456.5px; height: 341px; left: 469.75px; top: 130px;"><div class="sl-block-content notranslate" data-highlight-theme="zenburn" data-code-frame="none" style="z-index: 17;"><pre class="xml" style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="" style="padding: 15px;">// Hello.vue
+
+&lt;template&gt;
+	&lt;p&gt;
+		{{ message }}
+	&lt;/p&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+	const app = new Vue({
+		el: "#app",
+		data: {
+			message: "Hello, VueConf.US!"
+		}
+	})
+&lt;/script&gt;</code></pre></div></div></section><section data-id="5d0373c5a8f9f1e8978d287ad0514984"><div class="sl-block" data-block-type="text" style="width: 413px; left: 33.5px; top: 140px; height: auto;" data-block-id="ec7c8c60464c074e25bcb4659f69a700"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 10;"><h2>Vue 3.5.x</h2></div></div>
+<div class="sl-block" data-block-type="text" style="width: 399px; left: 33.5px; top: 214px; height: auto;" data-block-id="b864b2ca4d12589f4839b90621d3a995"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec metus justo. Aliquam erat volutpat." style="z-index: 11; text-align: left; line-height: 1.43;" data-has-line-height="">
+<p><span style="font-size:1.0em"><span style="color:rgb(44, 62, 80)">Full TypeScript Rewrite</span></span></p>
+
+<ul>
+	<li><span style="font-size:1.0em"><span style="color:rgb(44, 62, 80)">​Composition API</span></span></li>
+	<li>Proxies-based reactivity</li>
+	<li><span style="font-size:1.0em">Improved custom element support</span></li>
+	<li><span style="font-size:1.0em">Teleport</span></li>
+	<li><span style="font-size:1.0em">Fragments</span></li>
+	<li><span style="font-size:1.0em">Suspense</span></li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 33.5px; top: 630px;" data-name="text-de71cc" data-block-id="eaafed2e3c53cc213e08958272250225"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;"><p style="text-align:left">https://vuejs.org/</p></div></div>
+
+<div class="sl-block" data-block-type="code" data-name="code-1b84d9" style="width: 493.5px; height: 341px; left: 432.5px; top: 140px;" data-block-id="a7d8ff138b63c59f8947bb44cfe52ce5"><div class="sl-block-content notranslate" data-highlight-theme="zenburn" data-code-frame="none" style="z-index: 13;"><pre class="xml" style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="" style="padding: 15px;">// Hello-v3.vue
+
+&lt;script setup lang="ts"&gt;
+	import { ref } from 'vue';
+
+	const message = ref("Hello, VueConf.US!");
+&lt;/script&gt;
+
+&lt;template&gt;
+	&lt;p&gt;
+		{{ message }}
+	&lt;/p&gt;
+&lt;/template&gt;</code></pre></div></div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-ca7d69" data-block-id="4a84d075eb40a7bd01554b7619aa1fb3">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 850.154px 70px; z-index: 14;">
+        <div class="sl-block then" data-block-type="text" style="height: auto; width: 59.6935px; left: 820.307px; top: 35.75px;" data-name="text-bddd01" data-origin-id="5067a6ce07718f8383151b75ba2fb1fc" data-block-id="d82a8b1bfd79668412a3f874a7fdd47a">
+            <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16; color: rgb(79, 192, 141); font-size: 70%;">
+                <p><strong class="now">NOW</strong></p>
+            </div>
+        </div>
+        <div class="sl-block" data-block-type="text" style="height: auto; width: 58.6178px; left: 820.307px; top: 55.25px;" data-name="text-9c0390" data-origin-id="bdc1ac2afe5004f7893bd381257a0f0d" data-block-id="87b7eaea407780134f46ded5ff9815d4">
+            <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15; color: rgb(53, 73, 94); font-size: 125%;">
+                <p><strong class="now">v3</strong></p>
+            </div>
+        </div>
+    </div>
+</div></section><section data-id="22abb138b33996519f6aaecac3509536"><div class="sl-block" data-block-type="text" style="width: 413px; left: 33.5px; top: 140px; height: auto;" data-block-id="ddcfebaaca10ecf985ec63239867e54f"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 10;"><h2>Vue 2.7</h2></div></div>
+<div class="sl-block" data-block-type="text" style="width: 827px; left: 33.5px; top: 214px; height: auto;" data-block-id="737c234856a13a54b8963ce89c73e228"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec metus justo. Aliquam erat volutpat." style="z-index: 11; text-align: left; line-height: 1.43;" data-has-line-height="">
+<p><span style="font-size:1.0em"><span style="color:rgb(44, 62, 80)">Backporting v3 features</span></span></p>
+
+<ul>
+	<li><span style="font-size:1.0em"><span style="color:rgb(44, 62, 80)">​Composition API based on <code>Object.defineProperty</code></span></span></li>
+	<li><span style="font-size:1em">v-bind for CSS</span></li>
+	<li><code>&lt;script setup&gt;</code></li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 735px; left: 33.5px; top: 630px;" data-name="text-de71cc" data-block-id="6ed38bae60cca6375a1f2dad39c14fbe"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;"><p style="text-align:left">https://v2.vuejs.org/v2/guide/migration-vue-2-7</p></div></div>
+
+</section><section data-id="4fff28645a3277341b2b85d7c78507dd">
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 892px; left: 32.5px; top: 597px;" data-name="text-de71cc" data-block-id="6a270828d04361b35d69dfea48e4c338"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;" data-fragment-index="1"><p style="text-align:left"><span class="link-annotation-unknown-block-id-1141577772">https://www.herodevs.com/blog-posts/what-it-really-takes-to-migrate-from-vue-2-to-vue-3</span></p></div></div>
+
+<div class="sl-block" data-block-type="image" data-name="image-370d82" data-block-id="cf8d0978188ac4d4dca71a1d9b1408e2" style="width: 703.943px; height: 338.032px; left: 39.557px; top: 40.984px; min-width: 1px; min-height: 1px;"><div class="sl-block-content fragment" style="z-index: 11;" data-fragment-index="0"><img class="" data-natural-width="1010" data-natural-height="485" data-lazy-loaded="" data-src="vcus2025-full-cirlce/b1552b6cba24d0fc3d9f8099aa1e211a.png"></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-e30456" data-block-id="c43640bd3ed040767be67efa38915274" style="width: 583px; height: 352.143px; left: 333.5px; top: 227.857px; min-width: 1px; min-height: 1px;"><div class="sl-block-content fragment" style="z-index: 13;" data-fragment-index="1"><img class="" data-natural-width="846" data-natural-height="511" data-lazy-loaded="" data-src="vcus2025-full-cirlce/3bbcf3e4fabba67d82d7fa27b398134d.png"></div></div></section><section data-id="f4e48103c283e6c0f7fa9e11f9a8bbe6"><div class="sl-block" data-block-type="image" data-name="image-8aa3ef" data-block-id="6a4b86a4e420a7698f670078c2cffe0e" style="width: 574.316px; height: 264px; left: 352.842px; top: 330.328px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 11;"><img class="" data-natural-width="372" data-natural-height="171" data-lazy-loaded="" data-src="vcus2025-full-cirlce/85c9b231c61f4bbe7faf589011360c12.png"></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-58f0ac" data-block-id="555e466d978e357bf5db2a6ecede6ccc" style="width: 828.22px; height: 433.656px; left: 51.78px; top: 37.672px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 10;"><img class="" data-natural-width="2500" data-natural-height="1309" data-lazy-loaded="" data-src="vcus2025-full-cirlce/7567a51d15b97860f85711e19cc550f8.png"></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-bae8f3" data-block-id="949b31e737279c2505691a99b664967b" style="height: auto; width: 600px; left: 30px; top: 623.5px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;"><p style="text-align: left;">https://github.com/nasa/openmct</p></div></div></section></section><section class="stack" data-id="3e623bab4aeee2d741129c435724a09d"><section data-id="6c53774de6e860b51c2c8faa236c5d8f"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 266px; height: auto;" data-block-id="60ce4e301c38edf36be77dad0bf200ab"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;"><h1>Developer Tools</h1></div></div></section><section data-id="aadc85eacbef824a6a50436fc67f1958"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 266px; height: auto;" data-block-id="227372d6b0ab112fcb4e209b38a53f91"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;"><h1>VS Code Extensions</h1></div></div></section><section data-id="5055f675fa1af41333e880ea1c703438"><div class="sl-block" data-block-type="text" style="width: 413px; left: 33.5px; top: 235px; height: auto;" data-block-id="808b36e915c1521e1cbfd15337eadc5d"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 13;"><h2>Vetur</h2></div></div>
+<div class="sl-block" data-block-type="text" style="width: 238px; left: 33.5px; top: 309px; height: auto;" data-block-id="a28360bd11add227b8582f7fc4ac6b40"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec metus justo. Aliquam erat volutpat." style="z-index: 14; text-align: left;"><p><span style="color:rgb(44, 62, 80)">Vue tooling for VS Code</span></p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 33.5px; top: 630px;" data-name="text-de71cc" data-block-id="711b4ab340ad5893c5cef7ea287ba554"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15;"><p style="text-align:left">https://vuejs.github.io/vetur/</p></div></div>
+
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-615538" data-block-id="bd8c40cddcd60d76562850bd5612960d">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 849.616px 70px; z-index: 10;">
+        <div class="sl-block then" data-block-type="text" style="height: auto; width: 66.1962px; left: 816.518px; top: 35.75px;" data-name="text-20e5da" data-block-id="0a4af85aff87c9a30f1d43b53a822bcb">
+            <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; color: rgb(79, 192, 141); font-size: 70%;"><p><strong>THEN</strong></p></div>
+        </div>
+        <div class="sl-block" data-block-type="text" style="height: auto; width: 63.0244px; left: 818.105px; top: 55.25px;" data-name="text-c82701" data-block-id="e3918ecbb2395f4d4fc74456546d4038">
+            <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; color: rgb(53, 73, 94); font-size: 125%;"><p><strong>v2</strong></p></div>
+        </div>
+
+    </div>
+</div>
+<div class="sl-block" data-block-type="image" data-name="image-2d964e" data-block-id="38a159c9ca51f2ab67e83f1a892a60e5" style="width: 578.428px; height: 323.813px; left: 361.786px; top: 187.094px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 16;"><img class="" data-natural-width="1304" data-natural-height="730" data-lazy-loaded="" data-src="vcus2025-full-cirlce/fedbf9556cbf9fd80c4963d2cad6fda2.png"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 361.786px; top: 521px;" data-block-id="92b3636f27a41b8bfff730a5c1a7e45f" data-name="text-0e2079"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 17;"><p style="text-align:left">https://youtu.be/05tNXJ-Kric</p></div></div></section><section data-id="1a01e6e3c241faef63b01be49ad6ff1d"><div class="sl-block" data-block-type="text" style="width: 312.5px; left: 33.5px; top: 170px; height: auto;" data-block-id="ed2307c60f7343751ef73b33b9e16a4b"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 10;"><h2>Vue Languages Tools</h2></div></div>
+<div class="sl-block" data-block-type="text" style="width: 329px; left: 33.5px; top: 398px; height: auto;" data-block-id="841ea18c47e9f53f52e3af17e96ca167"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec metus justo. Aliquam erat volutpat." style="z-index: 11; text-align: left;"><p><span style="font-size:1.0em"><span style="color:rgb(51, 51, 51)">Comprehensive suite of language tooling for Vue.js development</span></span></p></div></div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-ca7d69" data-block-id="9d99ad5b10ebbf56d65208ef43e7fc61">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 850.154px 70px; z-index: 12;">
+        <div class="sl-block then" data-block-type="text" style="height: auto; width: 59.6935px; left: 820.307px; top: 35.75px;" data-name="text-bddd01" data-block-id="f047ec1bf5b7d7934d0c4c0575879fc0">
+            <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; color: rgb(79, 192, 141); font-size: 70%;">
+                <p><strong class="now">NOW</strong></p>
+            </div>
+        </div>
+        <div class="sl-block" data-block-type="text" style="height: auto; width: 58.6178px; left: 820.307px; top: 55.25px;" data-name="text-9c0390" data-block-id="0b1b9a224d15d3d0bfd0730f3e68099b">
+            <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; color: rgb(53, 73, 94); font-size: 125%;">
+                <p><strong class="now">v3</strong></p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 33.5px; top: 630px;" data-name="text-de71cc" data-block-id="a075fd20b44bc72aaa371e3532fb80c3"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15;"><p style="text-align:left">https://deepwiki.com/vuejs/language-tools</p></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-849eb5" style="width: 565.504px; height: 475px; left: 366.239px; top: 138px; min-width: 1px; min-height: 1px;" data-block-id="93d2a90d6d673bdc4735172c127f60ad"><div class="sl-block-content" style="z-index: 16;"><img class="" data-natural-width="839" data-natural-height="689" data-lazy-loaded="" data-crop-x="0.011157" data-crop-y="0" data-crop-width="0.977685" data-crop-height="1" style="left: -6px; top: 0px; width: 578px; height: 475px;" data-src="vcus2025-full-cirlce/24adaaad55912a5c3dc7d93cc59a0632.png"></div></div></section><section data-id="119ec8beed3ce16d17441ef8ee3bf060"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 266px; height: auto;" data-block-id="23f99228e6bd1fa4346b4501ecc9148f"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;"><h1>Browser Extensions</h1></div></div></section><section data-id="aac01c48a99403666ef6d927c284e12e">
+
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-615538" data-block-id="f914e22f02a43be49da20504bef33cc4">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 238.299px 366.768px; z-index: 19;">
+        <div class="sl-block then" data-block-type="text" style="height: auto; width: 66.1962px; left: 205.201px; top: 332.518px;" data-name="text-20e5da" data-block-id="24da83dd1218c9bf04a89448eb50cdda">
+            <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 21; color: rgb(79, 192, 141); font-size: 70%;"><p><strong>THEN</strong></p></div>
+        </div>
+        <div class="sl-block" data-block-type="text" style="height: auto; width: 63.0244px; left: 206.787px; top: 352.018px;" data-name="text-c82701" data-block-id="1191e981b12188017948c51767ecd8a4">
+            <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 20; color: rgb(53, 73, 94); font-size: 125%;"><p><strong>v2</strong></p></div>
+        </div>
+
+    </div>
+</div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-ca7d69" data-block-id="2f5e888dbf736c28d357a2ef04da3a2d">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 722.17px 366.768px; z-index: 11;">
+        <div class="sl-block then" data-block-type="text" style="height: auto; width: 59.6935px; left: 692.323px; top: 332.518px;" data-name="text-bddd01" data-block-id="c772f68057ba2cff524b7c8c86451865">
+            <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; color: rgb(79, 192, 141); font-size: 70%;">
+                <p><strong class="now">NOW</strong></p>
+            </div>
+        </div>
+        <div class="sl-block" data-block-type="text" style="height: auto; width: 58.6178px; left: 692.323px; top: 352.018px;" data-name="text-9c0390" data-block-id="2090ebee35cb78b1a31999597fb3889b">
+            <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; color: rgb(53, 73, 94); font-size: 125%;">
+                <p><strong class="now">v3</strong></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="sl-block" data-block-type="text" style="width: 413px; left: 33.75px; top: 35px; height: auto;" data-block-id="0461917a8664f2701536f8e9f5e1b2f6" data-name="text-2fb977"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 14;"><h2>Vue Dev Tools</h2></div></div>
+<div class="sl-block" data-block-type="text" style="width: 745.904px; left: 33.75px; top: 109px; height: auto;" data-block-id="7a08a2d71cbf05d8ad74a35ba775f36f" data-name="text-fc8698"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec metus justo. Aliquam erat volutpat." style="z-index: 15; text-align: left; line-height: 1.495; color: rgb(0, 0, 0);" data-has-line-height="">
+<p>Debugging extension fo Vue</p>
+
+<ul>
+	<li><span style="font-size:1em">Time-travel debugging</span></li>
+	<li>Prop inspection and editing</li>
+	<li><code style="font-size: 1em;"><font face="Open Sans, sans-serif">Monitor state, stores, and routes</font></code></li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 456px; left: 487.043px; top: 608.482px;" data-name="text-de71cc" data-block-id="3f4dc6124530a96c83cfd4e7c56b8b87"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16;"><p style="text-align:left">https://devtools.vuejs.org/</p></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-5cf801" data-block-id="1debb102306a47dc183091dde73251c3" style="width: 482.719px; height: 185px; left: 471.921px; top: 403.201px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 10;"><img class="" data-natural-width="2178" data-natural-height="1322" data-lazy-loaded="" data-crop-x="0" data-crop-y="0.037182" data-crop-width="1" data-crop-height="0.631399" style="left: 0px; top: -11px; width: 483px; height: 293px;" data-src="vcus2025-full-cirlce/ef5b3fcda2accea01f2d7bac4cf85ef5.png"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 434px; left: 21.2982px; top: 608.482px;" data-block-id="787e46ff5b8412207c2177a0bc6c6ba1" data-name="text-bbf544">
+<div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 17;"><p style="text-align:left">https://devtools-v6.vuejs.org/</p></div>
+<grammarly-extension data-grammarly-shadow-root="true" class="dnXmp" style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 20; --rem: 16;"></grammarly-extension><grammarly-extension data-grammarly-shadow-root="true" class="dnXmp" style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 20; --rem: 16;"></grammarly-extension>
+</div>
+<div class="sl-block" data-block-type="image" data-name="image-6a88e0" data-block-id="b5f6f3c54adf46f019a284e1e643e2f6" style="width: 476.81px; height: 193.849px; left: 5.3605px; top: 403.201px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 18;"><img class="" data-natural-width="1648" data-natural-height="670" data-lazy-loaded="" data-src="vcus2025-full-cirlce/d896e2220e17e610a18dab6387bce2b8.png"></div></div></section></section><section class="stack" data-id="6ae6512c2512dfc5ce08d1f398752f8c"><section data-id="0eb612ae5d56ac9447921e84aa02566f"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 266px; height: auto;" data-block-id="d53ba7505206997b1667e706e515966b"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;"><h1>Routing</h1></div></div></section><section data-id="f8d073a332c81dcdcce2e7f165497497"><div class="sl-block" data-block-type="text" style="width: 413px; left: 33.5px; top: 235px; height: auto;" data-block-id="874d279a08a63298315ae2b51d031385"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 15;"><h2>Vue Router</h2></div></div>
+<div class="sl-block" data-block-type="text" style="width: 329px; left: 33.5px; top: 309px; height: auto;" data-block-id="fd1bc7987cb5d7f6aa36b255c0a2097d"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec metus justo. Aliquam erat volutpat." style="z-index: 16; text-align: left;"><p>Vue’s official routing plugin</p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 33.5px; top: 630px;" data-name="text-de71cc" data-block-id="1d72d18baa23eb08520a5ed89243a931">
+<div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 17;"><p style="text-align:left">https://v3.router.vuejs.org/</p></div>
+<grammarly-extension data-grammarly-shadow-root="true" class="dnXmp" style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 17; --rem: 16;"></grammarly-extension><grammarly-extension data-grammarly-shadow-root="true" class="dnXmp" style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 17; --rem: 16;"></grammarly-extension>
+</div>
+<div class="sl-block" data-block-type="image" data-name="image-849eb5" style="width: 524px; height: 488.491px; left: 400px; top: 121px; min-width: 1px; min-height: 1px;" data-block-id="b639a290c3e7dfc1b81f7a017c6c9a04"><div class="sl-block-content" style="z-index: 18;"><img class="" data-natural-width="841" data-natural-height="803" data-lazy-loaded="" data-crop-x="0" data-crop-y="0.011825" data-crop-width="1" data-crop-height="0.97635" style="left: 0px; top: -6px; width: 524px; height: 500px;" data-src="vcus2025-full-cirlce/1af56096f1b729b113d4bb01b0d96b51.png"></div></div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-615538" data-block-id="e5c500fb4a555d935d973e35d9850ba1">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 849.616px 70px; z-index: 10;">
+        <div class="sl-block then" data-block-type="text" style="height: auto; width: 66.1962px; left: 816.518px; top: 35.75px;" data-name="text-20e5da" data-block-id="5b953edcb5f59c404001dcf4ecdc9435">
+            <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; color: rgb(79, 192, 141); font-size: 70%;"><p><strong>THEN</strong></p></div>
+        </div>
+        <div class="sl-block" data-block-type="text" style="height: auto; width: 63.0244px; left: 818.105px; top: 55.25px;" data-name="text-c82701" data-block-id="8f6bc2ed52038d7c9a5d56292dff2b19">
+            <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; color: rgb(53, 73, 94); font-size: 125%;"><p><strong>v2</strong></p></div>
+        </div>
+
+    </div>
+</div></section><section data-id="1782758322226a56718f9f00782954c9"><div class="sl-block" data-block-type="text" style="width: 413px; left: 33.5px; top: 235px; height: auto;" data-block-id="b0ac46fd0591b7167b107c90a1861625"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 10;"><h2>Vue Router</h2></div></div>
+<div class="sl-block" data-block-type="text" style="width: 329px; left: 33.5px; top: 309px; height: auto;" data-block-id="7959f921ffd5669f58d5f2e1411ed9c1"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec metus justo. Aliquam erat volutpat." style="z-index: 11; text-align: left;"><p><span style="color:rgb(0, 0, 0)">Vue’s official routing plugin, still.</span></p></div></div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-ca7d69" data-block-id="6d76b90440a0b223162402d4a122842e">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 850.154px 70px; z-index: 12;">
+        <div class="sl-block then" data-block-type="text" style="height: auto; width: 59.6935px; left: 820.307px; top: 35.75px;" data-name="text-bddd01" data-block-id="6dc1cfe96890d5cc474c659a2089b147">
+            <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16; color: rgb(79, 192, 141); font-size: 70%;">
+                <p><strong class="now">NOW</strong></p>
+            </div>
+        </div>
+        <div class="sl-block" data-block-type="text" style="height: auto; width: 58.6178px; left: 820.307px; top: 55.25px;" data-name="text-9c0390" data-block-id="09f9622102d8f094aeae561653f48f44">
+            <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15; color: rgb(53, 73, 94); font-size: 125%;">
+                <p><strong class="now">v3</strong></p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 33.5px; top: 630px;" data-name="text-de71cc" data-block-id="59d345337d1c981594dd22578590b5be"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 17;"><p style="text-align:left">https://router.vuejs.org/</p></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-849eb5" style="width: 532.055px; height: 496px; left: 391.945px; top: 121px; min-width: 1px; min-height: 1px;" data-block-id="5bf44ee01105434098815554f9314573"><div class="sl-block-content" style="z-index: 18;"><img class="" data-natural-width="838" data-natural-height="832" data-lazy-loaded="" data-crop-x="0" data-crop-y="0" data-crop-width="1" data-crop-height="0.938957" style="left: 0px; top: 0px; width: 532px; height: 528px;" data-src="vcus2025-full-cirlce/4a55f4fcc30f3929cb2e6c57cc99a399.png"></div></div></section><section data-id="9c36bd0c726fc16e39bad98e26676b53"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 266px; height: auto;" data-block-id="b11cf36fbe2decc3ded01a8339889b36"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;"><h1>That's it?</h1></div></div></section><section data-id="b7e0d0351d55f234e41818673dc5628b"><div class="sl-block" data-block-type="text" style="width: 413px; left: 33.5px; top: 235px; height: auto;" data-block-id="1745e41805e3704cf3f0364f110e9103"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 10;"><h2>Kitbag<br>
+Router</h2></div></div>
+<div class="sl-block" data-block-type="text" style="width: 329px; left: 33.5px; top: 383px; height: auto;" data-block-id="af5e76a36dfbf4305ca6b2834fc779de"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec metus justo. Aliquam erat volutpat." style="z-index: 11; text-align: left;"><p><span style="color:rgb(44, 62, 80)">Type-safe router for Vue.js</span></p></div></div>
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 33.5px; top: 630px;" data-name="text-de71cc" data-block-id="6d0feac5c70de770645bef982856200d"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;"><p style="text-align:left">https://router.kitbag.dev/</p></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-6fb255" data-block-id="d762b16f2e38f20bb779a446f9ae55f1" style="width: 404.6px; height: 510px; left: 437.159px; top: 95px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 13;"><img class="" data-natural-width="119" data-natural-height="150" data-lazy-loaded="" data-src="vcus2025-full-cirlce/bbc7c3da57e44fd8d6b7d20880c12ef4.svg"></div></div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-ca7d69" data-block-id="6b4297032d4158f417bba6d24edc03bf">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 850.154px 70px; z-index: 14;">
+        <div class="sl-block then" data-block-type="text" style="height: auto; width: 59.6935px; left: 820.307px; top: 35.75px;" data-name="text-bddd01" data-origin-id="6dc1cfe96890d5cc474c659a2089b147" data-block-id="0e23d905a935558b7363b358587987e3">
+            <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16; color: rgb(79, 192, 141); font-size: 70%;">
+                <p><strong class="now">NOW</strong></p>
+            </div>
+        </div>
+        <div class="sl-block" data-block-type="text" style="height: auto; width: 58.6178px; left: 820.307px; top: 55.25px;" data-name="text-9c0390" data-origin-id="09f9622102d8f094aeae561653f48f44" data-block-id="99a7de1c40b0f62fa72958c6c8018ed1">
+            <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15; color: rgb(53, 73, 94); font-size: 125%;">
+                <p><strong class="now">v3</strong></p>
+            </div>
+        </div>
+    </div>
+</div></section></section><section class="stack" data-id="dfbeebd4443a7857f005cfe12a6f6d0f"><section data-id="8d7beb63dbe316031133c12b5f35c6f7"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 266px; height: auto;" data-block-id="569e294d0e12c8aa83a5f1025e511e0e"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;"><h1>Client-side<br>
+State Management</h1></div></div></section><section data-id="6d9e99baba5f3e3edb0fdece92dffad5"><div class="sl-block" data-block-type="text" style="width: 413px; left: 33.5px; top: 235px; height: auto;" data-block-id="889e52fbfe7e17adea4d8fa5cb44fdd9"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 13;"><h2>Vuex</h2></div></div>
+<div class="sl-block" data-block-type="text" style="width: 329px; left: 33.5px; top: 309px; height: auto;" data-block-id="af5c0febd506bc8e1619694e7ddde367"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec metus justo. Aliquam erat volutpat." style="z-index: 14; text-align: left;"><p><span style="color:rgb(44, 62, 80)">State management pattern + library</span><span style="color:rgb(44, 62, 80)"> for Vue.js applications</span></p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 33.5px; top: 630px;" data-name="text-de71cc" data-block-id="0b630f4a07817c5b37ad63032e243fe6"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15;"><p style="text-align:left">https://vuex.vuejs.org/</p></div></div>
+
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-615538" data-block-id="85c464019481a3bb18c4cd0eb835bbb1">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 849.616px 70px; z-index: 10;">
+        <div class="sl-block then" data-block-type="text" style="height: auto; width: 66.1962px; left: 816.518px; top: 35.75px;" data-name="text-20e5da" data-block-id="e60a166c1331336a5f985323170d82e4">
+            <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; color: rgb(79, 192, 141); font-size: 70%;"><p><strong>THEN</strong></p></div>
+        </div>
+        <div class="sl-block" data-block-type="text" style="height: auto; width: 63.0244px; left: 818.105px; top: 55.25px;" data-name="text-c82701" data-block-id="b16428b673dd98af9dea9dd432c16230">
+            <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; color: rgb(53, 73, 94); font-size: 125%;"><p><strong>v2</strong></p></div>
+        </div>
+
+    </div>
+</div>
+<div class="sl-block" data-block-type="code" data-name="code-7d63d6" data-block-id="c0dedfff037dbcd9d3aee8c90cd0a522" style="width: 560px; height: 434px; left: 372px; top: 150px;"><div class="sl-block-content notranslate" data-highlight-theme="zenburn" data-code-frame="none" style="z-index: 17;"><pre class="javascript" style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="" style="padding: 15px;">import { createApp } from 'vue'
+import { createStore } from 'vuex'
+
+// Create a new store instance.
+const store = createStore({
+  state () {
+    return {
+      count: 0
+    }
+  },
+  mutations: {
+    increment (state) {
+      state.count++
+    }
+  }
+})
+
+const app = createApp({ /* your root component */ })
+
+// Install the store instance as a plugin
+app.use(store)</code></pre></div></div></section><section data-id="d71270516d60214b0ae775285a7c862c"><div class="sl-block" data-block-type="image" data-name="image-30235e" data-block-id="20b1b2cb18f6c9a489496168dabdc9de" style="width: 518px; height: 518px; left: 221px; top: 91px;"><div class="sl-block-content" style="z-index: 10;"><img class="" data-natural-width="400" data-natural-height="400" data-lazy-loaded="" data-src="vcus2025-full-cirlce/286c9018c818f7d2141118e95e036c65.gif"></div></div></section><section data-id="1383295ae032b749b495cc16e2ecd460"><div class="sl-block" data-block-type="text" style="width: 413px; left: 33.5px; top: 235px; height: auto;" data-block-id="3b4ab458981ba1056a3325321af9c663"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 10;"><h2>Pinia</h2></div></div>
+<div class="sl-block" data-block-type="text" style="width: 329px; left: 33.5px; top: 309px; height: auto;" data-block-id="86be0b52ade073c53db5f12cf54ca8f4"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec metus justo. Aliquam erat volutpat." style="z-index: 11; text-align: left;"><p><span style="color:rgb(44, 62, 80)">Type-safe store library for Vue.js</span></p></div></div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-ca7d69" data-block-id="939370aa9f4bcacded3614ae0068c04f">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 850.154px 70px; z-index: 12;">
+        <div class="sl-block then" data-block-type="text" style="height: auto; width: 59.6935px; left: 820.307px; top: 35.75px;" data-name="text-bddd01" data-block-id="7633cfd3aef0206d5ecd6fb712300814">
+            <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; color: rgb(79, 192, 141); font-size: 70%;">
+                <p><strong class="now">NOW</strong></p>
+            </div>
+        </div>
+        <div class="sl-block" data-block-type="text" style="height: auto; width: 58.6178px; left: 820.307px; top: 55.25px;" data-name="text-9c0390" data-block-id="b2b02f04c17f8f41f2cd7b4fcf4ee078">
+            <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; color: rgb(53, 73, 94); font-size: 125%;">
+                <p><strong class="now">v3</strong></p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 33.5px; top: 630px;" data-name="text-de71cc" data-block-id="07e5ee651d4dd44d27808a6ed02eae97"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15;"><p style="text-align:left">https://pinia.vuejs.org/</p></div></div>
+<div class="sl-block" data-block-type="code" data-name="code-7d63d6" style="width: 560px; height: 434px; left: 372px; top: 150px;" data-block-id="aef04fad934423a0d3b9e78349533cac"><div class="sl-block-content notranslate" data-highlight-theme="zenburn" data-code-frame="none" style="z-index: 17;"><pre class="javascript" style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="" style="padding: 15px;">// stores/counter.js
+import { defineStore } from 'pinia'
+
+export const useCounterStore = defineStore(
+  'counter',
+  {
+    state: () =&gt; {
+      return { count: 0 }
+    },
+    // could also be defined as
+    // state: () =&gt; ({ count: 0 })
+    actions: {
+      increment() {
+        this.count++
+      },
+    },
+  }
+)</code></pre></div></div></section></section><section class="stack" data-id="857c7909144edd8a61598a34efa01790"><section data-id="fab2be8a1aea5b2bb58571c611c7ece6"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 266px; height: auto;" data-block-id="96c65002f7e2e8bfa18ac37db417d788"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;"><h1>Asynchronous<br>
+State Management</h1></div></div></section><section data-id="51fbe6b77874941cec1b3174baa41292"><div class="sl-block" data-block-type="text" style="width: 413px; left: 33.5px; top: 235px; height: auto;" data-block-id="b443ab893523adce208e81bbc371f6a7"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 10;"><h2>Tanstack<br>
+Query</h2></div></div>
+<div class="sl-block" data-block-type="text" style="width: 329px; left: 33.5px; top: 383px; height: auto;" data-block-id="afab213cbd94e7df8226c94447d96744"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec metus justo. Aliquam erat volutpat." style="z-index: 11; text-align: left;"><p><span style="color:rgb(44, 62, 80)">Framework-agnostic </span><br>
+<span class="decoration-3 decoration-dashed decoration-yellow-500 underline underline-offset-2">asynchronous state management</span></p></div></div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-ca7d69" data-block-id="10a35b56dd1b34a8d81b52ba3068843b">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 850.154px 70px; z-index: 12;">
+        <div class="sl-block then" data-block-type="text" style="height: auto; width: 59.6935px; left: 821.307px; top: 35.75px;" data-name="text-bddd01" data-block-id="7dc83381c5caa58f8df9b9955387492f">
+            <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16; color: rgb(79, 192, 141); font-size: 70%;">
+                <p><strong class="now">NOW</strong></p>
+            </div>
+        </div>
+        <div class="sl-block" data-block-type="text" style="height: auto; width: 58.6178px; left: 821.307px; top: 55.25px;" data-name="text-9c0390" data-block-id="063f8a86b785a2241bab7b44638b4b86">
+            <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15; color: rgb(53, 73, 94); font-size: 125%;">
+                <p><strong class="now">v3</strong></p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 917px; left: 33.5px; top: 630px;" data-name="text-de71cc" data-block-id="b30fb97bc6846b09fe56fde4a7285eee"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 17;"><p style="text-align:left">https://tanstack.com/query/latest/docs/framework/vue/overview</p></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-849eb5" style="width: 546px; height: 509px; left: 367px; top: 112.5px; min-width: 1px; min-height: 1px;" data-block-id="4dbe982006864728bfacc0aef011b78b"><div class="sl-block-content" style="z-index: 18;"><img class="" data-natural-width="850" data-natural-height="1003" data-lazy-loaded="" data-crop-x="0" data-crop-y="0.104985" data-crop-width="1" data-crop-height="0.790029" style="left: 0px; top: -68px; width: 546px; height: 644px;" data-src="vcus2025-full-cirlce/6896213d7582e22d0e5d595c369ccf5d.png"></div></div></section><section data-id="09d2218390694d58008c59ebf6434eb0"><div class="sl-block" data-block-type="text" style="width: 413px; left: 33.5px; top: 235px; height: auto;" data-block-id="2e26c4570d66296c9858ed8aa4d07734"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 10;"><h2>Pinia<br>
+Colada</h2></div></div>
+<div class="sl-block" data-block-type="text" style="width: 329px; left: 33.5px; top: 383px; height: auto;" data-block-id="d5dc673fe57d2f5e7bceb696d22d04be">
+<div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec metus justo. Aliquam erat volutpat." style="z-index: 11; text-align: left;"><p><span style="color:rgb(44, 62, 80)">The data-fetching layer for Pinia</span></p></div>
+<grammarly-extension data-grammarly-shadow-root="true" class="dnXmp" style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 11; --rem: 16;"></grammarly-extension><grammarly-extension data-grammarly-shadow-root="true" class="dnXmp" style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 11; --rem: 16;"></grammarly-extension>
+</div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-ca7d69" data-block-id="28ae60b2128a9c5952ff8bc148e9c7fa">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 850.154px 70px; z-index: 12;">
+        <div class="sl-block then" data-block-type="text" style="height: auto; width: 59.6935px; left: 820.307px; top: 35.75px;" data-name="text-bddd01" data-block-id="c4e34c13c35b743c8c637210666071fc">
+            <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16; color: rgb(79, 192, 141); font-size: 70%;">
+                <p><strong class="now">NOW</strong></p>
+            </div>
+        </div>
+        <div class="sl-block" data-block-type="text" style="height: auto; width: 58.6178px; left: 820.307px; top: 55.25px;" data-name="text-9c0390" data-block-id="f5c8ebd9a57abcf147d7dacbcb53ebea">
+            <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15; color: rgb(53, 73, 94); font-size: 125%;">
+                <p><strong class="now">v3</strong></p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 33.5px; top: 630px;" data-name="text-de71cc" data-block-id="bf6e148876b0e581f5a353b7a580be3c"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 17;"><p style="text-align:left">https://pinia-colada.esm.dev/</p></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-849eb5" style="width: 524px; height: 488.491px; left: 400px; top: 121px; min-width: 1px; min-height: 1px;" data-block-id="5235f9d7f18f50de200b80b542853f2d"><div class="sl-block-content" style="z-index: 18;"><img class="" data-natural-width="839" data-natural-height="807" data-lazy-loaded="" data-crop-x="0" data-crop-y="0.0154" data-crop-width="1" data-crop-height="0.9692" style="left: 0px; top: -8px; width: 524px; height: 504px;" data-src="vcus2025-full-cirlce/b16d2ba93af29da432aa417573fe2fa3.png"></div></div></section><section data-id="220d05f75bcef0fe767211a403331074"><div class="sl-block" data-block-type="image" style="width: 449.885px; height: 256px; left: 15.0575px; top: 197px; min-width: 1px; min-height: 1px;" data-block-id="96027c918bd39a958504c491850d658e"><div class="sl-block-content" style="z-index: 10;"><img class="" data-natural-width="1492" data-natural-height="849" style="" data-lazy-loaded="" data-src="vcus2025-full-cirlce/d34f9a1624fe835ff9b048343be02636.png"></div></div>
+<div class="sl-block" data-block-type="text" style="width: 445px; left: 19.9425px; top: 464px; height: auto;" data-block-id="02484d578eab0f126390cfaa82ca6b6c">
+<div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;"><p>https://youtu.be/Aybu-SnA34Q</p></div>
+<grammarly-extension data-grammarly-shadow-root="true" class="dnXmp" style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 11; --rem: 16;"></grammarly-extension><grammarly-extension data-grammarly-shadow-root="true" class="dnXmp" style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 11; --rem: 16;"></grammarly-extension>
+</div>
+<div class="sl-block" data-block-type="image" style="width: 449.885px; height: 258.38px; left: 495.058px; top: 197px; min-width: 1px; min-height: 1px;" data-block-id="fc750ec5da22f330da27da4869656d25" data-name="image-6aff52"><div class="sl-block-content" style="z-index: 12;"><img class="" data-natural-width="1480" data-natural-height="850" style="" data-lazy-loaded="" data-src="vcus2025-full-cirlce/734ab6c2077bb5c69b6ec76045cfbf57.png"></div></div>
+<div class="sl-block" data-block-type="text" style="width: 445px; left: 499.942px; top: 464px; height: auto;" data-block-id="aad732104e101cb53ffde76f2e60bee5" data-name="text-d18a7d">
+<div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 13;"><p>https://youtu.be/SLAGCe3XK38</p></div>
+<grammarly-extension data-grammarly-shadow-root="true" class="dnXmp" style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 11; --rem: 16;"></grammarly-extension><grammarly-extension data-grammarly-shadow-root="true" class="dnXmp" style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 11; --rem: 16;"></grammarly-extension>
+</div></section></section><section class="stack" data-id="9429e63fd6b1c811b6d74d2a78215640"><section data-id="062f9681b9062da452b8c5aa8bf1edea"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 266px; height: auto;" data-block-id="280407e114111a8da5bd6acf18112332"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;"><h1>Meta-frameworks</h1></div></div></section><section data-id="139e26fd6438d03c36efdaf49d2b8c2a"><div class="sl-block" data-block-type="image" data-name="image-855ae1" data-block-id="7257f8ba7abde7017225dc8a46ba47d2" style="width: 806.4px; height: 201.6px; left: 76.8px; top: 249.2px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 10;"><img class="" data-natural-width="128" data-natural-height="32" data-lazy-loaded="" data-src="vcus2025-full-cirlce/38a2b2996e3bfe6e319d527c4488f0e2.svg"></div></div></section><section data-id="94560abc1e5ebd8b74dd1196ce5276f8"><div class="sl-block" data-block-type="text" style="width: 413px; left: 33.5px; top: 235px; height: auto;" data-block-id="ae5499bc7a84560c32a027c95425dadf"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 15;"><h2>Nuxt 2</h2></div></div>
+<div class="sl-block" data-block-type="text" style="width: 341px; left: 33.5px; top: 309px; height: auto;" data-block-id="350578d033bea022c994916a2c897488"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec metus justo. Aliquam erat volutpat." style="z-index: 16; text-align: left;"><p>Opinionated framework for building scalable Vue applications</p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 33.5px; top: 630px;" data-name="text-de71cc" data-block-id="bad68448b3a1413811adbff4c409a85f"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 17;"><p style="text-align:left">https://v2.nuxt.com/</p></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-849eb5" style="width: 524px; height: 488.491px; left: 400px; top: 121px; min-width: 1px; min-height: 1px;" data-block-id="6c096f6892b0634837aecf64e574151e"><div class="sl-block-content" style="z-index: 18;"><img class="" data-natural-width="839" data-natural-height="947" data-lazy-loaded="" data-crop-x="0" data-crop-y="0" data-crop-width="1" data-crop-height="0.825918" style="left: 0px; top: 0px; width: 524px; height: 591px;" data-src="vcus2025-full-cirlce/b7623627c36fad106e273e0a9975b329.png"></div></div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-615538" data-block-id="bb7e4133d12c58a916b23e014e900875">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 849.616px 70px; z-index: 10;">
+        <div class="sl-block then" data-block-type="text" style="height: auto; width: 66.1962px; left: 816.518px; top: 35.75px;" data-name="text-20e5da" data-block-id="4c9f81ae9297a40deeb350632af1beb6">
+            <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; color: rgb(79, 192, 141); font-size: 70%;"><p><strong>THEN</strong></p></div>
+        </div>
+        <div class="sl-block" data-block-type="text" style="height: auto; width: 63.0244px; left: 818.105px; top: 55.25px;" data-name="text-c82701" data-block-id="b968d5da921701f7d018e10e66887f77">
+            <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; color: rgb(53, 73, 94); font-size: 125%;"><p><strong>v2</strong></p></div>
+        </div>
+
+    </div>
+</div></section><section data-id="55c53858dba7f31da6942d9a7b5c14a6"><div class="sl-block" data-block-type="text" style="width: 413px; left: 33.5px; top: 235px; height: auto;" data-block-id="4e6e4b18212006a8a3caa065c8f89fad"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 10;"><h2>Nuxt 3</h2></div></div>
+<div class="sl-block" data-block-type="text" style="width: 329px; left: 33.5px; top: 309px; height: auto;" data-block-id="d2e18897c4c163e7e678950c1c28349e">
+<div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec metus justo. Aliquam erat volutpat." style="z-index: 11; text-align: left;"><p><span style="color:rgb(44, 62, 80)">Modern rewrite of Nuxt based on Vite, Vue 3, and Nitro</span></p></div>
+<grammarly-extension data-grammarly-shadow-root="true" class="dnXmp" style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 11; --rem: 16;"></grammarly-extension><grammarly-extension data-grammarly-shadow-root="true" class="dnXmp" style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 11; --rem: 16;"></grammarly-extension>
+</div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-ca7d69" data-block-id="a5192adcd1358ec088a1006ac900c48a">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 850.154px 70px; z-index: 12;">
+        <div class="sl-block then" data-block-type="text" style="height: auto; width: 59.6935px; left: 820.307px; top: 35.75px;" data-name="text-bddd01" data-block-id="1285a1f8e87c023f4e6cb6603fc6a349">
+            <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16; color: rgb(79, 192, 141); font-size: 70%;">
+                <p><strong class="now">NOW</strong></p>
+            </div>
+        </div>
+        <div class="sl-block" data-block-type="text" style="height: auto; width: 58.6178px; left: 820.307px; top: 55.25px;" data-name="text-9c0390" data-block-id="1d0630582dafdf8d8cf256a472add93e">
+            <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15; color: rgb(53, 73, 94); font-size: 125%;">
+                <p><strong class="now">v3</strong></p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 33.5px; top: 630px;" data-name="text-de71cc" data-block-id="74f1b74686a6639fce9fd49ffad43568"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 17;"><p style="text-align: left;">https://cli.vuejs.org/</p></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-849eb5" style="width: 546px; height: 509px; left: 378px; top: 121px; min-width: 1px; min-height: 1px;" data-block-id="8060e14b3946e34a27d95fa45f037f02"><div class="sl-block-content" style="z-index: 18;"><img class="" data-natural-width="839" data-natural-height="920" data-lazy-loaded="" data-crop-x="0" data-crop-y="0" data-crop-width="1" data-crop-height="0.850157" style="left: 0px; top: 0px; width: 546px; height: 599px;" data-src="vcus2025-full-cirlce/f442c6867923dc4dde50f0f8cb07f319.png"></div></div></section><section data-id="5fb4c8b05229478ec24da8f7a0746636"><div class="sl-block" data-block-type="image" data-name="image-fce5ba" data-block-id="a4e8ffe30a5749c1859e4440cc289c15" style="width: 897px; height: 374.824px; left: 31.5px; top: 162.588px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 10;"><img class="" data-natural-width="1185" data-natural-height="533" data-crop-x="0.033333" data-crop-y="0.069444" data-crop-width="0.934375" data-crop-height="0.868056" style="left: -32px; top: -30px; width: 960px; height: 432px;" data-lazy-loaded="" data-src="vcus2025-full-cirlce/bd6099c6319c2eb8c8be6f0e565ce3ce.png"></div></div></section><section data-id="b990d476c25a61591001ac888feccb47"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 266px; height: auto;" data-block-id="6800de9967347445a0d4180bbfd32694"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;"><h1>Other frameworks</h1></div></div></section><section data-id="944e11448b2c9f0b39ecadd65d68313c"><div class="sl-block" data-block-type="text" style="width: 413px; left: 33.5px; top: 136px; height: auto;" data-block-id="b00ad9f54d3bf33e094c082c36509bfc">
+<div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 13;"><h2>VuePress</h2></div>
+<grammarly-extension data-grammarly-shadow-root="true" class="dnXmp" style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 13; --rem: 16;"></grammarly-extension><grammarly-extension data-grammarly-shadow-root="true" class="dnXmp" style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 13; --rem: 16;"></grammarly-extension>
+</div>
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 389.387px; left: 33.5px; top: 630px;" data-name="text-de71cc" data-block-id="d72b0ac5557e23d5c86e10b6bd5fc57a"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;"><p style="text-align:left">https://vuepress.vuejs.org/</p></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-849eb5" style="width: 389.387px; height: 363px; left: 33.5px; top: 238.5px; min-width: 1px; min-height: 1px;" data-block-id="181d172445622437d1f2d65f7e3b1873"><div class="sl-block-content" style="z-index: 15;"><img class="" data-natural-width="853" data-natural-height="785" data-lazy-loaded="" data-crop-x="0.006411" data-crop-y="0" data-crop-width="0.987178" data-crop-height="1" style="left: -3px; top: 0px; width: 394px; height: 363px;" data-src="vcus2025-full-cirlce/5284e3beb4492d3a0c39001dcdffee7b.png"></div></div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-615538" data-block-id="b73ecbf801c6fe02f079f02b56835964">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 849.616px 70px; z-index: 10;">
+        <div class="sl-block then" data-block-type="text" style="height: auto; width: 66.1962px; left: 816.518px; top: 35.75px;" data-name="text-20e5da" data-block-id="10eeab6044d8125901b57cd845b4b967">
+            <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; color: rgb(79, 192, 141); font-size: 70%;"><p><strong>THEN</strong></p></div>
+        </div>
+        <div class="sl-block" data-block-type="text" style="height: auto; width: 63.0244px; left: 818.105px; top: 55.25px;" data-name="text-c82701" data-block-id="84bef8df4cc3919f33610788abeccefd">
+            <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; color: rgb(53, 73, 94); font-size: 125%;"><p><strong>v2</strong></p></div>
+        </div>
+
+    </div>
+</div>
+<div class="sl-block" data-block-type="text" style="width: 413px; left: 480px; top: 136px; height: auto;" data-block-id="60b777df3aaeb889bac991988d114b5f" data-name="text-8ef160">
+<div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 16;"><h2>Gridsome</h2></div>
+<grammarly-extension data-grammarly-shadow-root="true" class="dnXmp" style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 16; --rem: 16;"></grammarly-extension><grammarly-extension data-grammarly-shadow-root="true" class="dnXmp" style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 16; --rem: 16;"></grammarly-extension><grammarly-extension data-grammarly-shadow-root="true" class="dnXmp" style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 13; --rem: 16;"></grammarly-extension><grammarly-extension data-grammarly-shadow-root="true" class="dnXmp" style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 13; --rem: 16;"></grammarly-extension>
+</div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 480px; top: 630px;" data-block-id="5ab5041502e71419bd7f24668cbb2fa7" data-name="text-495b7b"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 17;"><p style="text-align:left">https://gridsome.org/</p></div></div>
+<div class="sl-block" data-block-type="image" style="width: 389.387px; height: 363px; left: 480px; top: 238.5px; min-width: 1px; min-height: 1px;" data-block-id="e0360771763de319f057412b0ccc261b" data-name="image-55a916"><div class="sl-block-content" style="z-index: 18;"><img class="" data-natural-width="838" data-natural-height="934" data-lazy-loaded="" data-crop-x="0" data-crop-y="0" data-crop-width="1" data-crop-height="0.836416" style="left: 0px; top: 0px; width: 389px; height: 434px;" data-src="vcus2025-full-cirlce/ee6dacbb6b27f62dd274df9339d675a1.png"></div></div></section><section data-id="4ea775a070ff68e98915602c5cd3219c"><div class="sl-block" data-block-type="text" style="width: 413px; left: 33.5px; top: 136px; height: auto;" data-block-id="44d6d2f13701336df6fb5c550f694a92">
+<div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 16;"><h2>VitePress</h2></div>
+<grammarly-extension data-grammarly-shadow-root="true" class="dnXmp" style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 13; --rem: 16;"></grammarly-extension><grammarly-extension data-grammarly-shadow-root="true" class="dnXmp" style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 13; --rem: 16;"></grammarly-extension>
+</div>
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 389.387px; left: 33.5px; top: 630px;" data-name="text-de71cc" data-block-id="31e6a86888fe69016ca64fe55b15b398"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 17;"><p style="text-align:left">https://vitepress.dev/</p></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-849eb5" style="width: 389.387px; height: 363px; left: 33.5px; top: 238.5px; min-width: 1px; min-height: 1px;" data-block-id="2b0fdc1b614b67c5857e8290536c881e"><div class="sl-block-content" style="z-index: 18;"><img class="" data-natural-width="842" data-natural-height="1102" data-lazy-loaded="" data-crop-x="0" data-crop-y="0" data-crop-width="1" data-crop-height="0.712288" style="left: 0px; top: 0px; width: 389px; height: 510px;" data-src="vcus2025-full-cirlce/4ff2847d170c4389450974ba9296a9ef.png"></div></div>
+<div class="sl-block" data-block-type="text" style="width: 429px; left: 480px; top: 136px; height: auto;" data-name="text-8ef160" data-block-id="af08710b32cf0b6773c2995b1ec8ca41">
+<div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 19;"><h2>Astro (w/ Vue)</h2></div>
+<grammarly-extension data-grammarly-shadow-root="true" class="dnXmp" style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 16; --rem: 16;"></grammarly-extension><grammarly-extension data-grammarly-shadow-root="true" class="dnXmp" style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 16; --rem: 16;"></grammarly-extension><grammarly-extension data-grammarly-shadow-root="true" class="dnXmp" style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 13; --rem: 16;"></grammarly-extension><grammarly-extension data-grammarly-shadow-root="true" class="dnXmp" style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 13; --rem: 16;"></grammarly-extension>
+</div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 480px; top: 630px;" data-name="text-495b7b" data-block-id="1bc8f93251bbf69a28e98d8570eb1c8f"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 20;"><p style="text-align:left">https://astro.build/</p></div></div>
+<div class="sl-block" data-block-type="image" style="width: 389.387px; height: 363px; left: 480px; top: 238.5px; min-width: 1px; min-height: 1px;" data-name="image-55a916" data-block-id="1f486318b94aa5fe3b776cf8b0c8b6f2"><div class="sl-block-content" style="z-index: 21;"><img class="" data-natural-width="840" data-natural-height="811" data-lazy-loaded="" data-crop-x="0" data-crop-y="0" data-crop-width="1" data-crop-height="0.96557" style="left: 0px; top: 0px; width: 389px; height: 376px;" data-src="vcus2025-full-cirlce/facfa02da3bcfaf87efd2db7443bd7fc.png"></div></div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-ca7d69" data-block-id="16449d29adb2e5d6c4b5445c78509da0">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 850.154px 70px; z-index: 10;">
+        <div class="sl-block then" data-block-type="text" style="height: auto; width: 59.6935px; left: 820.307px; top: 35.75px;" data-name="text-bddd01" data-origin-id="7dc83381c5caa58f8df9b9955387492f" data-block-id="82e055a36088643df69b309ac86cec6c">
+            <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; color: rgb(79, 192, 141); font-size: 70%;">
+                <p><strong class="now">NOW</strong></p>
+            </div>
+        </div>
+        <div class="sl-block" data-block-type="text" style="height: auto; width: 58.6178px; left: 820.307px; top: 55.25px;" data-name="text-9c0390" data-origin-id="063f8a86b785a2241bab7b44638b4b86" data-block-id="f1fee4a5cad6276eb5ce67f14916d821">
+            <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; color: rgb(53, 73, 94); font-size: 125%;">
+                <p><strong class="now">v3</strong></p>
+            </div>
+        </div>
+    </div>
+</div></section></section><section class="stack" data-id="316d6ad7d48b76526813d1b9eaef1580"><section data-id="6ffec591125fb0a02c0081a3a0ea367e"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 266px; height: auto;" data-block-id="461a6ad9688f794f200cb21e5ece0444"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;"><h1>Testing</h1></div></div></section><section data-id="341b17ba9cf8749430b6fba221996904">
+
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-615538" data-block-id="4e7aa9b87d1255ecab35b580b8076cc1">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 238.299px 204.25px; z-index: 18;">
+        <div class="sl-block then" data-block-type="text" style="height: auto; width: 66.1962px; left: 205.201px; top: 170px;" data-name="text-20e5da" data-block-id="60e2f29105a1b4f5a3a4b033a05431d5">
+            <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 20; color: rgb(79, 192, 141); font-size: 70%;"><p><strong>THEN</strong></p></div>
+        </div>
+        <div class="sl-block" data-block-type="text" style="height: auto; width: 63.0244px; left: 206.787px; top: 189.5px;" data-name="text-c82701" data-block-id="7112504dc9949fd1a1017a406c133548">
+            <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 19; color: rgb(53, 73, 94); font-size: 125%;"><p><strong>v2</strong></p></div>
+        </div>
+
+    </div>
+</div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-ca7d69" data-block-id="529ad1dc9261138d45cbb758c749491c">
+    <div class="sl-block-content sl-block-group-content" style="transform-origin: 722.17px 204.25px; z-index: 10;">
+        <div class="sl-block then" data-block-type="text" style="height: auto; width: 59.6935px; left: 692.323px; top: 170px;" data-name="text-bddd01" data-block-id="eccabbce9b07153fb1bdb038dd57bbad">
+            <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; color: rgb(79, 192, 141); font-size: 70%;">
+                <p><strong class="now">NOW</strong></p>
+            </div>
+        </div>
+        <div class="sl-block" data-block-type="text" style="height: auto; width: 58.6178px; left: 692.323px; top: 189.5px;" data-name="text-9c0390" data-block-id="5dee5823048822537adaa3db54b390fc">
+            <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; color: rgb(53, 73, 94); font-size: 125%;">
+                <p><strong class="now">v3</strong></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="sl-block" data-block-type="text" style="width: 413px; left: 33.75px; top: 35px; height: auto;" data-name="text-2fb977" data-block-id="76bc2f19085072283b0fac15296c674e"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 13;"><h2>Vue Test Utils</h2></div></div>
+<div class="sl-block" data-block-type="text" style="width: 745.904px; left: 33.75px; top: 109px; height: auto;" data-name="text-fc8698" data-block-id="dca5e73129feceb877759af580a13204"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec metus justo. Aliquam erat volutpat." style="z-index: 14; text-align: left; line-height: 1.495; color: rgb(0, 0, 0);" data-has-line-height=""><p><span style="color:rgb(60, 60, 67)">Official testing utility library for Vue.js!</span></p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 456px; left: 502.765px; top: 607.447px;" data-name="text-de71cc" data-block-id="9f7f1aa355c290cc619ae8dc8ac93889"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15;"><p style="text-align:left">https://test-utils.vuejs.org/</p></div></div>
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 434px; left: 21.2982px; top: 608.482px;" data-name="text-bbf544" data-block-id="91e93d07561053b758ef58f341b6a834">
+<div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16;"><p style="text-align:left">https://v1.test-utils.vuejs.org/</p></div>
+<grammarly-extension data-grammarly-shadow-root="true" class="dnXmp" style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 20; --rem: 16;"></grammarly-extension><grammarly-extension data-grammarly-shadow-root="true" class="dnXmp" style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 20; --rem: 16;"></grammarly-extension>
+</div>
+<div class="sl-block" data-block-type="image" data-name="image-6a88e0" style="width: 434.47px; height: 326.893px; left: 24.265px; top: 259.554px; min-width: 1px; min-height: 1px;" data-block-id="bae415423936e9e5efbc6d683939181e"><div class="sl-block-content" style="z-index: 17;"><img class="" data-natural-width="839" data-natural-height="874" data-lazy-loaded="" data-crop-x="0" data-crop-y="0" data-crop-width="1" data-crop-height="0.722265" style="left: 0px; top: 0px; width: 434px; height: 453px;" data-src="vcus2025-full-cirlce/6774aea69278f1eee5f4738d0496c607.png"></div></div>
+<div class="sl-block" data-block-type="image" style="width: 434.47px; height: 326.893px; left: 502.765px; top: 259.554px; min-width: 1px; min-height: 1px;" data-block-id="7d8226c19ff635d40f4a6430336cd5ca" data-name="image-7f2079"><div class="sl-block-content" style="z-index: 21;"><img class="" data-natural-width="853" data-natural-height="1025" data-lazy-loaded="" data-crop-x="0" data-crop-y="0.245211" data-crop-width="1" data-crop-height="0.626139" style="left: 0px; top: -128px; width: 434px; height: 522px;" data-src="vcus2025-full-cirlce/72051976f0b10f6708fe8d1b47f5d681.png"></div></div></section><section data-id="fa85fa7c634d1bd2d31b7c3b1ed55723"><div class="sl-block" data-block-type="image" data-name="image-cdce1f" data-block-id="88761dd9ca134bbdde0ec9e10a226bb0" style="width: 344px; height: 488.875px; left: 308px; top: 105.562px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 10;"><img class="" data-natural-width="262" data-natural-height="369" data-crop-x="0.068127" data-crop-y="0.075993" data-crop-width="0.836983" data-crop-height="0.84456" style="left: -28px; top: -44px; width: 411px; height: 579px;" data-lazy-loaded="" data-src="vcus2025-full-cirlce/e86fc1d361c4df56134f98a55a9dcd59.png"></div></div></section></section><section class="stack" data-id="2662db9a3b7614df998e94eb121569cb"><section data-id="375197bdef5d5be44e1358de07514725"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 37px; height: auto;" data-block-id="05f24bfecd6993f2e0e4bd951aa78dc8"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 10;"><h2>Documentation</h2></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-df3003" data-block-id="9ebb73f8275001f95213fb19cfa1ba97" style="width: 739.909px; height: 457.208px; left: 110.046px; top: 139.792px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 11;"><img class="" data-natural-width="1696" data-natural-height="1048" data-lazy-loaded="" data-src="vcus2025-full-cirlce/e4b9941c864745eaebc67310d820939a.png"></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-f797d9" data-block-id="dfbfae3dc46f143f50318e946f845d34" style="height: auto; width: 600px; left: 180px; top: 610.5px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;"><p>https://www.vuejs.org</p></div></div></section><section data-id="745ea5dd62c4b9b885c271e3f3520073"><div class="sl-block" data-block-type="image" data-name="image-0913f2" data-block-id="1964177cd8c839458178e2772f57e6fd" style="width: 729.649px; height: 152.102px; left: 115.175px; top: 104.481px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 10;"><img class="" data-natural-width="331" data-natural-height="69" data-lazy-loaded="" data-src="vcus2025-full-cirlce/2dce536bc91898f3c424bce60f695bc0.svg"></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-46d22c" data-block-id="862a47832667c87a0c1baffda00879cd" style="width: 480px; height: 84px; left: 240.972px; top: 306.28px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 11;"><img class="" data-natural-width="480" data-natural-height="84" data-lazy-loaded="" data-src="vcus2025-full-cirlce/cf5331e09508304928f28282e0fcbb44.svg"></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-a27833" data-block-id="bf8af9cdd3508b76c04fb085f565a581" style="width: 406.4px; height: 65.024px; left: 20.8002px; top: 490px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 12;"><img class="" data-natural-width="300" data-natural-height="48" data-lazy-loaded="" data-src="vcus2025-full-cirlce/52008ac0d8aeea90f965267f95c226ee.svg"></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-c2d887" data-block-id="60bb5516bce309602302b28eb145635b" style="width: 446.055px; height: 47.0385px; left: 480.972px; top: 498.993px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 13;"><img class="" data-natural-width="275" data-natural-height="29" data-lazy-loaded="" data-src="vcus2025-full-cirlce/0073d90c50aa9b18256a7ae66fb1cec5.svg"></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-80d6a2" data-block-id="74af46216446404fe04e6909663d715f" style="height: auto; width: 600px; left: 189.999px; top: 244.481px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;"><p>https://vueschool.io</p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180.972px; top: 392.28px;" data-block-id="a1980440d9608c093887bcbc2fad9eba" data-name="text-514230"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15;"><p>https://vuemastery.com</p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: -75.9997px; top: 555.024px;" data-block-id="a70e516056e83a4bff28be4bce712c00" data-name="text-f0b78c"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16;"><p>https://frontendmasters.com</p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 404px; top: 555.024px;" data-block-id="7cb89702708ded1d8afe299804a7858d" data-name="text-9a9f4d"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 17;"><p>https://laracasts.com</p></div></div></section></section><section class="stack" data-id="1f3de4d02bb44ebe3f675c16e03716bc"><section data-id="b3435475a68ba64e8826da3db09f09f2"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 266px; height: auto;" data-block-id="0587b4c10ef61ef0cbb1919978fc6824"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;"><h1>Vue's Future?</h1></div></div></section><section data-id="a0c87f201e8632095a2de39b77049723"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 42px; height: auto;" data-block-id="d2522e4dca311835423a5ad762c68908">
+<div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 10;"><h2>Vapor Mode</h2></div>
+<grammarly-extension data-grammarly-shadow-root="true" class="dnXmp" style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 10; --rem: 16;"></grammarly-extension><grammarly-extension data-grammarly-shadow-root="true" class="dnXmp" style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 10; --rem: 16;"></grammarly-extension>
+</div>
+<div class="sl-block" data-block-type="image" style="width: 710px; height: 476px; left: 125px; top: 154px; min-width: 1px; min-height: 1px;" data-block-id="2748c4a7cc90ac0b0ae0a30be096adf9"><div class="sl-block-content" style="z-index: 11;"><img class="" data-natural-width="2398" data-natural-height="1350" data-crop-x="0.080139" data-crop-y="0" data-crop-width="0.839723" data-crop-height="1" style="left: -68px; top: 0px; width: 846px; height: 476px;" data-lazy-loaded="" data-src="vcus2025-full-cirlce/ba81398f928d3268a7b783db3a1301d0.png"></div></div></section><section data-id="61057cccb2dabe9e10314c35a902bc41"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 42px; height: auto;" data-block-id="c14046b9ee7685677176c954c0f91caa"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 10;"><h2>AI</h2></div></div>
+<div class="sl-block" data-block-type="image" style="width: 838.25px; height: 311.907px; left: 60.875px; top: 178.093px; min-width: 1px; min-height: 1px;" data-block-id="ff43c1a93a2a911f502bfba0f814698a"><div class="sl-block-content" style="z-index: 11;"><img class="" data-natural-width="602" data-natural-height="224" style="" data-lazy-loaded="" data-src="vcus2025-full-cirlce/55e503834f193dfc7fbfd5275ca78363.png"></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-367215" data-block-id="d47503a34670779ef85753f3ef6069df" style="height: auto; width: 786px; left: 87px; top: 527px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;"><p>https://bsky.app/profile/esm.dev/post/3lp7ldjp6zg2h</p></div></div></section><section data-id="191d51daec41abee0ed4b3e7b3068520"><div class="sl-block" data-block-type="image" data-name="image-9155f6" data-block-id="eb59be4bd1255b4952c9f9542e563f68" style="width: 960px; height: 311.891px; left: -1.42109e-14px; top: 194.054px;"><div class="sl-block-content" style="z-index: 10;"><img class="" data-natural-width="1105" data-natural-height="359" data-lazy-loaded="" data-src="vcus2025-full-cirlce/196869d6a610514b67c49d551666ce58.png"></div></div></section></section><section data-id="5f7cf0346415b1cfabe8bf12a010e6fa"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 266px; height: auto;" data-block-id="d90210640780fe75a5f7649a1f74b22f"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;"><h1>Thank you!<br>
+Enjoy the break!</h1></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-d9ab60" style="height: auto; width: 800px; left: 73.75px; top: 568.5px;" data-block-id="36edc1ed917cb8d7803cacf926692c33"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;"><p style="text-align:left">🌐  https://www.charlesvillard.co</p></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-bfeeb6" style="height: auto; width: 337px; left: 553.75px; top: 568.5px;" data-block-id="fd821303d3362042864c61e48c5e53be"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;"><p style="text-align:left">🦋  @charlesvillard.co</p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 337px; left: 73.75px; top: 614.5px;" data-name="text-297101" data-block-id="d9ad6076379197d428a7de6a3abc0d0b"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;"><p style="text-align:left">😶  @cdvillard</p></div></div></section>
+			</div>
+		</div>
+
+		<script>
+			var SLConfig = {"deck": {"id":3403316,"slug":"vcus2025-full-cirlce","title":"Full-Cirlce: a time traveler's perspective on Vue","description":"Charles Villard's VueConf US 2025 talk about coming back to Vue and exploring the then and now of a ten-year-old stalwart of a frontend framework","width":960,"height":700,"margin":0.05,"visibility":"all","published_at":"2025-05-20T20:25:10.936Z","sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/40b4403e3ff612166e1979f4ca4d705d/thumb.jpg?1747723248","view_count":55,"user":{"id":2927512,"username":"charlesvillard-1","name":"Charles Villard","description":"","thumbnail_url":"https://lh3.googleusercontent.com/a/ACg8ocJD_8Mvpupu_37WZyyYAOQiwo8m8oO7p1y1VcOiYMcOZoGoFKQ7-g=s96-c","account_type":"pro","team_id":null,"settings":{"id":57541678,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"default_deck_tag_id":null}},"background_transition":"slide","transition":"slide","theme_id":null,"theme_font":"montserrat","theme_color":"white-blue","auto_slide_interval":0,"comments_enabled":false,"forking_enabled":false,"rolling_links":false,"center":false,"shuffle":false,"should_loop":false,"share_notes":false,"slide_number":false,"slide_count":73,"rtl":false,"version":2,"collaborative":null,"deck_user_editor_limit":3,"data_updated_at":1748278508417,"font_typekit":null,"font_google":null,"time_limit":null,"navigation_mode":"default","upsizing_enabled":true,"language":"en","notes":{"388a0501ca580ca1a58418808040a553":"- INTRODUCTION\n    - I’m Charles Villard. I’m a web developer, currently at Hewlett-Packard Enterprise, working on internal front-end platform stuff\n    - I used to help out at Front-End Miami as a volunteer organizer. I also write occasionally on my blog and post a bunch on Bluesky.\n- CONTEXT\n    - I started my web development career in 2016 as a full-stack developer at a small agency, where I introduced Vue to their .NET Web Forms applications.\n    - That work taught me a lot about reactivity and front-end frameworks, and I enjoyed Vue since then.\n","f128b4bbcc38cce49af7f7fa3e1ad1e2":"- 2019: VUECONF US IN TAMPA at the Straz\n    - Attended [VueConf.US](http://VueConf.US), met lots of awesome people, and was selected to present a lightning talk\n    - (Photos from VueConf US, Me and Chris DeMars?)\n    - Embarrassing aside about that talk:\n        - I’d originally wanted to discuss newer features in development and what the RFC process looked like.\n        - I committed the ultimate speaker faux pas: changing my topic to how I learned Vue and how others can get involved.\n- Since that talk, I continued working with Vue in subsequent roles\n- I’ve sadly moved away from using Vue at work. I revisited some old work recently, and it felt like I never put it down.\n- Today, I want to share an updated version of that original topic with a twist to make up for that faux pas with:","49a4c48981228391eaf84592023d7785":"","5d4f6873f60248ff511abd831f13d63c":"Since VueConf is back in Tampa, I was tickled at revisiting my first reactive framework and its ecosystem, seeing where it was, where it’s at, and where it might be heading.","2ab156028893f3bb7a13de864daf3735":"A history lesson? At a tech conference?! Why?!\n","144c7ec50c18be1e7175f10705763954":"- Vue.js recently celebrated ten years of development.\n- Very mature as a framework that has driven an entire developer ecosystem.\n- As someone coming back into Vue, its developer experience makes it very comfortable to jump back in and feel like I never missed a step\n- Vue 2 has been a stable, reliable release even today","9d5635ed95293407418ab2ea72cd1e25":"- Vue 3 received a full overhaul via a rewrite using TypeScript and Vite in 2020 \n- Lots of improvements to the developer experience, \n- First-class TypeScript support\n- Improved SSR support\n- Improvements to hot module replacement, faster build times, and smaller bundle sizes\n- These benefits extended many of Vue's ancillary libraries and plugins, some of which we'll touch on today, giving many of the same benefits.\n(beat)\n- An unfortunate side effect of that rewrite was that it introduced challenges with adoption and migration.\n- that’s been acknowledged by the core team and community ","2214a67b55a9d9d2ed0998dc133753bf":"- Significant amounts of code written in Vue 2 that are still in production today, both in the form of projects and tooling\n- According to Monterail’s 2025 State of Vue.js Report (before the report was released):\n    - 35% of total respondents had worked with Vue 2.7 sometime in the last twelve months\n    - 19.5% of total respondents had worked with Vue 2.6 or prior","439ea91a6ad960f50d844bd0b35ff2ad":"- Not surprising if you consider this timeline\n    - Vue 2.0 (”Ghost in the Shell”) was released in Sept of 2016\n    - Vue 2.6 (”Macross”) was released in Feb of 2019\n    - Vue 3.0 (”One Piece”) was released more than a year and a half later, Sept 2020\n    - Even assuming your average development team didn’t start from Vue 1.0 in 2015, that’s four years of development and tech debt to migrate.","da04659ed03a51f791cab4c6dda0dc99":"- Originally, this talk was for people like me, coming back to Vue in the last year or so.\n- As I dug into my research and consulted with active Vue developers, I realized there was more to the story from when I left off.\n- Many reasons why projects might have yet to migrate\n    - Immense codebases\n    - Time and budget restrictions\n    - Vue 2-only dependencies\n    - Service-level agreements\n- It helps to remember and understand the environment and ecosystem, then and now, for when it does come time to make those changes.","22b04483bb7477dd4e467783b100d528":"- All of this combined reflects a software development sentiment that I believe goes underappreciated: engineering decisions have long shelf lives.\n- Time flies by quickly when calculated in engineering sprints and program increments\n- Those choices can significantly impact teams, especially when concerns like “refactoring” and “migrating” a project come up.","e8a3462034aff7c8114c280cbf55134f":"(beat)\n\n- At this point, I'd like to get a feel for the room:\n    - How many people knew this existed?\n    - How many people got their start with Vue 3 for everything?\n        - Might learn about some stuff if you weren’t around Vue 2\n    - Anyone still on Vue 2, maybe working on a migration?\n        - Might learn about some options you could transition to\n    - Any decision-makers just checking out Vue?\n        - This could be useful 10,000-foot view of what tools are out there\n        - Could help avoid confusion between tools for Vue 2 and Vue 3","009aacfa02a0eab9e2d3e9320f81d42c":"You won’t leave this talk an expert on anything!\nGuaranteed!\nBut you’ll have some leads to check out when we're through.","b2e16434365c5c8be697ca2493c73614":"- We’ll go through several sections from the perspective of starting and growing a Vue application, and compare the tools used in each from then to today.\n    - Initialization\n    - The Vue Framework\n    - Developer tools\n    - Routing\n    - Client-side state management\n    - Async state management\n    - Metaframeworks\n    - Testing","ca64d7d85f4e22415451ee55f298d8f5":"","4d86a20811559c43f65b806c92229af3":"- Another way to get started with some of Vue 3's tools is petite-vue \n- for certain use cases not requiring a build step, in the spirit of Alpine.js\n- Subset of Vue 3 features optimized for progressive enhancement\n- Let’s focus on building Vue applications, though.","ce6d58320c52b92aef6cd54b63a952c8":"You can start with script tags for Vue 2 and Vue 3\n- Vue 2 offers a development and production script\n- Vue 3 has a global build, which adds Vue to the global context of the browser","f55aafaf9329114c933478a8d71c7650":"- Getting started on a full-fat Vue project has always started with the CLI\n- VueCLI then https://cli.vuejs.org/\n    - Webpack-based CLI tooling for Vue\n    - Interactive scaffolding of Vue project with feature options including Babel, support for Progressive Web Apps, CSS pre-processing, TypeScript setup, and testing.\n    - Came with a GUI that could be used to spin up new projects\n    - Plugin system to extend Webpack configuration\n    - Access to the CLI service binary\n    - Can be used to build Vue 3 projects, but the most recent version defaults to Vue 3.2.x\n    - Maintenance has been discontinued in light of new tooling","0a13a80d3bda32338bc42eb30413a81b":"- `create-vue` now https://github.com/vuejs/create-vue\n    - Simplified Vite-based scaffolding CLI\n    - Capable of scaffolding both Vue 2 and Vue 3 applications by running `create` against `vue@legacy` and `vue@latest` respectively\n    - Many of the same feature options as Vue CLI, but JUST scaffolding: create-vue leaves the orchestration of plugins to Vite","698af05556feb39f12956afe3a3db332":"Now we get to building our applications\nWe won't be getting into all the extra libraries and tools we could pick from for component libraries, 3D, styling, etc. for now,\nWe’ll just be focusing on Vue.","b54baec636914829af6b269960c8242b":"Though the selection has vastly improved since back then\nEvan shared a few examples not too long ago.\nYou can check out Evan's conversation on that one site, or through the Nitter link on the slide if you want to avoid that one site.\nSorry, the link isn't super clean.\n","7b33ec87ed068801094f1d59d503b1b8":"","ddeef6767ac084b983e5665ff7b6f898":"- Vue’s primary DX patterns are already well established at this point.\n    - Incremental adoptability by way of a script tag\n    - Core features: Declarative Rendering with the Options API       \n    - Reactivity driven by `Object.defineProperty` under the hood, converting properties from the `data` option into getters and setters\n    - Single-File Components allowing for single-node component-based architecture\n    - Two-way data binding with `v-model`\n    - `v-` directives, allowing for dynamic data-binding via side effects\n- Some additional quality-of-life features\n    - TypeScript support, though it took some work\n        - Needed specific config, `Vue.extend`, class-style components, and sometimes external tooling\n    - Transitionary features in prep for v3.0 were starting to show\n        - New syntax for v-slot had been added","e038808d2a2fa9b2fb6feb3dad8ac702":"","5d0373c5a8f9f1e8978d287ad0514984":"- V3 major changes\n    - Along with TypeScript rewrite:\n    - Composition API, enabling clearer code organization and better reuse of code\n        - https://vueschool.io/lessons/introduction-to-the-vue-js-3-composition-api?friend=vuejs\n    - Proxy-based reactivity system, meaning better change detection and performance\n    - Improvements to custom element support\n    - New features, including Teleport for rendering content outside its parent, Fragments for multiple root nodes, and Suspense for displaying fallback content","22abb138b33996519f6aaecac3509536":"- As I mentioned before, many organizations have long-standing Vue 2 code in production\n- Example that comes to mind is NASA. I first heard of them using Vue in their project back in 2019.\n- Vue 2.7 was released in support of projects with dependencies still using Vue 2\n- Received a few backported features\n    - Composition API using Vue 2’s reactivity system\n    - SFCs got the ability to use `\u003cscript setup\u003e` and `v-bind` on CSS values","4fff28645a3277341b2b85d7c78507dd":"- Ultimately, Vue 2 has reached End Of Life as of December 31st, 2023\n    - There are groups still supporting Vue 2, like HeroDevs\n        - https://www.herodevs.com/blog-posts/what-it-really-takes-to-migrate-from-vue-2-to-vue-3\n","f4e48103c283e6c0f7fa9e11f9a8bbe6":"    - Also, for anyone else who was wondering, no worries, NASA’s already updated their Open Mission Control Technologies package to Vue 3.","6c53774de6e860b51c2c8faa236c5d8f":"Now that we have written some code, it's time to get some tools to help us better understand what we're writing.","aac01c48a99403666ef6d927c284e12e":"","9943cbdf712b3650d002f2acea805cbe":"","119ec8beed3ce16d17441ef8ee3bf060":"","aadc85eacbef824a6a50436fc67f1958":"We'll focus on VS Code Plugins for the sake of simplicity\nThere's a lot of great tooling for other editors, and WebStorm offers excellent support out of the box, but for now, just VS Code extensions","5055f675fa1af41333e880ea1c703438":"- Vetur\n    - VS Code plugin with tons of in-editor features\n        - syntax-highlighting\n        - Emmet support\n        - linting and error checking\n        - formatting\n        - intellisense\n        - component data auto-completion and info on hover\n    - Reached End of Life at the end of 2023 alongside Vue 2.7","cc00ebbf80db5ac793388558f7ac99bf":"","1a01e6e3c241faef63b01be49ad6ff1d":"- `vuejs/language-tools` \n- offered many of the same features as Vetur\n- additionally offered:\nType checking for Vue Single File Components (SFCs)\nDiagnostics and error checking\nNavigation features (go to definition, find references)\nComponent metadata extraction\n- formerly Volar\n    - Volar was itself a personal project of one Johnson Chu\n    - It offered improved architecture and performance over Vetur\n    - Eventually reached v1.0 and became the official Vue DevTools\n    - Over time, Volar became its own set of tools agnostic of Vue\n        - Embedded language processing\n        - TypeScript Language Server\n        - Interaction code for working with languages services\n    - Eventually, as Volar decoupled from Vue, the old Volar became vuejs/language-tools\n    - Volar.js is now an embedded language tooling framework used by the likes of Astro.","767c622307507d105e7610824799a079":"","0eb612ae5d56ac9447921e84aa02566f":"Now that we have some components built out, we’ve got a lot showing up on index.html. We're going to need pages, and that means we need routing!","f8d073a332c81dcdcce2e7f165497497":"- Component-based route configuration\n- Dynamic route matching\n- Nested declarative routing and programmatic navigation\n- HTML5 History Mode for improved SEO\n- View transitions and custom scroll behavior","1782758322226a56718f9f00782954c9":"- Vue Router 4 was written alongside Vue 3, making TypeScript fully supported by default\n- This allowed for many updates and changes\n- Composable route functions instead of class-based definition\n- Typed routes\n- New Memory history mode for Node or SSR that doesn't assume a browser environment.","9c36bd0c726fc16e39bad98e26676b53":"","b7e0d0351d55f234e41818673dc5628b":"Promises improved type safety for routes using resolver functions instead of magic strings\nTyped query parameters using built-in type primities and the ability to create custom types\nBuilt-in rejection handling","8d7beb63dbe316031133c12b5f35c6f7":"So we've got a few different components and pages built but maintaining data between them all is getting a little hairy, so let's talk client-side state.","6d9e99baba5f3e3edb0fdece92dffad5":"- Inspired by Redux, Flux, and Elm, it creates a central source of state\n- Multiple components can access and interact with that state through getters, mutations, and actions,\n- The state store could also be split into modules...","d71270516d60214b0ae775285a7c862c":"...which breaks down the store in a fractal pattern, with each module having its own state, mutations, getter, and modules, which...","1383295ae032b749b495cc16e2ecd460":"- Pinia became the official recommendation for Vue application state management in 2022\n- Evolved from an experiment to see what Vuex would look like using Vue 3’s Composition API into a fully realized state management library\n- The official Vuex docs state, “You could simply consider Pinia as Vuex 5 with a different name,” given the similarities between its API and the API proposed in the Vuex 5 RFC\n- Key differences between Vuex 4 and Pinia\n    - Pinia requires less cognitive complexity, forgoing the concept of mutations,\n    - Flatter folder structure for stores with inherent namespacing, though stores can be imported into other stores if dependencies are needed\n    - Simpler API than Vuex, making for less boilerplate\n    - Built-in testing utilities\n    - Plugins system\n    - Hot module replacement for stores without reloading pages","fab2be8a1aea5b2bb58571c611c7ece6":"Vuex and Pinia handle client state, but server state management can get hairy once asynchronous data and SSR come into play. How do?\nHandling data fetching concerns like caching, query invalidation, data-loading, optimistic updates, and stale data management\nIn my experience, we never really had a great story for async state management because SSR wasn't as big a concern as it is today. ","51fbe6b77874941cec1b3174baa41292":"- Opinionated framework-agnostic state management library for JavaScript and TypeScript projects\n- Offers Vue support through its `vue-query` utilities\n- Comes with DevTools out of the box\n- Doesn’t tie into global client state","09d2218390694d58008c59ebf6434eb0":"- Worth keeping an eye on: [Pinia Colada](https://pinia-colada.esm.dev/quick-start.htm)\n    - Billed as the “Data Fetching Layer for Pinia”\n    - Built by Posva/Eduardo San Martin Morote, who also created Pinia\n    - Reduces need for boilerplate and monitoring manual loading properties\n    - Ties directly into Pinia\n    - Not production-ready YET. Worth keeping an eye on.\n","220d05f75bcef0fe767211a403331074":"Great talks about Pinia Colada by Elise Patrikainen ","062f9681b9062da452b8c5aa8bf1edea":"At this point, we're pulling in a lot of tooling to get this application to work. It'd be a huge help if there were a framework that could handle all of this stuff for us. So let's check out our options.","139e26fd6438d03c36efdaf49d2b8c2a":"","94560abc1e5ebd8b74dd1196ce5276f8":"- Nuxt to Vue as Next to React\n- Established, opinionated framework designed for building scalable Vue applications based on strong conventions\n- Features\n    - file-based routing,\n    - in-built data fetching,\n    - render modes for static site generation and server-side generation,\n    - component auto-import,\n    - a module system for integrations\n- Much like Vue 2, Nuxt 2 has also reached end-of-life as of June 30, 2024\n    - HeroDevs offers Never-ending Support for Nuxt 2\n    - Nuxt team is offering Enterprise Support for those interested in migrating","55c53858dba7f31da6942d9a7b5c14a6":"- Nitro\n    - Universal Server Engine\n    - Cross-platform support for Node, Deno, browsers, and service workers\n    - Serverless support\n    - Hybrid rendering for route-based rendering and caching strategies\n    - Edge-side rendering, using CDN edge servers to render closer to users\n- Auto-imports extended from just components to include utilities and Vue 3 composables as well\n- Nuxt Dev Tools also introduced, and has been enabled by default as of version 3.8\n    - Tons of features I wish I had when working with Nuxt\n    - Too many to list but some personally interesting ones\n        - Component’s Graph View to see component relationships\n        - Imports tab for showing all auto-imports","5fb4c8b05229478ec24da8f7a0746636":"","b990d476c25a61591001ac888feccb47":"","944e11448b2c9f0b39ecadd65d68313c":"- VuePress\n    - Themeable static site generator built on Vue 2 and Webpack\n    - Originally designed for serving up the Vue docs, it proved useful for blogs and and content-driven static sites.\n    - File-based routing, using Markdown files in the folder structure to determine routes and internationalization\n- Gridsome - SSG with GraphQL, Gatsby equivalent\n    - Vue-based “Jamstack framework” - a static site generator\n    - Similar to Gatsby, its big feature was leveraging GraphQL to unify multiple data sources","bc4326483b5aa28fb996b68469582e2a":"","4ea775a070ff68e98915602c5cd3219c":"","6ffec591125fb0a02c0081a3a0ea367e":"","341b17ba9cf8749430b6fba221996904":"    - Vue Test Utils - set of utility functions for testing Vue components\n    - Then\n        - Jest was the recommended test runner to use with Vue Test utils\n        - Alternative\n            - Karma - browser-based test runner\n            - Mocha and Chai for test writing and assertions respectively\n            - Sinon for creating stubs and spies\n    - Now\n        - Vitest - Jest-compatible, Vite-native component testing framework\n        - Playwright - Cross-browser and cross-platform end-to-end testing platform\n        - Cypress - A multi-solution testing suite covering component testing, end-to-end testing, and more.\n","fa85fa7c634d1bd2d31b7c3b1ed55723":"","375197bdef5d5be44e1358de07514725":"Sections on\n- Migration Guide\n- Tooling","745ea5dd62c4b9b885c271e3f3520073":"- VueSchool.io\n- VueMastery\n- Frontend Masters\n    - Was where I got my start\n    - Vue Intro - Sarah Drasner\n    - (refer to Ramp up to vue slide)\n- Laracasts (wasn’t expecting that)","b3435475a68ba64e8826da3db09f09f2":"- Vapor Mode\n    - New compilation strategy","a0c87f201e8632095a2de39b77049723":"Evan just showed us the new feature coming to Vue and an example of what future updates will look like.\nThe core team is dedicating to less friction in coming updates, with more happening in the background.","61057cccb2dabe9e10314c35a902bc41":"- Caveat: my thoughts on this section are very much anecdotal, but with the prevalence of this topic, I thought it important to address\n- In the world of software development today, nothing is certain except JavaScript and AI.\n- Some statistics:\n    - According to GitHub’s 2024 Octoverse report, JavaScript and TypeScript were the second and third most popular languages, respectively\n        - The report notes isn’t because JavaScript is getting less popular, but more likely TypeScript is seeing growing adoption\n    - Referring back to Monterail’s State of Vue survey, it cites multiple sources that point to React still being the dominant framework by a lot.\n- So, is it any wonder that asking AI agents to generate Vue code is a dice roll?\n- Strategies to mitigate this","191d51daec41abee0ed4b3e7b3068520":"","5f7cf0346415b1cfabe8bf12a010e6fa":""}}};
+
+
+			// Use local fonts
+			SLConfig.fonts_url = 'lib/fonts/';
+		</script>
+
+		<script src="lib/reveal.js"></script>
+		<script src="lib/reveal-plugins.js"></script>
+		<script src="lib/offline.js"></script>
+
+		<!-- Initialize the presentation -->
+		<script>
+			Reveal.initialize({
+				width: 960,
+				height: 700,
+				margin: 0.05,
+
+
+				hash: true,
+				controls: true,
+				progress: true,
+				mouseWheel: false,
+				showNotes: false,
+				slideNumber: false,
+				fragmentInURL: true,
+
+				autoSlide: 0,
+				autoSlideStoppable: true,
+
+				autoAnimateMatcher: SL.deck.AutoAnimate.matcher,
+
+				scrollActivationWidth: null,
+
+				center: false,
+				shuffle: false,
+				loop: false,
+				rtl: false,
+				navigationMode: "default",
+
+				transition: "slide",
+				backgroundTransition: "slide",
+
+				highlight: {
+					escapeHTML: false
+				},
+
+				plugins: [ RevealZoom, RevealNotes, RevealMarkdown, RevealHighlight ]
+			});
+		</script>
+
+
+
+
+	</body>
+</html>
