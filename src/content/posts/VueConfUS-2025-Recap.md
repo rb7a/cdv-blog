@@ -1,7 +1,7 @@
 ---
 title: VueConf.US 2025 Recap
 pubDate: 2025-05-26T18:58:47.609Z
-updatedDate: 2025-05-26T19:16:21.280Z
+updatedDate: 2025-05-26T19:18:39.394Z
 description: Coming back to the framework I started with
 draft: true
 ---
@@ -17,3 +17,5 @@ For those unfamiliar with my backstory, I cut my teeth using front-end framework
 Vueconf.US typically has a day of workshops before two days of talks, but as I didn't get to attend the workshops, my first day was all talks. Admittedly, the morning was all stress because I was [one of the speakers](/talks/full-circle-vueconfus-2025/ "Slides for \"Full-Circle: A time traveler's perspective on Vue\"")!
 
 ![](/assets/media/bafkreihimqtebopm56hig7mj4yfkyysaeluiie2edbk6hwq5h2blputapa.jpg)
+
+My talk, titled "Full-Circle: A time traveler's perspective on Vue", was effectively a recap of the last ten or so years of Vue's ecosystem. As the title tells it, it's from the perspective of someone who used to work within the ecosystem and is coming back after years away.
