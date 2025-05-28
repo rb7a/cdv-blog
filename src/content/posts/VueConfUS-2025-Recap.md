@@ -1,7 +1,7 @@
 ---
 title: VueConf.US 2025 Recap
 pubDate: 2025-05-26T18:58:47.609Z
-updatedDate: 2025-05-28T13:32:04.055Z
+updatedDate: 2025-05-28T13:38:17.915Z
 description: Coming back to the framework I started with
 featuredImage: >-
   https://assets.tina.io/ccae3147-013b-4061-9b12-b6b5c70dc307/assets/media/street.jpg
@@ -36,3 +36,7 @@ In addition to giving my talk and emceeing for the afternoon, I got to enjoy fan
 * Abbey Perini hit us in the feels with her talk about how ADHD can be some developers' superpower and how they must advocate for themselves
 * Nerando Johnson called us all out about our side projects, whether they're our sidekicks or mentors
 * Henry Lie showed us how automating our testing suites (you do have tests, right?) isn't as daunting as we think
+
+On top of the talks, the "hallway track" always makes for insightful conversations, speaking with developers from around town and the world about their challenges and discoveries. All in, I couldn't have asked for a more energizing experience. If ever you get the opportunity, I encourage you to attend an in-person conference. Especially in the recent climate of the tech industry, it's one of the best places to find inspiration, connection, and drive.
+
+Special thanks to Pratik and Vincent of [connectevents.io](https://connectevents.io/) for having me!
