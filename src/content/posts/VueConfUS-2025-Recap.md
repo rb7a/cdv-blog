@@ -1,7 +1,7 @@
 ---
 title: VueConf.US 2025 Recap
 pubDate: 2025-05-26T18:58:47.609Z
-updatedDate: 2025-05-28T11:43:47.472Z
+updatedDate: 2025-05-28T11:52:41.190Z
 description: Coming back to the framework I started with
 draft: true
 ---
@@ -14,8 +14,12 @@ For those unfamiliar with my backstory, I cut my teeth using front-end framework
 
 ## Two days of great talks
 
-Vueconf.US features a day of workshops, which I didn't get to attend, followed by two days of fantastic talks, the first of which was all stress because I was [one of the speakers](/talks/full-circle-vueconfus-2025/ "Slides for \"Full-Circle: A time traveler's perspective on Vue\"")!
+Vueconf.US features a day of workshops, which I didn't get to attend, followed by two days of fantastic talks, the first of which was all stress because I was [one of the speakers](https://vueconf.us/session?sessionId=824948 "Session page for \"Full-Circle: A time traveler's perspective on Vue\"")!
 
 ![](/assets/media/bafkreihimqtebopm56hig7mj4yfkyysaeluiie2edbk6hwq5h2blputapa.jpg)
 
-My talk, "Full-Circle: A time traveler's perspective on Vue", is a recap of the last ten-ish years of Vue's ecosystem. Like the title says, it's from the perspective of someone who used to work within the ecosystem and is coming back after years away. When I started researching for this talk, what was supposed to be a comparison of what I used to work with and what Vue developers are using also became a discussion on the impacts of migrations and refactors on developers and engineers.
+My talk, "Full-Circle: A Time Traveler's Perspective on Vue," is a recap of the last ten or so years of Vue's ecosystem. Like the title suggests, it's from the perspective of someone who used to work within the ecosystem and is returning to it after years away. When I started researching for this talk, what was a comparison of what I used to work with and what Vue developers are using also became a discussion on the impacts of migrations and refactors on developers and engineers. 
+
+Giving the talk and hoping all my slides worked was one thing, but it was another thing to be giving it following the creator of the Vue framework, Evan You! No pressure, right?
+
+![](/assets/media/20250520_093844.jpg)
