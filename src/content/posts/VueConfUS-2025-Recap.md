@@ -1,7 +1,7 @@
 ---
 title: VueConf.US 2025 Recap
 pubDate: 2025-05-26T18:58:47.609Z
-updatedDate: 2025-05-28T13:25:36.468Z
+updatedDate: 2025-05-28T13:32:04.055Z
 description: Coming back to the framework I started with
 featuredImage: >-
   https://assets.tina.io/ccae3147-013b-4061-9b12-b6b5c70dc307/assets/media/street.jpg
@@ -27,7 +27,12 @@ Giving the talk and hoping all my slides worked was one thing, but it was anothe
 
 ![](/assets/media/20250520_093844.jpg)
 
-In addition to giving my talk and emceeing for the afternoon, I got to enjoy fantastic talks by fantastic speakers! I won't go through every one, but some talks of note:
+In addition to giving my talk and emceeing for the afternoon, I got to enjoy fantastic talks by fantastic speakers! I won't go through every one, as they'll all be available online at some point, but some talks of note:
 
 * Evan forwent his typical State of Vue-style address to get into the technical details of Vue's new [Vapor Mode](https://www.vuemastery.com/blog/the-future-of-vue-vapor-mode/#the-case-for-vapor-mode)
-*
+* Daniel Roe and Alexander Lichter of the Nuxt core team spoke about the state of Nuxt development and underutilized features, respectively
+* Alex Rivere gifted us the use-magic-props package after teaching us increasingly chaotic ways to define props on Vue components
+* Kathryn Grayson Nanz embodied the "Pirate City Vue" theme, encouraging us to ruin our users' experiences for fun and profit
+* Abbey Perini hit us in the feels with her talk about how ADHD can be some developers' superpower and how they must advocate for themselves
+* Nerando Johnson called us all out about our side projects, whether they're our sidekicks or mentors
+* Henry Lie showed us how automating our testing suites (you do have tests, right?) isn't as daunting as we think
