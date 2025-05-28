@@ -1,12 +1,12 @@
 ---
 title: VueConf.US 2025 Recap
 pubDate: 2025-05-26T18:58:47.609Z
-updatedDate: 2025-05-28T13:41:44.910Z
+updatedDate: 2025-05-28T13:41:51.168Z
 description: Coming back to the framework I started with
 featuredImage: >-
   https://assets.tina.io/ccae3147-013b-4061-9b12-b6b5c70dc307/assets/media/street.jpg
 featuredImageAlt: VueConf 2025 logo
-draft: true
+draft: false
 ---
 
 I attended Vueconf.US 2025 this past week as it returned to Tampa, Florida! This was a bit of a homecoming for me, as Vueconf.US was where I gave my first-ever talk to a live crowd when it was last in Tampa in 2019. I finally got some time to write, having taken the week off to also celebrate graduations and get some downtime, so here's a recap and some thoughts on my experience!
