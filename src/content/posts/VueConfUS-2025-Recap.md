@@ -1,7 +1,7 @@
 ---
 title: VueConf.US 2025 Recap
 pubDate: 2025-05-26T18:58:47.609Z
-updatedDate: 2025-05-28T13:15:11.246Z
+updatedDate: 2025-05-28T13:25:36.468Z
 description: Coming back to the framework I started with
 featuredImage: >-
   https://assets.tina.io/ccae3147-013b-4061-9b12-b6b5c70dc307/assets/media/street.jpg
@@ -17,7 +17,7 @@ For those unfamiliar with my backstory, I cut my teeth using front-end framework
 
 ## Two days of great talks
 
-Vueconf.US features a day of workshops, which I didn't get to attend, followed by two days of fantastic talks, the first of which was all stress because I was [one of the speakers](https://vueconf.us/session?sessionId=824948 "Session page for \"Full-Circle: A time traveler's perspective on Vue\"")!
+Vueconf.US features a day of workshops, which I didn't get to attend, followed by two days of talks, the first of which was all stress because I was [one of the speakers](https://vueconf.us/session?sessionId=824948 "Session page for \"Full-Circle: A time traveler's perspective on Vue\"")!
 
 ![](/assets/media/bafkreihimqtebopm56hig7mj4yfkyysaeluiie2edbk6hwq5h2blputapa.jpg)
 
@@ -27,6 +27,7 @@ Giving the talk and hoping all my slides worked was one thing, but it was anothe
 
 ![](/assets/media/20250520_093844.jpg)
 
-Evan forwent his typical "State of Vue"-style talk and gave us a technical look at Vue's upcoming [Vapor Mode](https://www.vuemastery.com/blog/the-future-of-vue-vapor-mode/). Rather than a virtual DOM to handle rendering, Vapor Mode provides an opt-in compilation strategy that forgoes the use of VDOM runtimes, increasing performance with no change to developer experience. This is part and parcel of the Vue team's strategy to surface more behind-the-scenes updates moving forward from Vue 3.\
-\
-After my talk,
+In addition to giving my talk and emceeing for the afternoon, I got to enjoy fantastic talks by fantastic speakers! I won't go through every one, but some talks of note:
+
+* Evan forwent his typical State of Vue-style address to get into the technical details of Vue's new [Vapor Mode](https://www.vuemastery.com/blog/the-future-of-vue-vapor-mode/#the-case-for-vapor-mode)
+*
