@@ -1,7 +1,7 @@
 ---
 title: VueConf.US 2025 Recap
 pubDate: 2025-05-26T18:58:47.609Z
-updatedDate: 2025-05-28T11:52:41.190Z
+updatedDate: 2025-05-28T12:10:27.021Z
 description: Coming back to the framework I started with
 draft: true
 ---
@@ -18,8 +18,12 @@ Vueconf.US features a day of workshops, which I didn't get to attend, followed b
 
 ![](/assets/media/bafkreihimqtebopm56hig7mj4yfkyysaeluiie2edbk6hwq5h2blputapa.jpg)
 
-My talk, "Full-Circle: A Time Traveler's Perspective on Vue," is a recap of the last ten or so years of Vue's ecosystem. Like the title suggests, it's from the perspective of someone who used to work within the ecosystem and is returning to it after years away. When I started researching for this talk, what was a comparison of what I used to work with and what Vue developers are using also became a discussion on the impacts of migrations and refactors on developers and engineers. 
+My talk, "Full-Circle: A Time Traveler's Perspective on Vue," is a recap of the last ten or so years of Vue's ecosystem. Like the title suggests, it's from the perspective of someone who used to work within the ecosystem and is returning to it after years away. When I started researching for this talk, what was a comparison of what I used to work with and what Vue developers are using also became a discussion about the impact of Vue 3's rewrite, the struggles of major migrations, and the impact engineering decisions can have on developers and engineers.
 
-Giving the talk and hoping all my slides worked was one thing, but it was another thing to be giving it following the creator of the Vue framework, Evan You! No pressure, right?
+Giving the talk and hoping all my slides worked was one thing, but it was another thing to be giving it following the creator of the Vue framework, Evan You! No pressure, right? 
 
 ![](/assets/media/20250520_093844.jpg)
+
+Evan forwent his typical "State of Vue"-style talk and gave us a technical look at Vue's upcoming [Vapor Mode](https://www.vuemastery.com/blog/the-future-of-vue-vapor-mode/). Rather than a virtual DOM to handle rendering, Vapor Mode provides an opt-in compilation strategy that forgoes the use of VDOM runtimes, increasing performance with no change to developer experience. This is part and parcel of the Vue team's strategy to surface more behind-the-scenes updates moving forward from Vue 3.\
+\
+After my talk, 
