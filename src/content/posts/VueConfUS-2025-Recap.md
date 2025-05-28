@@ -1,10 +1,11 @@
 ---
 title: VueConf.US 2025 Recap
 pubDate: 2025-05-26T18:58:47.609Z
-updatedDate: 2025-05-28T13:12:08.493Z
+updatedDate: 2025-05-28T13:12:25.395Z
 description: Coming back to the framework I started with
 featuredImage: >-
   https://assets.tina.io/ccae3147-013b-4061-9b12-b6b5c70dc307/assets/media/street.jpg
+featuredImageAlt: VueConf 2025 logo
 draft: true
 ---
 
