@@ -1,21 +1,33 @@
 ---
 title: Leet Heat Travelogue
 pubDate: 2025-01-25T16:38:01.407Z
-updatedDate: 2025-01-25T17:18:42.920Z
+updatedDate: 2025-06-23T06:18:09.197Z
 description: What a blast
 draft: true
 ---
 
-Earlier this year, I got to shoot an episode of Leet Heat! Jason Lengstorf, Mark Techson, Annie Sexton, and the entire crew were phenomenal to work with. I'm writing this well before the episodes air, so I can talk about my experience while it's fresh. Consider this a little peek behind the scenes.
+![](/assets/media/BA2_4871_Web.jpeg)
 
-For those who haven't seen it yet, Leet Heat is a game show concept from the mind of Jason Lengstorf. If you like Jeopardy, web development, and Hot Ones, you will certainly dig this! Dubbed "the worst technical interview ever," two contestants spin a wheel of category tiles and answer questions based on whatever category it lands on. Should they get it wrong, they're docked points, increase their spice level, and have to eat a spicy bite. Every game also starts with one "Leet Heat" tile, and as the questions for each category are depleted, that category also becomes a "Leet Heat" tile! When a player spins and lands on that, their spice level is automatically increased and they have to eat a spicy bite. Whoever gets the most points at the end of two rounds wins.
+Earlier this year, [I got to be on an episode of Leet Heat](https://www.youtube.com/watch?v=ZY3uQb_goHk)! Jason, Mark, Annie, and the entire crew were phenomenal to work with! I'm writing this months before the episode airs. That way, I can tell you about my experience while it's fresh. Consider this a little peek behind the scenes.
 
-Walking into the studio, I was blown away by the set. The whole thing is shot on several cameras with Mark, Annie, Jason, and the contestants miked up. The crew was amazing, handling lighting, sound, hair, makeup, props, set design, still photography, and video production. They made us all look fantastic! I can't thank them enough.
+## The show
 
-Seeing all of that made being there all the more real, and I have to admit my nerves started getting to me. I've been on a stage in front of people before, but this had been the first time in a long while. My biggest fear at that moment was seizing up in front of the camera, but everyone had my back. My opponent, Brittany Ellich, was super encouraging and kept me cool in the moments leading up to our shoot, and Mark was ever the consummate host and performer, checking in on us when he could, keeping us loose, and having fun the entire time we were at those podiums.
+For those who haven't seen it yet, Leet Heat is a game-show concept from the mind of [Jason Lengstorf](https://jason.energy/). If you like Jeopardy, web development, and Hot Ones, you will certainly dig this! Dubbed "the worst technical interview ever," two contestants spin a wheel of categories and answer questions based on what it lands on. Should they get the question wrong, players are docked points, their spice level is increased, and they have to eat a spicy Deno nuggie! The higher a player's spice level, the hotter the bite, up to level 10.
 
-After our episode was in the can, I hung out there for the rest of the day and got to see more of the behind-the-scenes process. The goal was to shoot five episodes in a day, and despite any setbacks or hold-ups, Jason and the crew managed to knock them all out on time. Given the number of moving parts and variables, it's hard to describe how impressive a feat this was. Once a groove was found, everything fell into place and everyone on the cast and crew worked in sync. I'm pretty sure this is what the phrase "movie magic" refers to.
+Every game also starts with one "Leet Heat" tile. When a player spins and lands on that, their spice level is automatically increased, and they have to eat a spicy bite. Plus, once a category is played, that category also becomes a "Leet Heat" tile! That means players eventually end up with a five-in-six chance of downing some spicy noms! Whoever gets the most points at the end of two rounds of spinning and spice wins... bragging rights, essentially!
 
-While this will likely be the corniest line I ever wrote, the real magic was indeed the amazing group of people I got to meet along the way. I got to meet so many cool people that I've only gotten to interact with online. There's something about connecting with other web developers and software engineers that re-energizes me about this work. It gets me wanting to build something cool, whatever that is! If you're reading this and we met on the Leet Heat set, you were an absolute pleasure to hang out with, and I hope we can do it again some time!\
-\
-I can't thank Jason enough for letting me be a part of this, and I can't wait for you to watch these episodes! Some are hilarious, others are real nail-biters. My big ask of you is that you please check them out so we can do more cool stuff like this in our community! The more that companies see we like this kind of content, the more companies might be willing to sponsor it, and the more opportunities we create for our community to make and build fun stuff together!
+## On the set
+
+Walking into the studio, it was so cool seeing the setup in person. The whole thing is shot on several high-def cameras with [Mark Techson](https://marktechson.com/) hosting, [Annie Sexton](https://anniesexton.com/) serving up punishing Deno nuggies, Jason producing and acting as the "man in the chair," and the contestants at their podiums, all mic'ed up. Watching Jason's crew handling lighting, sound, hair, makeup, props, set design, still photography, and video production was amazing.
+
+Standing in the midst of all that made being there all the more real and my nerves started getting to me. My biggest fear at that moment was seizing up in front of the camera. Thankfully, everyone had my back. My opponent, [Brittany Ellich](https://brittanyellich.com/) (who also got to shoot an [episode of Web Dev Challenge](https://www.youtube.com/watch?v=X2sEoZG8EIw\&t), you should check it out!), was super encouraging leading up to our shoot. Mark was ever the consummate game show host, checking in on us when he could, keeping us loose, and making sure it was fun the entire time.
+
+After our episode was in the can, I hung out there for the rest of the day and got to see more of the behind-the-scenes process. The goal was to shoot five episodes in a day, which Jason and the crew managed to knock out on time despite setbacks and hold-ups. Given the number of moving parts and variables, it's hard to describe how impressive a feat this was. Once a groove was found, everything and everyone felt in sync.
+
+This will be the corniest line I'll ever write, but the real magic was indeed the amazing group of people I got to connect with along the way. Whether it was someone I only got to chat with online before that day, or someone I'd never met before, it was a blast hanging out with the other contestants! There's something about connecting with other developers and engineers that re-energizes me about this work. It gets me wanting to learn and build! If you're reading this and we met on the Leet Heat set, you were an absolute pleasure to hang out with, and I hope we can do it again sometime!
+
+## A thanks and a plea
+
+I can't thank Jason enough for letting me be a part of this! If this is how you're learning about Leet Heat, I can't wait for you to watch these episodes. Some are hilarious, and some are real nail-biters!
+
+If there is something I could ask of you, though, it's that you please share them with your colleagues or even people outside the tech community! We're in a time right now where the tech industry can use some levity, and it'd make me so happy to see Jason and others do more cool stuff like this! The more eyeballs these get, the more companies see people like this kind of content, the more companies might be willing to sponsor it, and the more opportunities we create for our community to make and build fun stuff together!
