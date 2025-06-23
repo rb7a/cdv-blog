@@ -1,7 +1,7 @@
 ---
 title: Leet Heat Travelogue
 pubDate: 2025-01-25T16:38:01.407Z
-updatedDate: 2025-06-23T06:22:23.493Z
+updatedDate: 2025-06-23T06:26:18.620Z
 description: What a blast
 draft: true
 ---
@@ -19,6 +19,8 @@ For those who haven't seen it yet, Leet Heat is a game-show concept from the min
 Every game also starts with one "Leet Heat" tile. When a player spins and lands on that, their spice level is automatically increased, and they have to eat a spicy bite. Plus, once a category is played, that category also becomes a "Leet Heat" tile! That means players eventually end up with a five-in-six chance of downing some spicy noms! Whoever gets the most points at the end of two rounds of spinning and spice wins... bragging rights, essentially!
 
 ## On the set
+
+![](/assets/media/BA1_5893_Web.jpeg)
 
 Walking into the studio, it was so cool seeing the setup in person. The whole thing is shot on several high-def cameras with [Mark Techson](https://marktechson.com/) hosting, [Annie Sexton](https://anniesexton.com/) serving up punishing Deno nuggies, Jason producing and acting as the "man in the chair," and the contestants at their podiums, all mic'ed up. Watching Jason's crew handling lighting, sound, hair, makeup, props, set design, still photography, and video production was amazing.
 
