@@ -1,9 +1,9 @@
 ---
 title: Leet Heat Travelogue
 pubDate: 2025-01-25T16:38:01.407Z
-updatedDate: 2025-06-23T06:47:05.865Z
+updatedDate: 2025-06-23T06:54:01.821Z
 description: What a blast
-draft: true
+draft: false
 ---
 
 ![](/assets/media/BA2_4871_Web.jpeg)
@@ -38,6 +38,6 @@ Now, this will be the corniest line I'll ever write, but the real magic was inde
 
 ![](/assets/media/20250123_19372_Web.jpeg)
 
-I can't thank Jason enough for letting me be a part of this! If this is how you're learning about Leet Heat, I can't wait for you to watch these episodes. Some are hilarious, and some are real nail-biters!
+I can't thank Jason enough for letting me be a part of this! If this is how you're learning about [Leet Heat](https://www.youtube.com/playlist?list=PLz8Iz-Fnk_eQwPfZx8lixhpBg22KCCZzo), I can't wait for you to watch these episodes. Some are hilarious, and some are real nail-biters!
 
 If there is something I could ask of you, though, it's that you please share these with your colleagues or even people outside the tech community! We're in a time right now where the tech industry can use some levity. It'd make me so happy to see Jason and others do more cool stuff like this! The more eyeballs these get and the more companies see people like this kind of content, the more companies might be willing to sponsor it, and the more opportunities we create for our community to make and build fun stuff together!
