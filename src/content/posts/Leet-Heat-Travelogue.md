@@ -1,7 +1,7 @@
 ---
 title: Leet Heat Travelogue
-pubDate: 2025-01-25T16:38:01.407Z
-updatedDate: 2025-06-23T06:54:01.821Z
+pubDate: 2025-06-23T06:54:00.000Z
+updatedDate: 2025-06-23T07:04:01.225Z
 description: What a blast
 draft: false
 ---
