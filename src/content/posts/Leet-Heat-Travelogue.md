@@ -1,7 +1,7 @@
 ---
 title: Leet Heat Travelogue
 pubDate: 2025-01-25T16:38:01.407Z
-updatedDate: 2025-06-23T06:26:18.620Z
+updatedDate: 2025-06-23T06:32:05.606Z
 description: What a blast
 draft: true
 ---
@@ -22,9 +22,11 @@ Every game also starts with one "Leet Heat" tile. When a player spins and lands 
 
 ![](/assets/media/BA1_5893_Web.jpeg)
 
-Walking into the studio, it was so cool seeing the setup in person. The whole thing is shot on several high-def cameras with [Mark Techson](https://marktechson.com/) hosting, [Annie Sexton](https://anniesexton.com/) serving up punishing Deno nuggies, Jason producing and acting as the "man in the chair," and the contestants at their podiums, all mic'ed up. Watching Jason's crew handling lighting, sound, hair, makeup, props, set design, still photography, and video production was amazing.
+Walking into the studio, it was so cool seeing the setup in person. The whole thing is shot on several high-def cameras with [Mark Techson](https://marktechson.com/) hosting, [Annie Sexton](https://anniesexton.com/) serving up punishing Deno nuggies, Jason producing and acting as the "man in the chair," and the contestants at their podiums, all mic'ed up. Watching Jason's crew handling lighting, sound, hair, makeup, props, set design, still photography, and video production was amazing. (Also, special thanks to [Jason Hill](https://jasonhillphoto.com/) for the photos you're seeing here!)
 
 Standing in the midst of all that made being there all the more real and my nerves started getting to me. My biggest fear at that moment was seizing up in front of the camera. Thankfully, everyone had my back. My opponent, [Brittany Ellich](https://brittanyellich.com/) (who also got to shoot an [episode of Web Dev Challenge](https://www.youtube.com/watch?v=X2sEoZG8EIw\&t), you should check it out!), was super encouraging leading up to our shoot. Mark was ever the consummate game show host, checking in on us when he could, keeping us loose, and making sure it was fun the entire time.
+
+![](/assets/media/20250123_125219_Web.jpeg)
 
 After our episode was in the can, I hung out there for the rest of the day and got to see more of the behind-the-scenes process. The goal was to shoot five episodes in a day, which Jason and the crew managed to knock out on time despite setbacks and hold-ups. Given the number of moving parts and variables, it's hard to describe how impressive a feat this was. Once a groove was found, everything and everyone felt in sync.
 
