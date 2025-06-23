@@ -1,7 +1,7 @@
 ---
 title: Leet Heat Travelogue
 pubDate: 2025-01-25T16:38:01.407Z
-updatedDate: 2025-06-23T06:18:09.197Z
+updatedDate: 2025-06-23T06:22:23.493Z
 description: What a blast
 draft: true
 ---
@@ -11,6 +11,8 @@ draft: true
 Earlier this year, [I got to be on an episode of Leet Heat](https://www.youtube.com/watch?v=ZY3uQb_goHk)! Jason, Mark, Annie, and the entire crew were phenomenal to work with! I'm writing this months before the episode airs. That way, I can tell you about my experience while it's fresh. Consider this a little peek behind the scenes.
 
 ## The show
+
+![](/assets/media/BA2_4828_Web.jpeg)
 
 For those who haven't seen it yet, Leet Heat is a game-show concept from the mind of [Jason Lengstorf](https://jason.energy/). If you like Jeopardy, web development, and Hot Ones, you will certainly dig this! Dubbed "the worst technical interview ever," two contestants spin a wheel of categories and answer questions based on what it lands on. Should they get the question wrong, players are docked points, their spice level is increased, and they have to eat a spicy Deno nuggie! The higher a player's spice level, the hotter the bite, up to level 10.
 
