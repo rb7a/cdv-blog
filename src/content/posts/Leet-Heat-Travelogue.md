@@ -1,28 +1,30 @@
 ---
 title: Leet Heat Travelogue
 pubDate: 2025-01-25T16:38:01.407Z
-updatedDate: 2025-06-23T06:32:05.606Z
+updatedDate: 2025-06-23T06:38:38.830Z
 description: What a blast
 draft: true
 ---
 
 ![](/assets/media/BA2_4871_Web.jpeg)
 
-Earlier this year, [I got to be on an episode of Leet Heat](https://www.youtube.com/watch?v=ZY3uQb_goHk)! Jason, Mark, Annie, and the entire crew were phenomenal to work with! I'm writing this months before the episode airs. That way, I can tell you about my experience while it's fresh. Consider this a little peek behind the scenes.
+Earlier this year, [I got to be on an episode of Leet Heat](https://www.youtube.com/watch?v=ZY3uQb_goHk)! Jason, Mark, Annie, and the entire crew were phenomenal to work with! I'm a few days behind publishing this after some very necessary days off, but I wrote most of this months before the episode aired, so I could tell you about my experience while it was fresh. Consider this a little peek behind the scenes.
 
 ## The show
 
 ![](/assets/media/BA2_4828_Web.jpeg)
 
-For those who haven't seen it yet, Leet Heat is a game-show concept from the mind of [Jason Lengstorf](https://jason.energy/). If you like Jeopardy, web development, and Hot Ones, you will certainly dig this! Dubbed "the worst technical interview ever," two contestants spin a wheel of categories and answer questions based on what it lands on. Should they get the question wrong, players are docked points, their spice level is increased, and they have to eat a spicy Deno nuggie! The higher a player's spice level, the hotter the bite, up to level 10.
+For those who haven't seen it yet, Leet Heat is a game-show concept from the mind of [Jason Lengstorf](https://jason.energy/). If you like Jeopardy, web development, and Hot Ones, you will certainly dig this! Dubbed "the worst technical interview ever," two contestants spin a wheel of categories and answer questions based on what it lands on. Should they get the question wrong, players are docked points, their spice level is increased, and they have to eat a spicy [Deno Nuggie](https://www.youtube.com/watch?v=3JrR7uktimg)! The higher a player's spice level, the hotter the bite, up to level 10.
 
-Every game also starts with one "Leet Heat" tile. When a player spins and lands on that, their spice level is automatically increased, and they have to eat a spicy bite. Plus, once a category is played, that category also becomes a "Leet Heat" tile! That means players eventually end up with a five-in-six chance of downing some spicy noms! Whoever gets the most points at the end of two rounds of spinning and spice wins... bragging rights, essentially!
+Every game also starts with one "Leet Heat" tile. When a player spins and lands on that tile, their spice level is automatically increased, and they have to eat a spicy bite. Plus, once a category is played through, that category also becomes a "Leet Heat" tile! That means players eventually end up with a five-in-six chance of downing some spicy noms! Whoever gets the most points at the end of two rounds of spinning and spice wins the game and... well, bragging rights, essentially!
 
 ## On the set
 
 ![](/assets/media/BA1_5893_Web.jpeg)
 
-Walking into the studio, it was so cool seeing the setup in person. The whole thing is shot on several high-def cameras with [Mark Techson](https://marktechson.com/) hosting, [Annie Sexton](https://anniesexton.com/) serving up punishing Deno nuggies, Jason producing and acting as the "man in the chair," and the contestants at their podiums, all mic'ed up. Watching Jason's crew handling lighting, sound, hair, makeup, props, set design, still photography, and video production was amazing. (Also, special thanks to [Jason Hill](https://jasonhillphoto.com/) for the photos you're seeing here!)
+Walking into the studio, it was so cool seeing the setup in person. The whole thing is shot on several high-def cameras with [Mark Techson](https://marktechson.com/) hosting, [Annie Sexton](https://anniesexton.com/) serving up punishing Deno nuggies, Jason producing and acting as the "man in the chair," and the contestants at their podiums, all mic'ed up. Watching Jason's crew handling lighting, sound, hair, makeup, props, set design, still photography, and video production was amazing. (Also, special thanks to [Jason Hill](https://jasonhillphoto.com/) for the photos you've seen so far!)
+
+![](/assets/media/dbd92546-32b3-4aaf-8e46-4757f7a42520.jpg)
 
 Standing in the midst of all that made being there all the more real and my nerves started getting to me. My biggest fear at that moment was seizing up in front of the camera. Thankfully, everyone had my back. My opponent, [Brittany Ellich](https://brittanyellich.com/) (who also got to shoot an [episode of Web Dev Challenge](https://www.youtube.com/watch?v=X2sEoZG8EIw\&t), you should check it out!), was super encouraging leading up to our shoot. Mark was ever the consummate game show host, checking in on us when he could, keeping us loose, and making sure it was fun the entire time.
 
