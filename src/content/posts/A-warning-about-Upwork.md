@@ -1,9 +1,9 @@
 ---
 title: A warning about Upwork
 pubDate: 2025-07-01T23:38:43.259Z
-updatedDate: 2025-07-01T23:41:01.224Z
+updatedDate: 2025-07-01T23:41:06.762Z
 description: Never share your Upwork account.
-draft: true
+draft: false
 ---
 
 I won't bury the lede with this one: no matter who contacts you or what the pitch is, never share an Upwork account.\
