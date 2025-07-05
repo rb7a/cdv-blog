@@ -1,0 +1,57 @@
+---
+
+---
+
+<div class="background">
+  <div class="eyebrow">Charles Villard</div>
+  <div class="title">This is the title of a story I wrote on my blog.</div>
+</div>
+
+<style>
+  :root {
+    --background: hsl(53, 53%, 94%);
+    /* --main-background: rgba(250, 244, 235, 0.5); */
+    --dot-color: hsl(210 11% 15% / 75%);
+    --dot-size: 1.5px;
+    --dot-space: 0.5in;
+    --c-transparent: rgba(0, 0, 0, 0);
+  }
+
+  html,
+  body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+    max-height: 630px;
+    outline: red 1px solid;
+  }
+
+  html {
+    padding: 0.5in;
+    height: calc(630px - 1in);
+    width: calc(1200px - 1in);
+  }
+
+  body {
+    width: calc(100% - 1in);
+    height: calc(100% - 1in);
+    background:
+      linear-gradient(
+          90deg,
+          hsl(53, 53%, 94%) calc(0.5in - 1.5px),
+          rgba(0, 0, 0, 0) 1%
+        )
+        center,
+      linear-gradient(
+          hsl(53, 53%, 94%) calc(0.5in - 1.5px),
+          rgba(0, 0, 0, 0) 1%
+        )
+        center,
+      var(--dot-color);
+    background-size: 0.5in 0.5in;
+    background-attachment: fixed;
+    font-size: 100%;
+  }
+</style>
