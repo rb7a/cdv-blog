@@ -1,7 +1,7 @@
 ---
 title: Running TypeScript in Node right Date.now()
 pubDate: 2025-07-06T00:39:06.276Z
-updatedDate: 2025-07-06T05:41:27.997Z
+updatedDate: 2025-07-06T05:45:02.473Z
 description: Reminding myself of a quick way to run TypeScript
 draft: false
 ---
@@ -22,7 +22,7 @@ Part of the problem, I'm guessing, was that I was using newer versions of Node a
 
 Finding a solution for running TypeScript projects locally was a frustrating rabbit hole. Typical TypeScript development calls for code to be compiled with the [tsc](https://www.typescriptlang.org/docs/handbook/compiler-options.html) CLI before restarting the server for every change you might want to test. A Google search for a solution to smooth that experience out kept turning up dated content with titles like "How to set up a Node server with TypeScript in (insert any year after 2020 here)," all basically recommending `ts-node`. The circular nature of my predicament frustrated me enough to almost put down the work altogether.
 
-Thankfully, I came across [tsx](https://tsx.is/). According to its documentation, tsx is designed to "enhance" Node.js, with support for CommonJS and ESM modes, and a built-in Watch mode to restart development servers on every saved change. Beyond being an easy drop-in replacement for ts-node, it can also be [used in place of node](https://tsx.is/node-enhancement) to run Node commands.
+Thankfully, I came across [tsx](https://tsx.is/). According to its documentation, tsx is designed to "enhance" Node.js, with support for CommonJS and ESM modes, and a built-in Watch mode to restart development servers on every saved change. Beyond being an easy drop-in replacement for ts-node, it can also be [used in place of Node commands](https://tsx.is/node-enhancement).
 
 The big benefit I've enjoyed from tsx is not needing to toss out my coursework to start over with another version of Node. I could have tried to use newer versions of Node now that [TypeScript is supported natively](https://nodejs.org/en/learn/typescript/run-natively), sure, but then, I'd need to figure out what else might be compatible or incompatible, and at that point, I might as well be forget about API design and start writing my own course! 
 
