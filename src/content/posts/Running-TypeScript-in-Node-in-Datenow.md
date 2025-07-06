@@ -1,7 +1,7 @@
 ---
-title: Running TypeScript in Node right Date.now()
+title: Running TypeScript in Node in Date.now()
 pubDate: 2025-07-06T00:39:06.276Z
-updatedDate: 2025-07-06T05:47:47.873Z
+updatedDate: 2025-07-06T05:51:31.609Z
 description: Reminding myself of a quick way to run TypeScript
 draft: false
 ---
