@@ -1,16 +1,16 @@
 ---
 title: Running TypeScript in Node right Date.now()
 pubDate: 2025-07-06T00:39:06.276Z
-updatedDate: 2025-07-06T05:37:13.054Z
+updatedDate: 2025-07-06T05:40:19.908Z
 description: Reminding myself of a quick way to run TypeScript
 draft: false
 ---
 
 > TL;DR: Use [tsx](https://tsx.is/) as a modern replacement for tools like ts-node and nodemon.
 
-Platforms like [Deno](https://deno.com/) and [Bun](https://bun.sh/) support TypeScript out of the box. However, peek into any API-related course using TypeScript like I did recently, and you'll likely be working with [Node](https://nodejs.org/en). The particular API design course I used was a bit dated by a few years, from before when Node supported native ESM imports.
+Platforms like [Deno](https://deno.com/) and [Bun](https://bun.sh/) support TypeScript out of the box. However, peek into any API-related course using TypeScript like I did recently, and you'll likely be working with [Node](https://nodejs.org/en). The particular API design course I used was a bit dated by a few years, from before when Node supported native ESM imports. The instructions asked students to install [ts-node](https://www.npmjs.com/package/ts-node), a TypeScript engine and REPL, to run TypeScript files locally.
 
-The instructions asked students to install [ts-node](https://www.npmjs.com/package/ts-node), a TypeScript engine and REPL, to run TypeScript files locally. Unfortunately, that was a roadblock for me, throwing type errors left and right when I tried to start my development server. No matter how many errors I fixed or changes I made to my config, if my app didn't throw `TypeError: Unknown file extension ".ts"`, it was throwing `Error: Cannot find module './index.js'`.
+Unfortunately, that was a roadblock for me, throwing type errors left and right when I tried to start my development server. No matter how many errors I fixed or changes I made to my config, if my app didn't throw `TypeError: Unknown file extension ".ts"`, it was throwing `Error: Cannot find module './index.js'`.
 
 Part of the problem, I'm guessing, was that I was using newer versions of Node and TypeScript than the course was designed for, with [pnpm](https://pnpm.io/) instead of npm to boot. The course was released back when `ts-node` was the common approach. The [ts-node project](https://github.com/TypeStrong/ts-node) hasn't received updates since then, so there was likely some discrepancy between what would work then versus now. This might be old news for TypeScript developers working on APIs everyday, but as a front-end developer trying to refresh my full-stack skills, silly me for not remembering the pace of JavaScript's innovation.
 
